@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*td{
+				width: 50px;
+				border: 1px solid grey;
+				text-align: center;
+			}
+			li{
+				width: 100px;
+				height: 30px;
+				list-style: none;
+				float: left;
+				text-align: center;
+			}
+			.check{
+				border: 1px solid#F10180;
+				background: pink;
+			}*/
+			/**{margin: 0;padding: 0;}
+			html,body{height: 100%;}
+			#bigbox{width: 100%;height: 100%;background: rgba(0,0,0,0.5);}
+			#box{width: 200px;height: 200px;margin:auto;position: absolute;left: 0;top: 0;right: 0;bottom: 0;background: yellowgreen}*/
+			
+		</style>
+	</head>
+	<body>
+		<!--<a href="dom.html">点我</a>
+		hello world
+		<h1>好好学习</h1>
+		<ul><li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+		</ul>-->
+		<!--<table border="" cellspacing="0" cellpadding="">
+			<thead>
+				<tr>
+					<td>商品名称</td>
+					<td>单价</td>
+					<td>数量</td>
+					<td>总计</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>iPhone 5</td>
+					<td>4000</td>
+					<td>
+						<button onclick="calc(this)">-</button>
+						<span>1</span>
+						<button onclick="calc(this)">+</button>
+					</td>
+					<td class="total">4000</td>
+				</tr>
+				<tr>
+					<td>iPhone 6</td>
+					<td>5000</td>
+					<td>
+						<button onclick="calc(this)">-</button>
+						<span>1</span>
+						<button onclick="calc(this)">+</button>
+					</td>
+					<td class="total">5000</td>
+				</tr>
+				<tr>
+					<td>iPhone 7</td>
+					<td>6000</td>
+					<td>
+						<button onclick="calc(this)">-</button>
+						<span>1</span>
+						<button onclick="calc(this)">+</button>
+					</td>
+					<td class="total">6000</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="3">总计</td>
+					<td class="atotal">15000元</td>
+				</tr>
+			</tfoot>
+		</table>-->
+		
+		<!--改变字体大小并弹出输入内容不能为空-->
+		<!--<input type="text" placeholder="请输入" autofocus="autofocus"/>
+		<input type="text" placeholder="请输入" autofocus="autofocus"/>
+		<input type="text" placeholder="请输入" autofocus="autofocus"/>
+		<br />
+		<button>大号</button>
+		<button>中号</button>
+		<button>小号</button>
+		<p>王大炮小姐</p>
+		<div>王小胖小姐</div>-->
+		
+		<!--创建删除节点-->
+		<!--<a id="a" class="aa" href="#">a</a>-->
+		
+		<!--插入删除修改-->
+		<!--<ul id="ke">
+			<li class="check">语文</li>
+			<li>数学</li>
+			<li id="english">英语</li>
+			<li>科学</li>
+		</ul>-->
+		<!--<div id="bigbox"> 
+			<div id="box">5</div>
+		</div>-->
+	</body>
+	<script type="text/javascript">
+//		console.log(document.body.nodeName);
+//		console.log(document.body.nodeValue);
+//		console.log(document.body.nodeType);
+//		console.log(document.body.childNodes);
+//		var a=document.body.childNodes[1];
+//		console.log(a);
+//		console.log(a.nodeName);
+//		var b=document.body.childNodes[5].childNodes;
+//		for (var i=1;i<b.length;i+=4) {
+//			b[i].style.background="yellow";
+//			b[i].style.width=300+"px";//"300px"
+//		}
+//		console.log(document.body.childNodes[5].firstChild);
+//		document.body.childNodes[5].firstChild.style.background="blue";
+//	function calc(btn){
+//		var td=btn.parentNode;
+//		var span=td.getElementsByTagName("span")[0];
+//		if(btn.innerHTML=="+"){
+//			span.innerHTML++;			
+//		}else{
+//			span.innerHTML>1?span.innerHTML--:span.innerHTML=1;
+//		}
+//		td.nextElementSibling.innerText=span.innerHTML*td.previousElementSibling.innerHTML;
+//		var total=document.getElementsByClassName("total");
+//		var atotal=document.getElementsByClassName("atotal")[0];
+//		for(var i=0,sum=0;i<total.length;i++){
+//			sum+=parseInt(total[i].innerHTML);
+//		}
+//		atotal.innerHTML=sum;
+//	
+//	}
+
+//改变字体大小并弹出输入内容不能为空
+//	var oinput = document.getElementsByTagName("input");
+//	for(var i=0;i<oinput.length;i++){
+//		oinput[i].onfocus=function(){
+//			if(i!=0&&this.previousSibling.previousSibling.value==""){
+//				alert("输入内容不能为空");
+//			}
+//		}
+//	}
+//	var btn=document.getElementsByTagName("button");
+//	var arr=["30px","20px","15px"];
+//	for(var i=0;i<btn.length;i++){
+//		btn[i].index=i;
+//		btn[i].onclick=function(){
+//			for(var j=0;j<oinput.length;j++){
+//				oinput[j].style.fontSize=arr[this.index];
+//				document.body.style.fontSize=arr[this.index];
+//			}
+//			
+//		}
+//	}
+
+//创建删除节点
+//console.log(document.querySelector("#a"));//查找元素
+//a.className="bb";
+//a.herf="http://www.ucai.cn";
+//for(var i=0;i<10;i++){
+//	var btn= document.createElement("button");
+//	btn.innerHTML="点我";
+//	btn.onclick=function(){
+//		alert("约吗？")
+//	}
+//	document.body.appendChild(btn);
+//}
+//
+//console.log(btn);
+
+//json,从后台获取过来的都是json
+//		var obj={
+//			"name":"鱼头",
+//			"age":40,
+//			"sex":"男",
+//			"boyfriend":{
+//				"name":"王大炮",
+//				"age":23,
+//				"sex":"女",
+//			}
+//		}
+//		console.log(obj.boyfriend.name)
+//		console.log(obj.boyfriend["name"])
+//		obj.height=180;
+//		delete obj.boyfriend;
+//		console.log(obj);
+//		for(var key in obj){
+//			console.log(key+obj[key]);
+//		}
+
+//数组中的json,在网页中打印出来数组内容
+//var arr=[
+//	{"name":"Tom","salary":8000,"age":25},
+//	{"name":"Will","salary":6000,"age":22},
+//	{"name":"Jin","salary":10000,"age":20},
+//	{"name":"Kin","salary":3000,"age":18},
+//	{"name":"Tim","salary":5000,"age":15},
+//	]
+//	var otable=document.createElement("table");
+//	addtable("name","salary","age");
+//for(var i=0;i<arr.length;i++){
+//	addtable(arr[i].name,arr[i].salary,arr[i].age);
+//}
+//document.body.appendChild(otable);//将table加入body中
+//
+//function addtable(a,b,c){
+//	var otr=document.createElement("tr");
+//	var otdname=document.createElement("th");
+//	otdname.innerHTML=a;
+//	var otdsalary=document.createElement("th");
+//	otdsalary.innerHTML=b;
+//	var otdage=document.createElement("th");
+//	otdage.innerHTML=c;
+//	otr.appendChild(otdname);		
+//	otr.appendChild(otdsalary);		
+//	otr.appendChild(otdage);//将name，salary,age加入一行中
+//	otable.appendChild(otr);//将每一行加入table中
+//}
+
+//插入删除修改
+//var oul=document.querySelector("#ke");
+//var oli=document.getElementsByTagName("li");
+//var ty=document.createElement("li");
+//ty.innerHTML="体育";
+//oul.insertBefore(ty,oul.children[0]);
+//oul.removeChild(document.querySelector("#english"));
+//oul.replaceChild(ty,oul.children[0]);
+//for(var i=0;i<oli.length;i++){
+//	oli[i].onclick=function(){
+//		alert("你忍心删除吗？")
+//		oul.removeChild(this)
+//	}
+//	oli[i].onmouseover=function(){
+//		for(var j=0;j<oli.length;j++){
+//			oli[j].className="";//排他思想
+//		}
+//		this.className="check";
+//	}
+//}
+//周期性定时器
+//	var i=0;
+//	var timer=setInterval(function(){
+//		console.log(i++);
+//		if(i>10){
+//			clearInterval(timer);	
+//		}
+//	},1000)
+//一次性定时器
+//	setTimeout(function(){
+//		alert("吓你一跳");
+//	},1000)
+//用一次性定时器实现周期性定时器
+//	setTimeout(fun,1000)
+//	function fun(){
+//		document.write(1);
+//		setTimeout(fun,1000)
+//	}
+//打开页面弹出一个框，5秒后消失，并显示倒计时
+
+//var box=document.querySelector("#box");
+//var time=setInterval(function fun(){
+//		box.innerHTML-=1;
+//		if(box.innerHTML==0){
+//			clearInterval(time);
+//			document.querySelector("#bigbox").style.display="none";
+//		}
+//		
+//},1000)
+</script>
+</html>

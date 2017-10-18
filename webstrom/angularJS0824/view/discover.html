@@ -1,0 +1,7 @@
+<div ng-controller="discoverController">
+    <h1>这是发现</h1>
+    <p>这是发现</p>
+    <ul ng-init="list=[1,2,3,4,5]">
+        <li ng-repeat="item in list" ng-bind="item" ng-click="showInfo(item)"></li>
+    </ul>
+</div>

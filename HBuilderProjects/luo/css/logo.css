@@ -1,0 +1,247 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/*log大盒子*/
+a{
+	text-decoration: none;
+}
+#logo{
+	width: 100%;
+	height: 55px;
+	background: #F2F2F2;
+	border-top: 2px solid #DD5862;
+	line-height: 55px;
+}
+#logo .logo_margin{
+	width: 960px;
+	height: 55px;
+	margin: 0 auto;
+	position: relative;
+	}
+#logo .logo_margin_img{
+	display: block;
+	width: 35px;
+	height: 40px;
+	background: url(../img/luowang.png) no-repeat 0px -300px;
+	float: left;
+	margin-top: 8px;
+}
+#logo .logo_margin ul{
+	list-style: none;
+	float: left;
+
+	height: 20px;
+	margin-left: 30px;
+}
+#logo .logo_margin ul li{
+	float: left;
+	width: 50px;
+	height: 20px;
+}
+#logo .logo_margin ul li a{
+	color: #2D2D2D;
+}
+#logo .logo_margin ul li a:hover{
+	color: #DD5862;
+	transition: all .3S;
+}
+#logo .logo_margin .logo_margin_input{
+	width: 100px;
+	height: 25px;
+	border-radius: 12px;
+	border: 1px solid #E5E5E5;
+	background: #EDEDED;
+	outline: none;
+	text-indent: 30px;
+	background: url(../img/luowang.png) no-repeat -106px -238px;
+}
+#logo .logo_margin .logo_margin_login{
+	float: right;
+	
+	cursor: pointer;
+	font-size: 14px;
+}
+#logo .logo_margin .logo_margin_dislogin{
+	width: 235px;
+	height: 270px;
+	background: lightgoldenrodyellow;
+	border-radius: 3px;
+	position: absolute; 
+	top: 48px;
+    left: 806px;
+    display: none;
+}
+
+#logo .logo_margin .logo_margin_dislogin_trigon{
+	width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid lightgoldenrodyellow;;
+    margin: 0 auto;
+    position: absolute;
+    top: -10px;
+    left: 112px;
+}
+#logo .logo_margin .logo_margin_dislogin_denglu{
+	width: 235px;
+	height: 270px;
+	line-height: 2;
+	margin: 0 auto ;
+	
+}
+.logo_margin_dislogin_denglu_linetitle{
+	width: 200px;
+	height: 40px;
+	
+	margin: 0 auto;
+}
+.logo_margin_dislogin_denglu_linetitle .zi1{
+	float: left;
+    font-size: 14px;
+    color: #000;
+}
+.logo_margin_dislogin_denglu_linetitle .zi2{
+	float: right;
+    font-size: 14px;
+    color: #706f6f;
+}
+.logo_margin_dislogin_denglu_linetitle .zi2 a{
+    font-size: 14px;
+    color: #dd5862;
+}
+.logo_margin_dislogin_denglu_lineinput{
+	width: 210px;
+	height: 35px;
+	margin: 0 auto;
+	border:1px solid #E5E5E5;
+	line-height: 1;
+	margin-bottom: 5px;
+	
+	
+}
+.logo_margin_dislogin_denglu_lineinput input{
+	width: 170px;
+	height: 25px;
+	border: none;
+	float: right;
+	margin: 0 auto;
+	margin-top: 5px;
+	border: none;
+	outline: none;
+	background: lightgoldenrodyellow;
+}
+.logo_margin_dislogin_denglu_lineinput .zi3{
+	font-size: 13px;
+	float: left;
+	text-indent: 7px;
+	line-height: 35px;
+}	
+.logo_margin_dislogin_denglu_linetiajiao input{
+	width: 210px;
+	height: 25px;
+	background: #DD5862;
+	color: #fff;
+	border-radius: 5px;
+	margin-left: 13px;
+	margin-top: 15px;
+	transition: all .3s;
+	border: none;
+	outline: none;
+	
+}
+.logo_margin_dislogin_denglu_linezhaohui{
+	width: 220px;
+	height: 40px;
+	font-size: 13px;
+	
+	color: #706f6f;
+	text-indent: 13px;
+	margin-top: 7px;
+}
+.logo_margin_dislogin_denglu_linezhaohui .zi5{
+	float: right;
+	color: #dd5862;
+}
+.logo_margin_dislogin_denglu_hezuo{
+	width: 235px;
+	height: 50px;
+	margin-top: 15px;
+}
+.logo_margin_dislogin_denglu_hezuo .yi{
+	width: 30px;
+	height: 30px;
+	float: left;
+	
+	margin-left:50px;
+}
+.logo_margin_dislogin_denglu_hezuo .er{
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin-left:20px;
+}
+.logo_margin_dislogin_denglu_hezuo .san{
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin-left:20px;
+}
+.logo_margin_dislogin_denglu_hezuo .yi{
+	background: url(../img/luowang.png) no-repeat -110px -30px;
+}
+.logo_margin_dislogin_denglu_hezuo .er{
+	background: url(../img/luowang.png) no-repeat -110px -90px;
+}
+.logo_margin_dislogin_denglu_hezuo .san{
+	background: url(../img/luowang.png) no-repeat -110px -60px;
+}
+#banner{
+	width: 1000px;
+	height: 400px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+#banner #tu{
+	width: 100%;
+}
+.sectionu{
+	width: 1000px;
+	height: 45px;
+	margin: 0 auto;
+}
+.sectionu .section1{
+	width: 110px;
+	height: 45px;
+	border-left: 3px solid #DD5862;
+	margin-right: 10px;
+}
+.sectionu .section2 ul{
+	width: 450px;
+	height: 45px;
+	list-style: none;
+	float: right;
+	margin-top: -20px;
+}
+.sectionu .section2 ul li{
+	list-style: none;
+	width: 40px;
+	height: 20px;
+	text-align: center;
+	font-size: 14px;
+	color: #7D7D7D;
+	float: left;
+}
+.sectionu .section2 ul li a:hover{
+	color: red;
+}
+.sectiond{
+	width: 1000px;
+	height: 550px;
+	margin: 0 auto;
+	
+}
+.sectiond .section3{
+	
+}

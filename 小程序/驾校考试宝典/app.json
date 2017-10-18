@@ -1,0 +1,16 @@
+{
+  "pages": [
+  "pages/home/home",
+  "pages/type/type",
+  "pages/detail/detail",
+  "pages/answer/answer"
+],
+"window": {
+  "navigationBarBackgroundColor": "#4f94cd",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "驾校考试宝典",
+  "backgroundColor": "#ffffff",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": true
+}
+}

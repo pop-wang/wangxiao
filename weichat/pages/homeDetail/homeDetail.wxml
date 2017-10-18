@@ -1,0 +1,2 @@
+<!--pages/homeDetail/homeDetail.wxml-->
+<navigator delta='2' open-type='navigateBack' >可以指定要返回的页面</navigator>

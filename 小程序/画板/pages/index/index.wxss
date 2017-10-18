@@ -1,0 +1,8 @@
+/* pages/index/index.wxss */
+.container, .inner_container{
+  height: 100%;
+}
+.draw_container{
+  width: 100%;
+  height: 100%;
+}

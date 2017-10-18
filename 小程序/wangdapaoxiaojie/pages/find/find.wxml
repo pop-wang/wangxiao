@@ -1,0 +1,15 @@
+<!--pages/find/find.wxml-->
+<view>
+  <scroll-view class='container' scroll-x>
+    <view class='item'>我是王大炮小姐啊啊啊啊啊~~~</view>
+    <view class='item'>我是王大炮小姐啊啊啊啊啊~~~</view>
+    <view class='item'>我是王大炮小姐啊啊啊啊啊~~~</view>
+    <view class='item'>我是王大炮小姐啊啊啊啊啊~~~</view>
+    <view class='item'>我是王大炮小姐啊啊啊啊啊~~~</view>
+    <view class='item'>我是王大炮小姐啊啊啊啊啊~~~</view>
+    <view class='item'>我是王大炮小姐啊啊啊啊啊~~~</view>
+    <view class='item'>我是王大炮小姐啊啊啊啊啊~~~</view>
+    <view class='item'>我是王大炮小姐啊啊啊啊啊~~~</view>
+    <view class='item'>我是王大炮小姐啊啊啊啊啊~~~</view>
+  </scroll-view>
+</view>

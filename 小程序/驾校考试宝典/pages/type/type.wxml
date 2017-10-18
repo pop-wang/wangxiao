@@ -1,0 +1,6 @@
+<!--pages/type/type.wxml-->
+<view class='type_container'>
+  <view class='type_item' wx:for="{{['a1','a2','b1','b2','c1','c2']}}" data-type='{{item}}'>
+  <navigator url='/pages/detail/detail?subObj={{item}}&type={{type}}'>{{item}}</navigator>
+  </view>
+</view>

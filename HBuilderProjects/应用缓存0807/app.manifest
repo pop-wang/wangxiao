@@ -1,0 +1,5 @@
+CACHE MANIFEST
+## 需要缓存的文件
+index.html
+js/app.js
+img/icon.png

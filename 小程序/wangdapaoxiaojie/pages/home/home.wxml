@@ -1,0 +1,4 @@
+<!--pages/home/home.wxml-->
+<view>
+  <view wx:for="{{list}}" wx:for-index="id" wx:for-item="info">{{id}}={{info.title}}</view>
+</view>

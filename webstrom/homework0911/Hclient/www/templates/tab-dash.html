@@ -1,0 +1,16 @@
+<ion-view view-title="王大炮">
+  <ion-content class="padding">
+    <ion-refresher
+      pulling-text="下拉刷新..."
+      on-refresh="loadData()"
+      refreshing-text="正在加载中...">
+    </ion-refresher>
+    <ion-list>
+      <ion-item ng-repeat="info in list">
+        <h1>姓名：{{info.username}}</h1>
+        <h2>电话：{{info.userphone}}</h2>
+        <h2>爱好：{{info.userhobby}}</h2>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

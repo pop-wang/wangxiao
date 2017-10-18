@@ -1,0 +1,8 @@
+<div ng-init="isShow=true">
+    <h1>这是首页</h1>
+    <button ng-click="isShow=!isShow">显示标题</button>
+    <p ng-hide="isShow">这是首页</p>
+    <ul class="homeContentList" ng-init="list=[1,2,3,4,5]">
+        <li ng-repeat="item in list" ng-bind="item"></li>
+    </ul>
+</div>

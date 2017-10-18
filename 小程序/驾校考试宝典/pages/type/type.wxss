@@ -1,0 +1,17 @@
+/* pages/type/type.wxss */
+.type_container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.type_item{
+  width: 375rpx;
+  height: 375rpx;
+  color: white;
+  text-align: center;
+  line-height: 295rpx;
+  border: 40rpx solid white;
+  border-radius: 80rpx;
+  background: #4f94cd;
+  box-sizing: border-box;
+}

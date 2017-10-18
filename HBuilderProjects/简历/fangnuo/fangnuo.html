@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>方诺知识产权</title>
+		<style type="text/css">
+		*{margin 0;padding: 0;}
+			#fangnuo{
+				width: 1000px;
+				height: 90px;
+			
+				margin: 0 auto;
+				margin-top: 40px;
+			}
+			#fangnuo .logo{
+				width: 380px;
+				height: 90px;
+			
+				float: left;
+				background: url(img/logon.png) no-repeat;
+			}
+			#fangnuo .wenzi{
+				width: 620px;
+				height: 50px;
+			
+				float: right;
+				text-align: center;
+				margin-top: 40px;
+			}
+			.wenzi ul li{
+				list-style: none;
+				width: 88px;
+				height: 25px;
+				float: left;
+				color:#000;
+				transition: all .3s;
+			}
+			#bannners{
+				width: 1000px;
+				height: 400px;
+				margin: 0 auto;
+				
+			}
+			#bannners img{
+				width: 100%;
+				
+			}
+			#weather{
+				width: 700px;
+				height: 60px;
+				margin: 0 auto;
+				margin-top: -50px;
+			}
+			#content{
+				width: 330px;
+				height: 80px;
+				margin: 0 auto;
+				text-align: center;
+			}
+			#content #wenzi1{
+				width: 330px;
+				height: 40px;
+				font-size: 30px;
+				font-weight: 800px;
+				color: blue;
+				font-family: "微软雅黑";
+			}
+		
+			
+			#neirong{
+				width: 1000px;
+				height: 270px;
+				margin: 0 auto;
+			}
+			#tu1,#tu2,#tu3,#tu4{
+				width: 250px;
+				height: 270px;
+				text-align: center;
+				float: left;
+			}
+			.abc{
+				text-decoration: line-through;
+			}
+			p{
+				font-size: 14px;
+			}
+			.wenzi ul li ul li{
+				z-index: 3;
+				position: relative;
+				font-size: 14px;
+				display: none;
+				color: #FFF;
+				background: grey;
+				rgb(0,0,0,0.8)
+			}
+			.wenzi ul li ul{
+				display: block;
+				background: grey;
+				rgb(0,0,0,0.2)
+			}
+			.wenzi ul li:hover ul li{
+				display: block;
+			}
+			.wenzi ul li ul .baizi{
+				color: #FFFFFF;
+			}
+		</style>
+	</head>
+	<body>
+	<div id="fangnuo">
+		<div class="logo"></div>
+		<div class="wenzi">
+			<ul>
+				<a href="#">
+					<li>首页
+					
+						<ul>
+								
+							<li>产品介绍</li>
+							<li>公司介绍</li>
+							<li>团队介绍</li>
+						</ul>
+				    </li>
+				</a>
+				<a href="#">
+					<li>关于我们
+					 	<ul>
+							<li>资金</li>
+							<li>分公司</li>
+							<li>合作企业</li>
+						</ul>
+					</li>
+				</a>
+				<a href="#">
+					<li>专利业务
+						<ul>
+							<li>申请专利</li>
+							<li>专利办理</li>
+						</ul>
+					</li>
+				</a>
+				<a href="#">
+					<li>商标服务
+						<ul>
+							<li>国内商标</li>
+							<li>国外商标</li>
+						</ul>
+					</li>
+				</a>
+				<a href="#">
+					<li>成功案例
+						<ul>
+							<li>PYTHON</li>
+							<li>SPSS</li>
+							<li>SAS</li>
+						</ul>
+					</li>
+				</a>
+				<a href="#">
+					<li>新闻动态
+						<ul>
+							<li>网易</li>
+							<li>搜狐</li>
+							<li>腾讯</li>
+						</ul>
+					</li>
+				</a>
+				<a href="#">
+					<li>联系我们
+						<ul>
+							<li>电话</li>
+							<li>手机</li>
+							<li>邮箱</li>
+						</ul>
+					</li>
+				</a>
+			</ul>
+		</div>
+	</div>
+	<div id="bannners">
+		<img id="tu" src="img/1.jpg"/>
+	</div>
+	<div id="weather">
+		<iframe width="700" scrolling="no" height="60" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=12&icon=1&num=5"></iframe>
+	</div>
+	<div id="content">
+			<span class="abc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;服务项目&nbsp;&nbsp;<span class="abc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+		</div>
+	</div>
+	<div id="neirong">
+		<div id="tu1">
+			<img src="img/tu1.png"/>
+			<h3>国内商标</h3>
+			<p>国内商标商标注册，免费商标查询</p>
+		</div>
+		<div id="tu2">
+			<img src="img/tu2.png"/>
+			<h3>国内商标</h3>
+			<p>美国、加拿大、欧盟商标注册</p>
+		</div>
+		<div id="tu3">
+			<img src="img/tu3.png"/>
+			<h3>专利服务</h3>
+			<p>申请专利、专利办理</p>
+		</div>
+		<div id="tu4">
+			<img src="img/tu4.png"/>
+			<h3>版权服务</h3>
+			<p>作者版权登记、著作者登记</p>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var tu = document.getElementById("tu");
+		var n=1;
+		function banners(){
+			n++;
+			if(n==7){
+				n=1;
+			}
+			tu.src="img/"+n+".jpg"	
+				
+		}
+		setInterval(banners,1000)
+		
+	</script>
+	</body>
+</html>

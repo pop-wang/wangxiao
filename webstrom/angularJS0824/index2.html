@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="main">
+<head>
+    <meta charset="UTF-8">
+    <title>angulardirective</title>
+    <link rel="stylesheet/less" href="css/index2.less">
+    <script src="css/bower_components/less/dist/less.js"></script>
+    <script src="js/bower_components/angular/angular.js"></script>
+</head>
+<body ng-controller="mainController" ng-init="username='wangxiao';sex='女';list=[22,23,24];isSelect=true;className='a'">
+    {{username+","+sex}}
+    <div ng-repeat="x in list" ng-bind="x"></div>
+
+    <input type="text" ng-model="className">
+    <button ng-click="isSelect=!isSelect">更改</button>
+    <div ng-class="{a:isSelect,b:!isSelect}"></div>
+    <div ng-class="[{a:isSelect,b:!isSelect},className]">class数组</div>
+    <input type="image" ng-src="{{isSelect?'images/1.png':'images/2.png'}}" ng-click="isSelect=!isSelect">
+    <div ng-hide="isSelect" ng-show="isSelect">content</div>
+    <a ng-href="{{className}}">link</a>
+    <input type="text" ng-model="type">
+    <ul ng-switch="type">
+        <li ng-switch-when="11">111</li>
+        <li ng-switch-when="22">222</li>
+        <li ng-switch-when="33">333</li>
+        <li ng-switch-default>444</li>
+    </ul>
+<script src="js/mainController.js"></script>
+<script src="js/index2.js"></script>
+</body>
+</html>

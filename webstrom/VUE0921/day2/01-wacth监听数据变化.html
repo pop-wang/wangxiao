@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
+</head>
+<body>
+<div id="box">
+    <p>{{a}}</p>
+    <p>{{b}}</p>
+</div>
+
+<script>
+    let vm=new Vue({
+        el:"#box",
+        data:{
+           stark:"shudong",
+            a:111,
+            b:222
+        },
+    })
+    vm.$watch("a",function () {
+        alert("a值发生了变化");
+        this.b=this.a+100;
+    })
+    document.onclick=function () {
+        vm.a=333;
+    }
+</script>
+</body>
+</html>

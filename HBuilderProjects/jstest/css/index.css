@@ -1,0 +1,25 @@
+*{margin: 0;padding: 0;}
+.back{width: 900px;height: 800px;background: rgba(0,0,0,0.3);margin: 50px auto;}
+.box{width: 800px;height: 400px;margin: 0 auto;padding-top: 50px;}
+#text{width: 560px;height: 400px;float: left;}
+.text1{width: 180px;height: 50px;margin-top: 10px;}
+.text1 img{width: 50px;height: 50px;border-radius: 50%;float: left;}
+.text1 span{display: block;width: 130px;height: 50px;line-height: 70px;text-align: center; font-family: "楷体";font-size: 18px;color: white;float: right;}
+.text2{width: 500px;height: 80px;border: 1px solid black;border-radius: 10px;background: rgba(0,0,0,0.3);margin-top: 20px;}
+.text2 input{border: none;background: transparent;border: 1px solid black;}
+.text2 #word{width: 400px;height: 78px;border-radius: 10px 0px 0px 10px;}
+.text2 #sbt{width: 80px;height: 50px;border-radius: 50%;}
+.text3{width: 500px;height: 120px;margin-top: 10px;border: 1px solid black;border-radius: 10px;background: #7E7E7E;}
+.text3 img{width: 30px;height: 30px;border-radius: 50%;float: left;}
+.text3 span{font-family: "楷体";font-size: 16px;color: white;line-height: 30px;}
+.text3 p{width: 400px;height: 50px;float: left;}
+.text3 a{width: 80px;height: 50px;line-height: 50px;text-align: center;float: right;}
+#banner{width: 240px;height: 320px;float: right;position: relative;overflow: hidden;}
+#bannerimg{width: 240px;height: 1280px;list-style: none;}
+#bannerimg img{float: left;}
+#bannernav{position: absolute;bottom: 50%;left: 50%;margin-left: -60px;list-style: none;}
+#bannernav li{float:left;width: 20px;height: 20px;border-radius: 50%;line-height: 20px;text-align: center;margin: 0 10px;background: rgba(0,0,0,0.3);}
+#banner button{width: 40px;height: 40px;border-radius: 30%;position: absolute;left: 50%;margin-left:-20px;background: rgba(0,0,0,0.3);border: 0;display: none;}
+.btnu{top: 0px;}
+.btnd{top: 280px;}
+#bannernav .nacive{background: yellowgreen;}

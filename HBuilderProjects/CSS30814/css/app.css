@@ -1,0 +1,104 @@
+/*h3~p{
+	color: red;
+}
+a[href^="#"]{
+	color: orange;
+}
+input[placeholder*="水"]~p{
+	color:red;
+}
+div p:first-of-type{
+	color:green;
+}
+div p:last-of-type{
+	border: 1px solid deeppink;
+}
+div p:nth-last-of-type(2){
+	padding: 50px;
+}
+div p:nth-of-type(1){
+	background: chartreuse;
+}
+div a:only-of-type{
+	text-decoration: blink;
+}
+/*li:only-child{
+	color: yellow;
+}
+ul :only-child{
+	color: green;
+}
+:root{
+	background: #123456;
+}
+div:empty{
+	width: 500px;
+	height: 100px;
+	background: yellow;
+}
+
+#news:target{
+	widows: 100px;
+	height: 100px;
+	background: green;
+}
+:enabled{
+	color: green;
+}
+:checked{
+	width: 50px;
+	height: 50px;
+}
+input:not([type="radio"]){
+	width: 200px;
+	height: 100px;
+}
+::selection{
+	color: sandybrown;
+}
+:out-of-range{
+	width: 6opx;
+	height: 30px;
+	background: white;
+}
+:read-only{
+	color: red;
+}*/
+body{
+	padding: 100px;
+}
+.bg-container{
+	width: 400px;
+	height: 3000px;
+	padding: 30px;
+	border: 20px solid rgba(0,0,0,0.1);
+	background: url(http://d2.lashouimg.com/cms/M00/BA/11/CqgBHlUCmtmASuDeAABj1tqFUG8415.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-origin: content-box;/*北京图片相对哪定位*/
+	background-clip: content-box;/*超过边框的地方就会被裁剪掉*/
+	background-attachment: fixed;/*背景图片不随滚动而滚动*/
+	/*border-top-left-radius: 10%;
+	border-top-right-radius: 10%;*/
+	border-image-source: url("https://mdn.mozillademos.org/files/4127/border.png");	
+	border-image-slice: 27 27;
+	border-image-width: 100px 100px;
+	border-image-outset: 100px;/*边框外沿到内容的距离*/
+	border-image-repeat: round;/*默认拉伸，repeat和round效果一样*/
+	box-shadow: #71e525 20px 20px 20px,blue 20px 20px 20px; /*可设置多层阴影*/
+}
+p{
+	width: 200px;
+	height: 20px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;/*溢出隐藏不换行，设置为省略号*/
+	text-shadow: #0000FF 5px 5px 3px;
+}
+.gradient{
+	width: 500px;
+	height: 500px;
+	background: linear-gradient(45deg, red 10%, white,blue);
+	/*background: radial-gradient(circle 200px at left top,red,yellow);*/
+	/*background: repeating-radial-gradient(circle 20px at left top,red,yellow);*/
+}

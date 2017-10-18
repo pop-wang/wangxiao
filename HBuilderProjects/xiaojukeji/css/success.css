@@ -1,0 +1,263 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "PingFang SC,Helvetica Neue,Helvetica,Arial,Microsoft Yahei,sans-serif";
+	text-decoration: none;
+	list-style: none;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+}
+.head{
+	width: 100%;
+	height: 60px;
+}
+.headinner{
+	width: 1300px;
+	height: 60px;
+	margin: 0 auto;
+}
+
+.head1{
+	width: 123px;
+	height: 22px;
+	float: left;
+	margin-top: 19px;
+	margin-left: 40px;
+}
+.head1 img{
+	width: 123px;
+	height: 22px;
+}
+.head2{
+	width: 468px;
+	height: 22px;
+	float: left;
+	margin-top: 19px;
+	margin-left: 36px;
+}
+.head2 .head21 .head21-1{
+	float: left;
+	margin-right: 36px;
+	color: #434343;
+}
+.head2 .head21 .head21-2 {
+	float: left;
+	margin-right: 36px;
+	color: #1E96FA;
+}
+.head3{
+	width: 180px;
+	height: 32px;
+	float: right;
+	margin-top: 14px;
+	margin-right: 80px;
+}
+.head3 .head31{
+	line-height: 32px;
+	display: block;
+	
+}
+.head3 .head31-1{
+	width: 50px;
+	height: 32px;
+	float: left;
+	color: #434343;
+}
+.head3 .head31-2{
+	width: 110px;
+	height: 32px;
+	float: left;
+	color: #1E96FA;
+	border: 1px solid #1E96FA;
+	border-radius: 15px;
+	text-align: center;
+}
+.head3 .head31-1:hover{
+	color: #1E96FA;
+}
+.head3 .head31-2:hover{
+	color: white;
+	background: #1E96FA;	
+}
+.banner{
+	width: 100%;
+	height: 500px;
+	background: url(../img/cg-banner.jpg) no-repeat;
+	background-size: cover;
+}
+.bannerinner{
+	width: 1200px;
+	height: 234px;
+	margin: 0 auto;
+	position: relative;
+}
+.bannerinner h2{
+	width: 1200px;
+	height: 60px;
+	font-size: 42px;
+	line-height: 60px;	
+	color: white;
+	position: absolute;
+	top: 70px;
+}
+.bannerinner h3{
+	width: 1000px;
+	height: 30px;
+	font-size: 28px;
+	line-height: 30px;	
+	color: #e3e7eb;
+	position: absolute;
+	top: 210px;
+}
+.bannerinner .banner1{
+	width: 146px;
+	height: 44px;
+	background: #1E96FA;
+	position: absolute;
+	top: 265px;
+	font-size: 16px;
+	line-height: 48px;
+	text-align: center;
+	color: white;
+}
+.container{
+	width: 100%;
+	height: 2961px;
+	background: url(../img/cg-body-bg.png);
+}
+.container h2{
+	text-align: center;
+	font-size: 40px;
+	padding-top: 45px;
+}
+.container h2 span{
+	color: #1E96FA;
+}
+.container .container1{
+	width: 1000px;
+	height: 1551px;
+	margin: 0 auto;
+	margin-top: 35px;
+}
+.container .container1 ul{
+	width: 1000px;
+	height: 1551px;
+}	
+.container .container1 ul li{
+	width: 500px;
+	height: 517px;
+	float: left;
+	padding-top: 40px;
+}	
+.container .container1 .container11{
+	width: 454px;
+	height: 405px;
+	background: #fff;
+    border: 1px solid #c9c9c9;
+    padding-top: 35px;
+}
+.container .container1 .container11 h3{
+	font-size: 30px;
+    overflow: hidden;
+    padding: 30px 0 10px;
+    text-align: left;
+}
+.container .container1 .container11 h3 span{
+	display: block;
+	width: 0px;
+	height: 30px;
+	border-left: 4px solid #017ed2;   
+    float: left;   
+    margin: 5px 26px 0 0;
+    
+}
+.container .container1 .container11 p{
+	color: #666;
+    font-size: 14px;
+    padding: 0 30px;
+}
+.container .container1 .container11 h2{
+	font-size: 40px;
+	color: #999;
+}
+.container .container2{
+	width: 100%;
+	height: 325px;
+	margin-top: 150px;
+	background: url(../img/introduce_bg.png) repeat-x;
+}
+.container .container2 h2{
+	font-size: 40px;
+	color: white;
+}
+.container .container2 h3{
+	height: 36px;
+	line-height: 36px;
+	font-size: 18px;
+	color: white;
+	text-align: center;
+	margin-top: 30px;
+}
+.container .container3{
+	width: 100%;
+	height: 785px;
+	margin-top: 30px;
+}
+.container .container3 h2{
+	font-size: 40px;
+	color: #565A5C;
+}
+.container .container3 ul{
+	width: 1000px;
+	height: 431px;
+	margin: 30px auto;
+	border-bottom: 1px solid #999999;
+	border-top: 1px solid #999999;
+}
+.container .container3 ul li{
+	float: left;
+    padding: 100px 0 120px;
+    text-align: center;
+    width: 33%;
+}
+.container .container3 ul li h3{
+	font-size: 26px;
+	margin-top: 20px;
+}
+.container .container3 ul li h4{
+	font-size: 14px;
+	margin-top: 10px;
+}
+.container .container3 .container31{
+	display: block;
+	width: 180px;
+	height: 54px;
+	background: #017ED2;
+	font-size: 20px;
+	line-height: 48px;
+	text-align: center;
+	color: white;
+	margin :50px 0px 0px 560px;
+}
+.foot{
+	width: 100%;
+	height: 50px;
+	background: #2C2C2C;
+}
+.footinner{
+	width: 900px;
+	height: 50px;
+	margin: 0 auto;
+	line-height: 50px;
+	font-size: 12px;
+	color: #565A5C;
+	
+}
+.foot span{
+	float: right;
+	color: #959595;
+}
+.foot span b{
+	font-size: 14px;
+}

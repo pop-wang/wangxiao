@@ -1,0 +1,25 @@
+<!--pages/user/user.wxml-->
+<view class='questionContainer'>
+  <view class='questionItem' wx:for="{{questionData}}">
+    <view class='item_question'>
+      <text>{{index+1}}</text>
+      <text>.{{item.question}}</text>
+    </view>
+    <view class='item_answer'>
+      <radio-group class="radio-group"  bindchange='checked'>
+        <label class="radio">
+          <radio value="1"/>{{item.item1}}
+        </label>
+        <label class="radio">
+          <radio value="2"/>{{item.item2}}
+        </label>
+        <label class="radio">
+          <radio wx:if="{{isShow}}" value="3"/>{{item.item3}}
+        </label>
+        <label class="radio">
+          <radio wx:if="{{isShow}}" value="4"/>{{item.item4}}
+        </label>
+      </radio-group>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,153 @@
+{
+  "heros": [
+    {
+      "name": "奥特曼",
+      "blood": 1000,
+      "att": 20,
+      "level": 0,
+      "skills": [
+        {
+          "name": "手劈",
+          "att": 100,
+          "level": 5
+        },
+        {
+          "name": "流星拳",
+          "att": 200,
+          "level": 5
+        },
+        {
+          "name": "旋风腿",
+          "att": 500,
+          "level": 5
+        }
+      ]
+    },
+    {
+      "name": "葫芦娃",
+      "blood": 1500,
+      "att": 10,
+      "level": 0,
+      "skills": [
+        {
+          "name": "手劈",
+          "att": 100,
+          "level": 5
+        },
+        {
+          "name": "流星拳",
+          "att": 200,
+          "level": 5
+        },
+        {
+          "name": "旋风腿",
+          "att": 500,
+          "level": 5
+        }
+      ]
+    },
+    {
+      "name": "黑猫",
+      "blood": 4000,
+      "att": 50,
+      "level": 0,
+      "skills": [
+        {
+          "name": "手劈",
+          "att": 100,
+          "level": 5
+        },
+        {
+          "name": "流星拳",
+          "att": 200,
+          "level": 5
+        },
+        {
+          "name": "旋风腿",
+          "att": 500,
+          "level": 5
+        }
+      ]
+    }
+  ],
+  "monsters": [
+    {
+      "name": "青蛙",
+      "blood": 500,
+      "att": 20,
+      "level": 0,
+      "skills": [
+        [
+          {
+            "name": "手劈",
+            "att": 100,
+            "level": 5
+          },
+          {
+            "name": "流星拳",
+            "att": 200,
+            "level": 5
+          },
+          {
+            "name": "旋风腿",
+            "att": 500,
+            "level": 5
+          }
+        ]
+      ]
+    },
+    {
+      "name": "白蛇",
+      "blood": 500,
+      "att": 20,
+      "level": 0,
+      "skills": [
+        [
+          {
+            "name": "手劈",
+            "att": 100,
+            "level": 5
+          },
+          {
+            "name": "流星拳",
+            "att": 200,
+            "level": 5
+          },
+          {
+            "name": "旋风腿",
+            "att": 500,
+            "level": 5
+          }
+        ]
+      ]
+    },
+    {
+      "name": "黑熊",
+      "blood": 500,
+      "att": 20,
+      "level": 0,
+      "skills": [
+        [
+          {
+            "name": "手劈",
+            "att": 100,
+            "level": 5
+          },
+          {
+            "name": "流星拳",
+            "att": 200,
+            "level": 5
+          },
+          {
+            "name": "旋风腿",
+            "att": 500,
+            "level": 5
+          }
+        ]
+      ]
+    }
+  ]
+}
+
+
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LEARNFORYOU</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>LearnForYou</h1>
+    </header>
+    <section>
+        <ul class="firstTypeContainer"></ul>
+    </section>
+    <footer></footer>
+
+
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/http.js"></script>
+<script src="js/index.js"></script>
+<script>
+    function init() {
+        new FirstType().createView("http://route.showapi.com/8-11",{showapi_appid:42208,showapi_sign:"b1818eeddbd549ca9a6601a750ceb9fb"},$(".firstTypeContainer"),function (event) {
+            console.log(event);
+            window.open("html/secondType.html?name="+event.data.name);
+        })
+    }
+    init();
+</script>
+</body>
+</html>

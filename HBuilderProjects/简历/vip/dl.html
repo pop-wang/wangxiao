@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+		*{margin: 0;padding: 0;}
+		body{
+			background: #FCFAFD;
+		}
+			#vip{
+				width: 1050px;
+				height: 700px;
+				margin:0 auto;
+			}
+			
+			#log{
+				width: 1050px;
+				height: 50px;
+				padding-top: 50px;
+			}
+			#log .zuo{
+				width: 315px;
+				height: 45px;
+				float: left;
+				background: url(img/vip1.png) no-repeat;
+			}
+			#log .you{
+				width: 445px;
+				height: 28px;
+				float: right;
+				background: url(img/vip1.png) no-repeat -317px 0px;
+				margin-top: 15px;
+			}
+			#biaodan{
+				width: 1050px;
+				height: 650px;
+				margin-top: 70px;
+			}
+			#biaodan .dadan{
+				width: 400px;
+				height: 325px;
+				background: url(img/vip2.jpg) no-repeat -94px -42px;
+				float: left;
+			}
+			#biaodan .denglu{
+				width: 300px;
+				height: 400px;
+				float: right;
+				line-height: 2em;
+				margin-right: 50px;
+			}
+			#biaodan .denglu .input{
+				width: 270px;
+				height: 35px;
+				border: 1px solid red;
+				
+				text-indent: 10px;
+				outline: none;
+				border-radius: 3px;
+			}
+			#biaodan .denglu .zi{
+				font-size: 14px;
+				color: red;
+				
+			}
+			#biaodan .denglu #tijiao{
+				background: red;
+				width: 140px;
+				height: 40px;
+				border-radius: 3px;
+				border: none;
+				color: #FFF;
+				font-size: 14px;
+				
+				transition: all .3s;
+			}
+			#biaodan .denglu #tijiao:hover{
+				font-size: 20px;
+			}
+			a{text-decoration: none;
+			 color: black;
+			}
+			#biaodan .denglu .wangji{
+				margin-left: 40px;
+				font-size: 14px;
+			}
+			#biaodan .denglu .wangji:hover{
+				color: red;
+			}
+			#biaodan .denglu ul{
+				list-style: none;
+			}
+			#biaodan .denglu ul li{
+				width: 28px;
+				height: 28px;
+				float: left;
+			}
+			#biaodan .denglu ul .wu{
+				width: 35px;
+				height: 24px;
+			}
+			#biaodan .denglu ul .yi{
+				background: url(img/vip1.png) -289px -57px;
+			}
+			#biaodan .denglu ul .yi:hover{
+				background: url(img/vip1.png) -261px -57px;
+			}
+			#biaodan .denglu ul .er{
+				background: url(img/vip1.png) -234px -57px;
+			}
+			#biaodan .denglu ul .er:hover{
+				background: url(img/vip1.png) -346px -57px;
+			}
+			#biaodan .denglu ul .san{
+				background: url(img/vip1.png) -150px -57px;
+			}
+			#biaodan .denglu ul .san:hover{
+				background: url(img/vip1.png) -346px -57px;
+			}
+			#biaodan .denglu ul .si{
+				background: url(img/vip1.png) -207px -57px;
+			}
+			#biaodan .denglu ul .si:hover{
+				background: url(img/vip1.png) -318px -57px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="vip">
+			<div id="log">
+				<div class="zuo"></div>
+				<div class="you"></div>		
+			</div>
+			<div id="biaodan">
+				<div class="dadan"></div>
+				<div class="denglu">
+					<form action="" method="get">
+						<p>如有账号，请登录</p>
+						<label><p><input type="text" class="input" name="user" placeholder="手机号/用户名/邮箱"/></p></label>
+						<p class="zi">请输入用户名</p>
+						<label><p><input type="password" class="input" name="pwd" placeholder="密码"/></p></label>
+						<p class="zi">请输入密码</p>
+						<input type="submit" id="tijiao" value="登&nbsp;&nbsp;&nbsp;录"/>
+					    	<p style="font-size: 14px;">
+					    		<input type="checkbox" name="fuxuan" style="width: 20px;height: 20px;vertical-align: middle""/>记住用户名
+					    		<a href="#"><span class="wangji">忘记密码</span></a>&nbsp;&nbsp;|
+					    		<a href="zc.html"><span class="zi">免费注册</span></a>
+					    	</p>
+					    <p>合作账号登录
+					    </p>
+					    <ul>
+					    	<li class="yi"><a href=""></a></li>
+					    	<li class="er"><a href=""></a></li>
+					    	<li class="san"><a href=""></a></li>
+					    	<li class="si"><a href=""></a></li>
+					    	<li class="wu"><a href="">更多</a></li>
+					    	
+					    </ul>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

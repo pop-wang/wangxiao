@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			table{
+				width: 100%;
+				border: 1px solid black;
+				text-align: left;
+			}
+			table td,th{
+				border: 1px solid #B0B0B0;
+			}
+			tbody input[type=text]{
+				border: none;
+				outline: none;
+				background: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<p>姓名： <input type="text"/></p>
+			<p>性别： <input type="radio" value="男"/>男 <input type="radio" value="女"/>女</p>
+			<p>年龄： <input type="text" /></p>
+			<p>学号： <input type="text" /></p>
+			<p> <input type="button" value="提交" id="btn"/></p>			
+		</div>
+		<table>
+			<thead>
+				<tr>
+					<th>学号</th>
+					<th>姓名</th>
+					<th>性别</th>
+					<th>年龄</th>
+					<th>操作</th>
+				</tr>				
+			</thead>			
+			<tbody id="tbody">
+				<tr>
+					<td>01</td>
+					<td>王大炮</td>
+					<td>女</td>
+					<td>23</td>
+					<td><button>修改</button><a herf='#'>删除</a></td>
+				</tr>
+			</tbody>			
+		</table>
+	</body>
+	<script type="text/javascript">
+		var tbody = document.getElementById('tbody');
+		var btn = document.getElementById('btn');
+		btn.onclick = function(){
+			var oinput = document.getElementsByTagName('input');
+			var snum = document.getElementsByTagName('input')[4].value;
+			var name = document.getElementsByTagName('input')[0].value;
+			var age = document.getElementsByTagName('input')[3].value;
+			var clear = document.getElementsByTagName('a');
+			var sex;
+			for(i=0;i<oinput.length;i++){
+				if (oinput[i].checked) {
+					sex = oinput[i].value;
+				}
+			}
+//			不操作DOM元素,每次在后面自加一行
+			var otr = document.createElement('tr');
+			otr.innerHTML="<td><input type='text' value='"+snum+"' disabled/></td>"+
+			"<td><input type='text' value='"+name+"' disabled/></td>"+
+			"<td><input type='text' value='"+sex+"' disabled/></td>"+
+			"<td><input type='text' value='"+age+"' disabled/></td>"+
+			"<td>"+"<button>修改</button><a herf='#'>删除</a>"+"</td>";
+			tbody.appendChild(otr);
+//			点击删除的时候删除此行
+			clear = document.getElementsByTagName('a');
+			for(j=0;j<clear.length;j++){
+				clear[j].onclick = function(){
+					tbody.removeChild(this.parentNode.parentNode);
+				}
+			}
+			
+			var edit = tbody.getElementsByTagName('button');
+			for(n=0;n<edit.length;n++){
+				edit[n].onclick = function(){
+					var oinput = this.parentNode.parentNode.getElementsByTagName('input');
+					for(m=0;m<oinput.length;m++){
+						oinput[m].disabled = false;
+						oinput[m].style.border = "1px solid #B0B0B0";
+					}					
+				}
+			}
+//			操作DOM元素			
+//			tbody.innerHTML = 
+//			tbody.innerHTML + "<tr>"+
+//			"<td>"+snum+"</td>"+
+//			"<td>"+name+"</td>"+
+//			"<td>"+sex+"</td>"+
+//			"<td>"+age+"</td>"+
+//			"<td>"+"<button>修改</button><button>删除</button>"+"</td>"+
+//			"</tr>"
+		}
+	</script>
+</html>

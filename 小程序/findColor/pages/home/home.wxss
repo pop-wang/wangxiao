@@ -1,0 +1,4 @@
+/* pages/home/home.wxss */
+.gameContainer .colorView{
+  float: left;
+}

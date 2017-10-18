@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css" >
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		/*设置头部*/
+		#top{
+			width: 1200px;
+			height: 105px;
+		
+			margin: 0 auto;
+		}
+		#logo{
+			width: 210px;
+			height: 57px;
+			margin-top: 48px;
+			float: left;
+		}
+		#wenzi{
+			width: 990px;
+			height:105px;
+			
+			float: left;
+		}
+		#wenzi .wenzi1{
+			width: 300px; 
+			height: 30px;
+			
+			margin-left: 690px;
+			text-align: right;
+			color: #888;
+			font-size: 14px;
+			margin-top: 15px;
+		}
+		#wenzi .wenzi1 .yanse{
+			color: #888;
+			text-decoration: none;
+		}
+		#wenzi .wenzi1 .yanse:hover{
+			color: red;
+		}
+		#zero{
+			color: red
+		}
+		#wenzi .wenzi2{
+			width: 850px;
+			height: 60px;
+		
+			margin-left: 140px;
+			text-align: center;
+			color: black;
+			font-size: 20px;
+		}
+		
+		#wenzi .wenzi2 ul li{
+			list-style: none;
+			width: 85px;
+			height: 30px;
+			
+			float: left;
+			text-align: center;
+			margin-top: 18px;
+			margin-left: 2px;
+			color: black;
+			transition: all .3s;
+		}
+		
+		#wenzi .wenzi2 ul li:hover{
+			color: red;
+		}	
+		#wenzi .wenzi2 ul .sousuo{
+			width: 200px;
+			height: 30px;
+			margin-top: 15px;
+		}
+		#wenzi .wenzi2 ul .sousuo input{
+			width: 200px;
+			height: 30px;
+			margin-left: 30px;
+			background: url(img/QQ图片20170517205001.png) no-repeat;
+			background-size: 30px 30px;
+			background-position-x: 160px;
+			text-indent: 10px;
+			outline: none;
+		}	
+	  	</style>
+	</head>
+	<body>
+		<!--设置头部-->
+		<div id="top">
+			
+			<div id="logo">
+				<img src="img/logo.png" />
+			</div>
+			
+			<div id="wenzi">
+				<div class="wenzi1">
+					 <a href="#" class="yanse">您好，请登录</a> &nbsp;|
+					 <a href="#" class="yanse">注册</a> 
+					 <a href="#" class="yanse">购物车(<span id="zero">0</span>)</a>
+				</div>
+				<div class="wenzi2">
+					<ul>
+						<a href="#"><li>首页</li></a>
+						<a href="#"><li>手机</li></a>
+						<a href="#"><li>配件</li></a>
+						<a href="#"><li>服务</li></a>
+						<a href="#"><li>下载</li></a>
+						<a href="#"><li>社区</li></a>
+						<a href="#"><li>amigoOS</li></a>
+						<li class="sousuo">
+							<input type="text" name="" id="" placeholder="请输入手机名" />
+						
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+	</body>
+</html>

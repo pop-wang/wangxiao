@@ -1,0 +1,147 @@
+
+@backgroundColor:black;
+@topSpace:2rem;
+
+.marginTop(@space:1rem){
+  margin-top: @space;
+}
+
+.navbar-black {
+  background-color: @backgroundColor;
+  border-color: @backgroundColor;
+}
+.btn.btn-black {
+  .navbar-black();
+  border-color: white;
+  color: white;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus
+.btn.active:focus {
+  border: #555555;
+  outline: 2px solid #555555;
+  border-radius: 4px;
+}
+
+.jumbotron {
+  background-color: @backgroundColor;
+  border: 1px dashed #555555;
+}
+
+@keyframes scale {
+  0%{
+    transform: scale(0.7);
+  }
+  50%{
+    transform: scale(1.3);
+  }
+  100%{
+    transform: scale(1);
+  }
+  //from{}
+  //to{}
+}
+
+.fadeout(@duration:1s){
+  transition: all @duration;
+}
+
+@keyframes rotate {
+  from {
+    transform:  rotate(0deg);
+  }
+  to {
+    transform:  rotate(360deg);
+  }
+}
+.scale (@duration:1s){
+  transform-origin: 20%;
+  animation: scale @duration;
+}
+
+.rotate (@duration:1s){
+  transform-origin: 50%;
+  animation: rotate @duration;
+}
+
+
+.return{
+  transform: none;
+}
+
+
+body {
+  background: @backgroundColor;
+
+  .type-navbar {
+    border-bottom: 1px solid #555555;
+    .marginTop(@topSpace);
+    .navbar-button-container {
+      .navbar-toggle {
+        background-color: @backgroundColor;
+        float: left;
+        .icon-bar {
+          background-color: white;
+        }
+      }
+    }
+    #nav-type-list {
+      .type-item {
+        color: white;
+      }
+      .type-item:hover {
+        background: @backgroundColor;
+        color: #b4b4b4;
+      }
+      .active {
+        background: @backgroundColor;
+        color: #b4b4b4;
+        border-bottom: 2px solid #555555;
+      }
+    }
+  }
+
+  .nav-container {
+    h1:hover {
+      .scale();
+    }
+    .sub-title {
+      .fadeout(2s);
+    }
+    .sub-title:hover {
+      opacity: 0.1;
+    }
+    .input-group {
+      .input-group-addon {
+        background-color: @backgroundColor;
+        color: #949494;
+      }
+      .form-control {
+         background-color: @backgroundColor;
+       }
+      .form-control:focus {
+        border: #555555;
+        outline: 2px solid #555555;
+      }
+    }
+    .type-detail {
+      .marginTop();
+      #show-type-content {
+        ul {
+          list-style: none;
+          .type-detail-item {
+            display: block;
+            text-align: center;
+            background-color: @backgroundColor;
+            height: 5rem;
+            line-height: 5rem;
+            color: white;
+          }
+          .type-detail-item:hover {
+            .rotate(2s);
+          }
+        }
+      }
+    }
+  }
+}

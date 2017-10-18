@@ -1,0 +1,673 @@
+html,body{
+    height: 100%;
+}
+html{
+    font-size: 62.5%; /*默认12号字体*/
+}
+.music-btn-off{
+    position: absolute;
+    background: url("../images/musicBtnOff.png") 50% 50% no-repeat;
+    background-size: cover;
+    padding: 2.15rem;
+    top:0;
+    right: 0;
+    z-index: 999;
+}
+.music-btn{
+    position: absolute;
+    background: url("../images/musicBtn.png") 50% 50% no-repeat;
+    background-size: cover;
+    padding: 2.15rem;
+    top:0;
+    right: 0;
+    z-index: 999;
+    animation: rotate 5s linear infinite;
+}
+@keyframes rotate {
+    from{transform: rotate(0deg)}
+    to{transform: rotate(360deg)}
+}
+.swiper-container{
+    width: 100%;
+    height: 100%;
+}
+body{
+    position: relative;
+}
+.swiper-wrapper{
+    width: 100%;
+    height: 100%;
+}
+.page1{
+    background-color: #3E88F1;
+}
+.index-txt{
+    width: 100%;
+    height: 20.83rem;
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+}
+.index-txt img:nth-child(1){
+    position: absolute;
+    width: 50%;
+    top: 5.33rem;
+    left:8.33rem;
+}
+.index-txt img:nth-child(2){
+    position: absolute;
+    width: 13%;
+    left: 5.58rem;
+    top: 6.23rem;
+}
+.index-txt img:nth-child(3){
+    position: absolute;
+    width: 13%;
+    top: 11.17rem;
+    right: 7.43rem;
+}
+.index-flight{
+    position: absolute;
+    width: 100%;
+    top: 22.33rem;
+    z-index: 9;
+}
+.index-flight img{
+    position: absolute;
+    bottom: -6rem;
+    padding-left: 10%;
+    width: 80%;
+}
+.index-elements{
+    position: absolute;
+    width: 100%;
+    top: 4.16rem;
+    left: 0;
+    z-index: 3;
+}
+.index-elements img{
+    position: absolute;
+    width: 100%;
+}
+.index-cloud{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.index-cloud img{
+    position: absolute;
+    width: 96%;
+}
+.index-star{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.index-star img{
+    position: absolute;
+    width: 96%;
+}
+.index-building{
+    position: absolute;
+    width: 100%;
+    top: 42.92rem;
+    left: 0;
+    z-index: 1;
+}
+.index-building img{
+    position: absolute;
+    top: -6.5rem;
+    width: 100%;
+}
+.index-arrow-up{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+.index-arrow-up img{
+    position: absolute;
+    top: 42rem;
+    left: 12rem;
+    width: 15%;
+    z-index: 999;
+}
+.page2{
+    background-color: #000000;
+}
+.second-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../images/wasBg.jpg") 50% 100% no-repeat;
+    background-size: cover;
+}
+.second-star{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.second-star img{
+    width: 100%;
+}
+.second-it{
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+}
+.second-it img{
+    position: absolute;
+    width: 50%;
+    top: 19.92rem;
+    left: 7.6rem;
+}
+.second-farm{
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+}
+.second-farm img{
+    position: absolute;
+    top: 26rem;
+    left: 7.6rem;
+    width: 50%;
+}
+.page3{
+    background-color: #01172C;
+}
+.third-bg{
+    position: absolute;
+    width: 100%;
+
+}
+.third-bg img{
+    width: 100%;
+}
+.third-morning,.third-building,.third-title{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.third-building img{
+    width: 100%;
+    position: absolute;
+    top: 14rem;
+}
+.third-title img{
+    width: 20%;
+    position: absolute;
+    top: 3rem;
+}
+.third-lastBus,.third-lastBusTitle,.third-lastBusStation,.third-lastBusAvatar,.third-bus{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.third-lastBusTitle img{
+    width: 30%;
+    position: absolute;
+    top: 3rem;
+    z-index: 2;
+}
+.third-lastBusStation img{
+    width: 100%;
+    position: absolute;
+    top: 22rem;
+}
+.third-lastBusAvatar img{
+    width: 30%;
+    position: absolute;
+    top: 40rem;
+    right: 4rem;
+
+}
+.third-bus img{
+    width: 50%;
+    position: absolute;
+    top: 38rem;
+    right: 14rem;
+}
+.third-where,.third-myTeamBg,.third-myTeamWall,.third-myteamWhereTxt,.third-myTeamTxt,.third-myTeamAvatar{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.third-myTeamTxt div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.third-myTeamBg img{
+    width: 100%;
+    position: absolute;
+}
+.third-myTeamWall img{
+    width: 28%;
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+}
+.third-myteamWhereTxt img{
+    width: 40%;
+    position: absolute;
+    bottom: 7rem;
+    right: 9rem;
+}
+.third-myTeamAvatar img{
+    width: 30%;
+    position: absolute;
+    top: 11rem;
+    left: 18rem;
+}
+.third-myTeamTxt .myTeamTxt00{
+    width: 12%;
+    position: absolute;
+    top: 17rem;
+    left: 5rem;
+}
+.third-myTeamTxt .myTeamTxt01{
+    width: 20%;
+    position: absolute;
+    top: 20rem;
+    left: 5rem;
+}
+.third-myTeamTxt .myTeamTxt02{
+    width: 20%;
+    position: absolute;
+    top: 24rem;
+    left: 5rem;
+}
+.third-myTeamTxt .myTeamTxt03{
+    width: 20%;
+    position: absolute;
+    top: 28rem;
+    left: 5rem;
+}
+.page4{
+    background-color: #302E5C;
+}
+.fourth-lightOff,.fourth-lightOn,.fourth-light-off,.fourth-light-on{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.fourth-light-off,.fourth-light-on div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.fourth-lightOn,.fourth-light-on{
+    display: none;
+}
+.fourth-light-off .fourth-lightOffBg{
+    width: 100%;
+    position: absolute;
+    bottom: 0rem;
+    z-index: 1;
+}
+.fourth-light-off .fourth-cornerTitle{
+    width: 50%;
+    position: absolute;
+    top: 3rem;
+    right: 0rem;
+    z-index: 3;
+}
+.fourth-light-off .fourth-cornerWall{
+    width: 20%;
+    position: absolute;
+    top: 5rem;
+    right: 0rem;
+    z-index: 2;
+}
+.fourth-light-off .fourth-clickGuide{
+    width: 45%;
+    position: absolute;
+    top: 14rem;
+    left: 7rem;
+    z-index: 3;
+}
+.fourth-lightOff img{
+    width: 35%;
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
+    z-index: 2;
+}
+.fourth-lightOn img{
+    width: 35%;
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
+    z-index: 3;
+}
+.fourth-light-on .fourth-lightOnBg{
+    position: absolute;
+    width: 100%;
+    bottom: 0rem;
+    z-index: 1;
+}
+.fourth-light-on .fourth-lightFlowers{
+    position: absolute;
+    width: 30%;
+    bottom: 0rem;
+    right: 1.5rem;
+    z-index: 2;
+}
+.fourth-light-on .fourth-weKnowYou{
+    position: absolute;
+    width: 50%;
+    top: 12.5rem;
+    right: 5rem;
+    z-index: 4;
+}
+.page5 {
+    background: url("../images/aboutBg.jpg") no-repeat;
+    background-size: cover;
+}
+.fifth-footCity{
+    position: absolute;
+    width: 100%;
+    top: 0rem;
+}
+.fifth-footAvatar{
+    position: absolute;
+    width: 60%;
+    top: 10rem;
+    left: 9rem;
+}
+.fifth-footTa{
+    position: absolute;
+    width: 70%;
+    top:28rem;
+    left: 4rem;
+}
+.fifth-footTx{
+    position: absolute;
+    width: 50%;
+    top: 29rem;
+    left: 6rem;
+}
+.page6 {
+    background: url("../images/runBg.jpg") no-repeat;
+    background-size: cover;
+}
+.sixth-runAvatar{
+    position: absolute;
+    width: 30%;
+    top: 8rem;
+    left: 6rem;
+}
+.sixth-runTas{
+    position: absolute;
+    width: 70%;
+    top:26rem;
+    left: 4rem;
+}
+.sixth-runTxt{
+    position: absolute;
+    width: 55%;
+    top:26rem;
+    left: 6rem;
+}
+.page7{
+    background-color: #4ADD9D;
+}
+.seventh-salaryBg{
+    position: absolute;
+    width: 80%;
+    top:2rem;
+    left: 3.5rem;
+}
+.seventh-salaryAvatar{
+    position: absolute;
+    width: 45%;
+    top:3rem;
+    left: 7rem;
+}
+.seventh-salaryTa{
+    position: absolute;
+    width: 80%;
+    top:27rem;
+    left: 3rem;
+}
+.seventh-salaryTxt{
+    position: absolute;
+    width: 55%;
+    top:27rem;
+    left: 6rem;
+}
+.page8{
+    background-color: #B5EFFD;
+}
+.eighth-introLogo img{
+    position: absolute;
+    width: 50%;
+    top: 3rem;
+    left: 7rem;
+    z-index: 4;
+}
+.eighth-introFlowers{
+    position: absolute;
+    width: 20%;
+    top: 2rem;
+    left: 2rem;
+    z-index: 2;
+}
+.eighth-introAvatar{
+    position: absolute;
+    width: 30%;
+    bottom: 0rem;
+    right: 0rem;
+    z-index: 4;
+}
+.eighth-introStar{
+    position: absolute;
+    width: 17%;
+    bottom: 7rem;
+    right: 7rem;
+    z-index: 4;
+}
+.eighth-introCloudy{
+    position: absolute;
+    width: 100%;
+    top: 4rem;
+    left: 0rem;
+    z-index: 4;
+}
+.eighth-introTxt{
+    background:#fc5955;
+    padding:15px;
+    border-radius:20px;
+    margin:15px;
+    height:70%;
+    position:absolute;
+    top: 3.5rem;
+    left: 0rem;
+    overflow:hidden;
+    z-index: 3;
+}
+.eighth-introTxtInner{
+    background:#ef3d38;
+    padding:30px 10px 100px;
+    border-radius:3px;
+    color:#fff;
+    font-size:12px;
+    height:67%;
+    line-height: 1.5rem;
+}
+.eighth-introTxtInner p{
+    text-indent:2em;
+}
+.page9{
+    background-color: #3E88F1;
+}
+.last-endLogo{
+    position: absolute;
+    width: 50%;
+    top: 4rem;
+    left: 7rem;
+}
+.last-endTxt{
+    position: absolute;
+    width: 55%;
+    top: 9rem;
+    left: 6.5rem;
+}
+.last-endMail{
+    position: absolute;
+    width: 55%;
+    top: 15rem;
+    left: 6.5rem;
+}
+.last-endClickGuide{
+    position: absolute;
+    width: 35%;
+    top: 21rem;
+    left: 9rem;
+}
+.last-endAvatar{
+    position: absolute;
+    width: 60%;
+    top: 24rem;
+    left: 6rem;
+}
+.last-endCloudys{
+    position: absolute;
+    width: 100%;
+    top: 24rem;
+    left: 0rem;
+}
+.last-endBottomTxt{
+    position: absolute;
+    width: 50%;
+    bottom: 7rem;
+    left: 7rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.delay_100ms{ -webkit-animation-delay:100ms; animation-delay:100ms; }
+.delay_200ms{ -webkit-animation-delay:200ms; animation-delay:200ms; }
+.delay_300ms{ -webkit-animation-delay:300ms; animation-delay:300ms; }
+.delay_400ms{ -webkit-animation-delay:400ms; animation-delay:400ms; }
+.delay_500ms{ -webkit-animation-delay:500ms; animation-delay:500ms; }
+.delay_600ms{ -webkit-animation-delay:600ms; animation-delay:600ms; }
+.delay_700ms{ -webkit-animation-delay:700ms; animation-delay:700ms; }
+.delay_800ms{ -webkit-animation-delay:800ms; animation-delay:800ms; }
+.delay_900ms{ -webkit-animation-delay:900ms; animation-delay:900ms; }
+.delay_1s{ -webkit-animation-delay:1s; animation-delay:1s; }
+.delay_1100ms{ -webkit-animation-delay:1.1s; animation-delay:1.1s; }
+.delay_1200ms{ -webkit-animation-delay:1.2s; animation-delay:1.2s; }
+.delay_1300ms{ -webkit-animation-delay:1.3s; animation-delay:1.3s; }
+.delay_1400ms{ -webkit-animation-delay:1.4s; animation-delay:1.4s; }
+.delay_1500ms{ -webkit-animation-delay:1.5s; animation-delay:1.5s; }
+.delay_1600ms{ -webkit-animation-delay:1.6s; animation-delay:1.6s; }
+.delay_1700ms{ -webkit-animation-delay:1.7s; animation-delay:1.7s; }
+.delay_1800ms{ -webkit-animation-delay:1.8s; animation-delay:1.8s; }
+.delay_1900ms{ -webkit-animation-delay:1.9s; animation-delay:1.9s; }
+.delay_2s{ -webkit-animation-delay:2s; animation-delay:2s; }
+.delay_2100ms{ -webkit-animation-delay:2.1s; animation-delay:2.1s; }
+.delay_2200ms{ -webkit-animation-delay:2.2s; animation-delay:2.2s; }
+.delay_2300ms{ -webkit-animation-delay:2.3s; animation-delay:2.3s; }
+.delay_2400ms{ -webkit-animation-delay:2.4s; animation-delay:2.4s; }
+.delay_2500ms{ -webkit-animation-delay:2.5s; animation-delay:2.5s; }
+.delay_2600ms{ -webkit-animation-delay:2.6s; animation-delay:2.6s; }
+.delay_2700ms{ -webkit-animation-delay:2.7s; animation-delay:2.7s; }
+.delay_2800ms{ -webkit-animation-delay:2.8s; animation-delay:2.8s; }
+.delay_2900ms{ -webkit-animation-delay:2.9s; animation-delay:2.9s; }
+.delay_3s{ -webkit-animation-delay:3s; animation-delay:3s; }
+.delay_3100ms{ -webkit-animation-delay:3.1s; animation-delay:3.1s; }
+.delay_3200ms{ -webkit-animation-delay:3.2s; animation-delay:3.2s; }
+.delay_3300ms{ -webkit-animation-delay:3.3s; animation-delay:3.3s; }
+.delay_3400ms{ -webkit-animation-delay:3.4s; animation-delay:3.4s; }
+.delay_3500ms{ -webkit-animation-delay:3.5s; animation-delay:3.5s; }
+.delay_3600ms{ -webkit-animation-delay:3.6s; animation-delay:3.6s; }
+.delay_3700ms{ -webkit-animation-delay:3.7s; animation-delay:3.7s; }
+.delay_3800ms{ -webkit-animation-delay:3.8s; animation-delay:3.8s; }
+.delay_3900ms{ -webkit-animation-delay:3.9s; animation-delay:3.9s; }
+.delay_4s{ -webkit-animation-delay:4s; animation-delay:4s; }
+.delay_4100ms{ -webkit-animation-delay:4.1s; animation-delay:4.1s; }
+.delay_4200ms{ -webkit-animation-delay:4.2s; animation-delay:4.2s; }
+.delay_4300ms{ -webkit-animation-delay:4.3s; animation-delay:4.3s; }
+.delay_4400ms{ -webkit-animation-delay:4.4s; animation-delay:4.4s; }
+.delay_4500ms{ -webkit-animation-delay:4.5s; animation-delay:4.5s; }
+.delay_4600ms{ -webkit-animation-delay:4.6s; animation-delay:4.6s; }
+.delay_4700ms{ -webkit-animation-delay:4.7s; animation-delay:4.7s; }
+.delay_4800ms{ -webkit-animation-delay:4.8s; animation-delay:4.8s; }
+.delay_4900ms{ -webkit-animation-delay:4.9s; animation-delay:4.9s; }
+.delay_5s{ -webkit-animation-delay:5s; animation-delay:5s; }
+.delay_5100ms{ -webkit-animation-delay:5.1s; animation-delay:5.1s; }
+.delay_5200ms{ -webkit-animation-delay:5.2s; animation-delay:5.2s; }
+.delay_5300ms{ -webkit-animation-delay:5.3s; animation-delay:5.3s; }
+.delay_5400ms{ -webkit-animation-delay:5.4s; animation-delay:5.4s; }
+.delay_5500ms{ -webkit-animation-delay:5.5s; animation-delay:5.5s; }
+.delay_5600ms{ -webkit-animation-delay:5.6s; animation-delay:5.6s; }
+.delay_5700ms{ -webkit-animation-delay:5.7s; animation-delay:5.7s; }
+.delay_5800ms{ -webkit-animation-delay:5.8s; animation-delay:5.8s; }
+.delay_5900ms{ -webkit-animation-delay:5.9s; animation-delay:5.9s; }
+.delay_6s{ -webkit-animation-delay:6s; animation-delay:6s; }
+.delay_6100ms{ -webkit-animation-delay:6.1s; animation-delay:6.1s; }
+.delay_6200ms{ -webkit-animation-delay:6.2s; animation-delay:6.2s; }
+.delay_6300ms{ -webkit-animation-delay:6.3s; animation-delay:6.3s; }
+.delay_6400ms{ -webkit-animation-delay:6.4s; animation-delay:6.4s; }
+.delay_6500ms{ -webkit-animation-delay:6.5s; animation-delay:6.5s; }
+.delay_6600ms{ -webkit-animation-delay:6.6s; animation-delay:6.6s; }
+.delay_6700ms{ -webkit-animation-delay:6.7s; animation-delay:6.7s; }
+.delay_6800ms{ -webkit-animation-delay:6.8s; animation-delay:6.8s; }
+.delay_6900ms{ -webkit-animation-delay:6.9s; animation-delay:6.9s; }
+.delay_7000ms{ -webkit-animation-delay:7s;   animation-delay:7s; }
+.delay_7100ms{ -webkit-animation-delay:7.1s; animation-delay:7.1s; }
+.delay_7200ms{ -webkit-animation-delay:7.2s; animation-delay:7.2s; }
+.delay_7300ms{ -webkit-animation-delay:7.3s; animation-delay:7.3s; }
+.delay_7400ms{ -webkit-animation-delay:7.4s; animation-delay:7.4s; }
+.delay_7500ms{ -webkit-animation-delay:7.5s; animation-delay:7.5s; }
+.delay_7600ms{ -webkit-animation-delay:7.6s; animation-delay:7.6s; }
+.delay_7700ms{ -webkit-animation-delay:7.7s; animation-delay:7.7s; }
+.delay_7800ms{ -webkit-animation-delay:7.8s; animation-delay:7.8s; }
+.delay_7900ms{ -webkit-animation-delay:7.9s; animation-delay:7.9s; }
+
+.delay_8000ms{ -webkit-animation-delay:8s;   animation-delay:8s; }
+.delay_8100ms{ -webkit-animation-delay:8.1s; animation-delay:8.1s; }
+.delay_8200ms{ -webkit-animation-delay:8.2s; animation-delay:8.2s; }
+.delay_8300ms{ -webkit-animation-delay:8.3s; animation-delay:8.3s; }
+.delay_8400ms{ -webkit-animation-delay:8.4s; animation-delay:8.4s; }
+.delay_8500ms{ -webkit-animation-delay:8.5s; animation-delay:8.5s; }
+.delay_8600ms{ -webkit-animation-delay:8.6s; animation-delay:8.6s; }
+.delay_8700ms{ -webkit-animation-delay:8.7s; animation-delay:8.7s; }
+.delay_8800ms{ -webkit-animation-delay:8.8s; animation-delay:8.8s; }
+.delay_8900ms{ -webkit-animation-delay:8.9s; animation-delay:8.9s; }
+
+
+.delay_9000ms{ -webkit-animation-delay:9s;   animation-delay:9s; }
+.delay_9100ms{ -webkit-animation-delay:9.1s; animation-delay:9.1s; }
+.delay_9200ms{ -webkit-animation-delay:9.2s; animation-delay:9.2s; }
+.delay_9300ms{ -webkit-animation-delay:9.3s; animation-delay:9.3s; }
+.delay_9400ms{ -webkit-animation-delay:9.4s; animation-delay:9.4s; }
+.delay_9500ms{ -webkit-animation-delay:9.5s; animation-delay:9.5s; }
+.delay_9600ms{ -webkit-animation-delay:9.6s; animation-delay:9.6s; }
+.delay_9700ms{ -webkit-animation-delay:9.7s; animation-delay:9.7s; }
+.delay_9800ms{ -webkit-animation-delay:9.8s; animation-delay:9.8s; }
+.delay_9900ms{ -webkit-animation-delay:9.9s; animation-delay:9.9s; }

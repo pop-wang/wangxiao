@@ -1,0 +1,37 @@
+<ion-view view-title="Dashboard">
+  <ion-content class="padding" ng-init="filter={}">
+    <!--<button class="button button-calm button-clear">按钮</button>-->
+    <!--<button class="button button-calm button-clear"><span class="ion-navicon ion"></span></button>-->
+    <!--<label class="toggle toggle-calm">-->
+      <!--<input type="checkbox">-->
+      <!--<div class="track">-->
+        <!--<div class="handle"></div>-->
+      <!--</div>-->
+    <!--</label>-->
+    <!--<ion-list>-->
+
+      <!--<ion-checkbox ng-model="filter.blue">Red</ion-checkbox>-->
+      <!--<ion-checkbox ng-model="filter.yellow">Yellow</ion-checkbox>-->
+      <!--<ion-checkbox ng-model="filter.pink">Pink</ion-checkbox>-->
+
+    <!--</ion-list>-->
+    <!--<div class="item range">-->
+    <!--<i class="icon ion-volume-low"></i>-->
+    <!--<input type="range" name="volume">-->
+    <!--<i class="icon ion-volume-high"></i>-->
+    <!--</div>-->
+    <!--<div class="row box row-wrap">-->
+      <!--<div class="col-20" ng-repeat="item in [1,1,1,2,2,2,3,3,3,4,4,4,5,5,5,6,6,6] track by $index">{{item}}</div>-->
+      <!--<div class="col-offset-20" ng-repeat="item in [1,1,1,2,2,2,3,3,3,4,4,4,5,5,5,6,6,6] track by $index">{{item}}</div>-->
+    <!--</div>-->
+    <ion-refresher
+      pulling-text="下拉刷新..."
+      on-refresh="loadData()"
+      refreshing-text="正在加载中...">
+    </ion-refresher>
+    <ion-list>
+      <ion-item ng-repeat="info in datas" ng-bind="info.title" ng-click="waring(info.title)"></ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-view>

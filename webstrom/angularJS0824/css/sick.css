@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+body {
+  background-color: #d4d7d1;
+}
+body .typeContainer {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: scroll;
+}
+body .typeContainer li {
+  min-width: 8rem;
+  height: 3rem;
+  text-align: center;
+  line-height: 3rem;
+}
+body .typeContainer li a {
+  text-decoration: none;
+  min-width: 8rem;
+  height: 3rem;
+  text-align: center;
+  line-height: 3rem;
+}
+body .typeContainer::-webkit-scrollbar {
+  /*伪类取消滚动条*/
+  display: none;
+}
+body .subContainer {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body .subContainer li {
+  width: 15rem;
+  background-color: #198bff;
+  height: 15rem;
+  text-align: center;
+  line-height: 15rem;
+  border: 0.5rem solid #d4d7d1;
+  box-sizing: border-box;
+}

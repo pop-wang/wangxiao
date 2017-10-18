@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
+</head>
+<body>
+<div id="box">
+    {{stark | hello}}
+</div>
+
+
+<script>
+  Vue.filter("hello",function (input) {
+      return input<10?"0"+input:""+input;//类似于时间
+  })
+    let vm=new Vue({
+        el:"#box",
+        data:{
+            stark:9
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+html{
+	font-size: 16px;
+}
+p{
+	font-size: 1rem;/*根元素字号是16px，1rem就表示16个像素点*/
+}
+.container{
+	width: 10rem;
+	height: 10rem;
+	background-color: paleturquoise;
+}
+h3{
+	column-span: all;/*规定横跨的列数*/
+}
+div{
+	column-count: 5;/*规定列数*/
+	column-width: 200px;/*规定列的最小宽度*/
+	column-rule: 3px dashed blue;/*设置分隔线的样式*/
+	column-gap: 50px;/*设置列与列之间的间距*/
+	column-fill: auto;/*设置填充样式*/
+}
+/*@media (min-width:920px) and (max-width:1200px){
+	html{
+		font-size: 30px;
+		background-color: red;当设备宽度在920px-1200px之间的时候出发这些样式
+	}
+}*/
+/*手机*/
+@media (max-width:768px){
+	html{
+		background-color: green;
+		font-size: 10px;
+	}
+	ul{
+		display: none;
+	}
+	.itemMenu{
+		display: block;
+	}
+}
+/*平板*/
+@media (min-width:768px) and (max-width:992px){
+	html{
+		background-color: red;
+		font-size: 16px;
+	}
+	ul{
+		display: none;
+	}
+	.itemMenu{
+		display: block;
+	}
+}
+/*台式机或者大屏幕*/
+@media (min-width:992px) and (max-width:1200px){
+	html{
+		background-color: yellow;
+		font-size: 22px;
+	}
+	ul{
+		display: block;
+	}
+	.itemMenu{
+		display: none;
+	}
+}
+@media (min-width:1200px){
+	html{
+		background-color: black;
+		font-size: 22px;
+	}
+	ul{
+		display: block;
+	}
+	.itemMenu{
+		display: none;
+	}
+}
+ul{
+	width: 100%;
+}
+ul:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+ul li{
+	float: left;
+	min-width: 7rem;
+	width: 10%;
+	height: 2rem;
+	border: 2px solid burlywood;
+	box-sizing: border-box;
+	background-color: orange;
+	text-align: center;
+	line-height: 2rem;
+}
+.itemMenu{
+	float: right;
+}

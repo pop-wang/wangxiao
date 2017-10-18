@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动态组件&组件传参</title>
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/semantic-ui/2.2.13/components/accordion.min.css"></script>
+</head>
+<body>
+    <!--<div id="box">-->
+        <!--<input type="button" @click="stark='hello'" name="" value="hello组件">-->
+        <!--<input type="button" @click="stark='world'" name="" value="world组件">-->
+        <!--<component :is="stark"></component>-->
+    <!--</div>-->
+    <!--<script>-->
+        <!--let vm=new Vue({-->
+            <!--el:"#box",-->
+            <!--data:{-->
+                <!--stark:"hello"-->
+            <!--},-->
+            <!--components:{-->
+                <!--"hello":{-->
+                    <!--template:`<h2>我是hello组件</h2>`-->
+                <!--},-->
+                <!--"world":{-->
+                    <!--template:`<h2>我是world组件</h2>`-->
+                <!--},-->
+            <!--}-->
+        <!--})-->
+    <!--</script>-->
+    <div id="box">
+        <ui-button text="复制"></ui-button>
+        <ui-button text="粘贴"></ui-button>
+        <ui-button text="删除"></ui-button>
+    </div>
+    <script>
+        Vue.component("ui-button",{
+            template:"<button class='ui teal button'>{{text}}</button>",
+            props:["text"]
+        })
+        new Vue({
+            el:"#box",
+        })
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,199 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+/*<!--2017.6.26:vip.com-->*/
+/*body{
+	background: #FDFBFE;
+}
+.header{
+	width: 1000px;
+	height: 80px;
+	margin: 50px auto;
+}
+.header .header1{
+	width: 330px;
+	height: 73px;
+	float: left;
+	background: url(../img/2.png) no-repeat 20px -375px;
+}
+.header .header2{
+	width: 465px;
+	height: 73px;
+	float: right;
+	background: url(../img/2.png) no-repeat 20px -427px;
+}
+.container{
+	width: 1000px;
+	height: 600px;
+	margin: 50px auto;
+	background: url(../img/1.jpg) no-repeat;
+}
+.container .container1{
+	width: 344px;
+	height: 397px;
+	float: right;
+}
+.container .wz {
+	font-size: 14px;
+	margin-bottom: 25px;
+}
+				
+.container .wz a {
+	text-decoration: none;
+	color: #F10180;
+	font-size: 14px;
+}
+				
+.container .wz a:hover {
+	text-decoration: underline;
+}
+				
+.container .zc {
+	width: 270px;
+	height: 30px;
+	border: 1px solid #B2B2B2;
+	text-indent: 10px;
+	outline: none;
+	border-radius: 3px;
+	margin-bottom: 25px;
+}
+				
+#anhk input {
+	width: 140px;
+	height: 30px;
+	border: 1px solid #B2B2B2;
+	text-indent: 10px;
+	outline: none;
+	border-radius: 3px;
+	margin-bottom: 25px;
+}
+.zcemail{
+	margin: 25px 0px 25px 0px;
+}				
+#zhuce {
+	width: 140px;
+	height: 40px;
+	color: #FFFFFF;
+	background: #F10180;
+	border: none;
+	font-size: 16px;
+	float: left;
+	margin:0px 0px 0px -140px;
+}
+.email{
+	float: left;
+	font-size: 12px;
+	color: cornflowerblue;
+	margin:20px 0px 0px 50px;
+}				
+#zhuce:hover {
+	background: deeppink;
+}
+.fxk{
+	margin-top: 90px;
+}			
+.fxk a {
+	text-decoration: none;
+	color: #F10180;
+}
+				
+.fxk a:hover {
+	color: deeppink;
+}
+.footer{
+	width: 1000px;
+	height: 100px;
+	margin: -100px auto;
+}
+.footer button{
+	width: 150px;
+	height: 50px;
+	color: white;
+	background: #F10180;
+	border: none;
+	float: left;
+	margin: 0px 80px 0px 80px;
+	
+}*/
+
+/*<!--2017.6.27:时间，星星，日历-->*/
+/*.time{
+	width: 300px;
+	height: 100px;
+	margin:10px 0px 0px 10px;
+}
+.ph{
+	float: left;
+	margin-left: 10px;
+}
+h1{
+	float: left;
+}
+table{
+	width: 350px;
+	height: 400px;
+	background: red;
+	margin: 0 auto;
+}
+td{
+	width: 80px;
+	height: 50px;
+	border: 1px solid orange;
+	background: #FFFF00;
+	text-align: center;
+}
+ul{
+	width: 250px;
+	height: 30px;
+	margin: 100px 0px 0px 20px;
+	float: left;
+}
+li{
+	list-style: none;	
+	float: left;	
+}
+.ali{
+	width: 30px;
+	height: 30px;
+	background: url(../img/str.gif)no-repeat 0px 0px;
+}
+	
+#comment{
+	width: 80px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	background: transparent;
+}*/
+/*<!--2017.6.27：tab切换&轮播图：大盒子一定要溢出隐藏，其他的都是绝对定位上去的-->*/
+/*a{color: black;}
+a:hover{color: orange;}
+#tabnav{height: 30px;line-height: 30px;width: 500px;}
+#tabnav li{float: left;margin: 0 20px;padding: 0 10px;}
+#tabsaction li{width: 500px;height: 100px;display: none;}
+#tabsaction li a{width: 240px;display: inline-block;}
+#tabsaction .active{display: block;}*/
+
+/*#banner{overflow: hidden;width: 1200px;height: 535px;margin: 30px auto;position: relative;}
+#bannernav{position:absolute;bottom: 10px;left: 50%;margin-left: -140px;}
+#bannernav li{float: left;width: 30px;height: 30px;background: rgba(0,0,0,0.3);margin: 0 20px;line-height: 30px;text-align:center;border-radius: 50%;}
+button{position: absolute;width: 50px;height: 80px;top: 50%;margin-top: -40px;font-size: 60px;background: rgba(0,0,0,0.3);border-radius: 10%;border: 0;display: none;}
+.btnl{left: 20px;}
+.btnr{right: 20px;}
+#bannerimg li{display: none;}
+#bannerimg .iactive{display: block;}
+#bannernav .nactive{background: yellowgreen;}*/
+/*<!--推进式轮播图-->*/
+#banner{overflow: hidden;width: 1200px;height: 535px;margin: 30px auto;position: relative;}
+#bannernav{position:absolute;bottom: 10px;left: 50%;margin-left: -140px;}
+#bannernav li{float: left;width: 30px;height: 30px;background: rgba(0,0,0,0.3);margin: 0 20px;line-height: 30px;text-align:center;border-radius: 50%;}
+button{position: absolute;width: 50px;height: 80px;top: 50%;margin-top: -40px;font-size: 60px;background: rgba(0,0,0,0.3);border-radius: 10%;border: 0;display: none;}
+.btnl{left: 20px;}
+.btnr{right: 20px;}
+#bannerimg{width: 6000px;}
+#bannerimg li{float: left;}
+#bannerimg .iactive{display: block;}
+#bannernav .nactive{background: yellowgreen;}

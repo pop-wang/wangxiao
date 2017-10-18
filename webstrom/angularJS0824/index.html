@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en"  ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>AngualrJS</title>
+    <script src="js/bower_components/angular/angular.js"></script>
+</head>
+<body>
+    <!--<input type="text" ng-model="username">-->
+    <!--<p ng-bind="username"></p>-->
+    <!--<p>{{username}}</p>-->
+    <!--<div ng-controller="homeController">-->
+        <!--{{age}}-->
+        <!--<ul ng-repeat="username in list">-->
+            <!--<li ng-repeat="username in list" ng-bind="username"></li>-->
+        <!--</ul>-->
+        <!--<ul>-->
+            <!--<li ng-repeat="user in user">{{user.username+","+user.age+","+user.phone}}</li>-->
+        <!--</ul>-->
+        <!--<div ng-repeat="user in user">-->
+            <!--<h3 ng-bind="user.username"></h3>-->
+            <!--<h4 ng-bind="user.age"></h4>-->
+            <!--<h5 ng-bind="user.phone"></h5>-->
+        <!--</div>-->
+        <!--<p ng-repeat="num in nums track by $index"  ng-click="show(num)">{{num}}</p>-->
+    <!--</div>-->
+    <!--记账本：可以添加数据（title，content，price，time）可以在列表中显示，可以删除添加的数据-->
+    <div ng-controller="myCtrl">
+        <input type="text" placeholder="标题" ng-model="info.title"><br/>
+        <input type="text" placeholder="内容" ng-model="info.content"><br/>
+        <input type="number" placeholder="价格" ng-model="info.price"><br/>
+        <button ng-click="addAction()">提交</button>
+        <ul>
+            <li ng-repeat="info in list track by $index">
+                <h3>{{info.title}}</h3>
+                <p>{{info.content}}</p>
+                <p>{{info.price}}</p>
+                <button ng-click="deleteAction($index)">删除</button>
+            </li>
+        </ul>
+    </div>
+
+
+    <script src="js/noteInfo.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

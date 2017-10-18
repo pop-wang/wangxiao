@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			/*#wenzi{
+				width: 100px;
+				height: 100px;
+				border: 1px solid #ff6700;
+				font-size: 24px;
+				text-align: center;
+				line-height: 100px;
+
+			}*/
+			.box{
+				margin: 0 auto;
+				padding: 0;
+				width: 560px;
+				height: 560px;
+				border: 1px solid red;
+				overflow: hidden;
+			}
+		</style>
+	</head>
+	<body>
+		<!--<input type="button" name="btn" id="btn" value="点击我" />
+		<div id="wenzi" style="display: none;">你好！</div>-->
+		<a id="next" href="#"><</a>
+		<a id="pre" href="#">></a>	
+		<div class="box" id="imgbox">
+			<img  src="img/p1.jpg"/ width="560" height="560">
+			<img  src="img/p2.jpg"/ width="560" height="560">
+			<img  src="img/p3.jpg"/ width="560" height="560"> 
+		</div>
+		<!--<input type="button" name="btn" id="btn1" value="香槟色" />
+		<input type="button" name="btn" id="btn2" value="黑色" />
+		<input type="button" name="btn" id="btn3" value="粉色" />-->
+	</body>
+	<!--点击出现盒子-->
+	<!--<script type="text/javascript">
+		var btn =document.getElementById("btn");
+		var wenzi =document.getElementById("wenzi");
+		btn.onclick = function(){
+			wenzi.style.display = "block";
+		}
+	</script>-->
+	<!--前后换图片-->
+	<!--<script type="text/javascript">
+		var i = 1;
+		var oimg = document.getElementById('oimg');
+		var pre = document.getElementById('pre');
+		var next = document.getElementById('next');
+		pre.onclick = function(){
+			i++;
+			if(i==4){
+				i=3;
+			}
+			oimg.src="img/p"+i+".jpg";
+		}
+		next.onclick = function(){
+			i--;
+			if(i==0){
+				i=1;
+			}
+			oimg.src="img/p"+i+".jpg";
+		}
+	</script>-->
+	<!--当图片命名不规则的时候可将所有图片都嵌入网页中利用for循环来实现点击轮播，for循环是先让所有的都怎么样，再让单独的怎么样-->
+	<script type="text/javascript">
+		var pre = document.getElementById('pre');
+		var next = document.getElementById('next');
+		var imgbox = document.getElementsByTagName('img'); //获取img标签
+		var i = 0;
+		pre.onclick = function(){
+			i++;
+			if(i==3){i=2;}
+			for(var j=0;j<3;j++){               //j<3也可以写成j<imgbox.length,所有的3都可以写成imgbox.length
+				imgbox[j].style.display = "none";
+			}
+			imgbox[i].style.display = "block";
+		}
+		next.onclick = function(){
+			i--;
+			if(i==-1){i=0;}
+			for(var j=0;j<3;j++){
+				imgbox[j].style.display = "none";
+			}
+			imgbox[i].style.display = "block";
+		}
+		
+	</script>
+	
+	
+	
+	
+	
+	
+	<img  src="img/p1.jpg"/ width="560" height="560">
+	<button name="img/p1.jpg">第一张</button>
+	<button name="img/p2.jpg">第一张</button>
+	<button name="img/p3.jpg">第一张</button>
+	<script type="text/javascript">
+		var oimg = document.getElementById("img");
+		var obtn = document.getElementsByTagName("button");
+		for(var i=0;i<3;i++){
+			obtn.onclick = function(){
+				oimg.src = this.name
+			}
+		}
+	</script>
+</html>

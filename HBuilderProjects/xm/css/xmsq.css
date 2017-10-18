@@ -1,0 +1,187 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.top{
+	width: 100%;
+	height: 50px;
+	background: #4F4F51;
+}
+.top .topinner{
+	width: 990px;
+	height: 50px;
+	margin: 0 auto;
+}
+.top .topinner ul{
+	width: 850px;
+	height: 50px;
+	margin-left: -17px;
+	float: left;
+}
+.top .topinner ul li {
+	float: left;
+	line-height: 50px;
+	margin-left: 17px;
+	color: white;
+}
+
+.top .topinner .top1{
+	width: 100px;
+	height: 18px;
+	float: right;
+	margin-top: 16px;
+	
+}
+.top .topinner .top1 p{
+	width: 100px;
+	height: 18px;
+	color: white;
+	font-size: 14px;
+}
+.banner{
+	width: 960px;
+	height: 350px;
+	margin: 20px auto;
+}
+.content{
+	width: 960px;
+	height: 5000px;
+	margin: 10px auto;
+
+}
+.content .contentleft{
+	width: 645px;
+	height: 5000px;	
+	background: white;
+	float: left;	
+}
+
+.content .contentleft1{
+	width: 605px;
+	height: 235px;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+.content h2{
+	height: 60px;
+	line-height: 60px;
+	font-size: 22px;
+	font-weight: normal;
+}
+.content .contentleft1 .contentleft11{
+	
+	float: left;
+}
+.content .contentleft1 .contentleft12{
+	width: 288px;
+	height: 175px;
+	float: right;
+}
+.content .contentleft1 .contentleft12 .p1{
+	font-size: 12px;
+	color: #AAB2BD;
+}
+.content .p2{
+	margin-top: 20px;
+	font-size: 14px;
+	color: #6f6f6f;
+	line-height: 25px;
+}
+.content .p2 span{
+	display: block;
+	float: right;
+}
+.content .contentleft2{
+	width: 620px;
+	height: 187px;
+	margin: 20px auto;
+	background: url(../img/sq8.gif) no-repeat center bottom;
+}
+.content .contentleft2 ul li{
+	float: left;
+	margin-left: 8px;
+}
+.content .contentleft2 img{
+	border-radius: 5px;
+}
+.content .contentleft2 h3{
+	line-height: 23px;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.content .span1{
+	display: block;
+	line-height: 20px;
+	font-size: 12px;
+	color: #6F6F6F;
+	float: left;
+}
+.content .span2{
+	line-height: 20px;
+	display: block;
+	font-size: 12px;
+	color: #6F6F6F;
+	float: right;
+}
+.content .contentleft3{
+	width: 605px;
+	height: 420px;
+	margin: 20px auto;
+	background: url(../img/sq8.gif) no-repeat center bottom;
+}
+.content .contentleft3 img{
+	border-radius: 5px;
+	margin-top: 10px;
+}
+.content .contentright{
+	width: 300px;
+	height: 5000px;
+	background: yellow;
+	float: right;
+	
+}
+.content  .contentright1{
+	width: 300px;
+	height: 410px;
+	background: white;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.content  .contentright11{
+	width: 302px;
+	height: 40px;
+}
+.content  .contentright11 span{
+	display: block;
+	width: 149px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	background: #ccd1d9;
+	border: 1px solid #e8e8e8;
+}
+.content  .contentright11 span:first-child{
+	float: left;
+	
+}
+.content  .contentright11 span:last-child{
+	float: right;
+}
+.content  .contentright12 ul{
+	width: 302px;
+}
+.content  .contentright12 ul li{
+	width: 150px;
+	height: 45px;
+    line-height: 45px;
+    border-top: 1px solid #eee;
+    border-right: 1px solid #eee;
+    background: #ffffff;
+    text-align: center;
+    float: left;
+}
+.content  .contentright12 .lastli{
+	width: 301px;
+}

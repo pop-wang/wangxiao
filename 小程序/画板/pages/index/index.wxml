@@ -1,0 +1,6 @@
+<!--pages/index/index.wxml-->
+<view class='container'>
+  <view class='inner_container'>
+    <canvas class='draw_container' canvas-id='draw_container' bindtouchstart='drawStart' bindtouchmove='drawMove' bindtouchend='drawEnd'></canvas>
+  </view>
+</view>

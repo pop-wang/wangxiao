@@ -1,0 +1,23 @@
+@width: 1024;
+section, footer {
+  border: 1px solid red;
+  margin: 0 auto;
+  height: 100px;
+}
+section {
+  width: @width;
+}
+footer {
+  width: @width;
+}
+body {
+  width: @width;
+  .container {
+    .head {
+      .nav {
+        width: @width;
+        font-size: 48px;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import "default";
+body{
+  background-color: @screenBackgroundColor;
+  .typeContainer{
+    width: @screenWidth;
+    .center;
+    .flex;
+    overflow: scroll;
+    li{
+      min-width: 8rem;
+      .textCenter(3rem);
+      a{
+        text-decoration: none;
+        min-width: 8rem;
+        .textCenter(3rem);
+      }
+    }
+
+  }
+  .typeContainer::-webkit-scrollbar {/*伪类取消滚动条*/
+    display: none;
+  }
+  .subContainer{
+    width: @screenWidth;
+    .flex;
+    .center;
+    flex-wrap: wrap;
+    justify-content: center;
+    li{
+      width: 15rem;
+      height: 15rem;
+      background-color: #198bff;
+      .textCenter(15rem);
+      border: 0.5rem solid #d4d7d1;
+      box-sizing: border-box;
+    }
+
+  }
+}

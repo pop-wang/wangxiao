@@ -1,0 +1,7 @@
+<ion-view view-title="主科室">
+  <ion-content class="padding">
+    <ion-list>
+      <a class="item" ng-repeat="info in mainlist" ng-bind="info.typeName" ng-click="gotoNext(info)" ng-href="#/tab/dash/{{info.typeId}}"></a>
+    </ion-list>
+  </ion-content>
+</ion-view>

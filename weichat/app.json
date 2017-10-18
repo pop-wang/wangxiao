@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/homeDetail/homeDetail",
+    "pages/find/find",
+    "pages/findDetail/findDetail",
+    "pages/live/live",
+    "pages/user/user",
+    "pages/login/login"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#FFFD92",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "王大炮",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#FF0000",
+    "backgroundColor": "#FFFD92",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "home",
+      "iconPath":"images/smile.png",
+      "selectedIconPath":"images/smlie_select.png"
+    },{
+      "pagePath": "pages/find/find",
+      "text": "find",
+      "iconPath": "images/smile.png",
+      "selectedIconPath": "images/smlie_select.png"
+    },{
+      "pagePath": "pages/live/live",
+      "text": "live",
+      "iconPath": "images/smile.png",
+      "selectedIconPath": "images/smlie_select.png"
+    },
+    {
+      "pagePath": "pages/user/user",
+      "text": "user",
+      "iconPath": "images/smile.png",
+      "selectedIconPath": "images/smlie_select.png"
+    }]
+  }
+}

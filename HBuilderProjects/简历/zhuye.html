@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/zhuye.css"/>
+		<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+	</head>
+	<body>
+		<audio src="zhuye.wav" autoplay="autoplay" loop="loop"></audio>
+		<div class="log">
+			<div class="jianlilg">
+				<p>&hearts;个人简历&hearts;</p>
+				<p>Personal&nbsp;&nbsp;Resume</p>
+			</div>
+			<div class="yuan"><img class="touxiang" src="img/2.gif"/></div>
+		</div>
+		<div class="konbai"></div>
+		<div class="zhuye">
+			<div class="tu"><img  class="beijing" src="img/1.jpg"/></div>
+			<div class="zi">
+				
+				<div class="tubiao1 tu1">
+					<div class="tubiao1-1"><a href="jianjie.html"><img src="img/3.png"/></a></div>
+					<span id="zi1-1"><a href="jianjie.html">个人简介</a></span>
+				</div>
+				<div class="zi1">王大炮小姐</div>
+				<div class="tubiao1 tu2">
+					<div class="tubiao1-1"><a href="zuopin.html"><img src="img/4.png"/></a></div>
+					<span id="zi1-1"><a href="zuopin.html">作品展示</a></span>
+				</div>
+			</div>
+			<div id="stage">
+    			<ul id="container">
+       				<li>
+           			 	<img src="img/11.jpg"/>
+            			<span id="span2">Do one thing at a time, and do well..</span>
+        			</li>
+        			<li>
+            			<img src="img/12.jpg"/> 
+            			<span id="span2">Do one thing at a time, and do well..</span>
+        			</li>
+        			<li>
+            			<img src="img/13.jpg"/> 
+            			<span id="span2">Keep on going never give up.</span>
+        			</li>
+        			<li>
+            			<img src="img/14.jpg"/> 
+            			<span id="span2">Whatever is worth doing is worth doing well.</span>
+        			</li>
+        			<li>
+            			<img src="img/15.jpg"/> 
+            			<span id="span2">Believe in yourself.</span>
+        			</li>
+        			<li>
+            			<img src="img/16.jpg"/> 
+            			<span id="span2">Action speak louder than words.</span>
+        			</li>
+        			<li>
+            			<img src="img/17.jpg"/> 
+            			<span id="span2">Never put off what you can do today until tomorrow.</span>
+        			</li>
+        			<li>
+            			<img src="img/18.jpg"/> 
+            			<span id="span2">Jack of all trades and master of none.</span>
+        			</li>
+        			<li>
+            			<img src="img/19.jpg"/> 
+            			<span id="span2">Judge not from appearances.</span>
+        			</li>
+    			</ul>
+			</div>	
+		</div>
+		
+	</body>
+	 
+
+    <script type="text/javascript">
+        // alert( 64 / Math.tan(20 / 180 * Math.PI));
+        var transform = function (element, value, key)
+        {
+            key = key || "Transform";
+            ["Moz", "O", "Ms", "Webkit", ""].forEach(function (prefix)
+            {
+                element.style[prefix + key] = value;
+            });
+
+            return element;
+        }
+
+
+        $(function ()
+        {
+            var deg = -40 , i = 1;
+            $("#container").click(function ()
+            {
+                transform($(this)[0], "rotateY(" + (deg * i++) + "deg)")
+            });
+        });
+
+    </script>
+</html>

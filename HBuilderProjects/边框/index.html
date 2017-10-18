@@ -1,0 +1,30 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>流动边框效果的表格</title>
+</head>
+<body>
+<SCRIPT>
+l=Array(6,7,8,9,'a','b','b','c','d','e','f')
+Nx=5;Ny=35
+t="<table border=0 cellspacing=0 cellpadding=0 height="+((Nx+2)*16)+"><tr>"
+for(x=Nx;x<Nx+Ny;x++)
+t+="<td width=16 id=a_mo"+x+">　</td>"
+t+="</tr><tr><td width=10 id=a_mo"+(Nx-1)+">　</td><td colspan="+(Ny-2)+" rowspan="+(Nx)+">欢迎来到烈火网，能够看到这篇文章说明你有志成为是一名站长，或者你已经是准站长了!本文主要向建站新手介绍如何从学习建站、到运营网站、再到实现网站的盈利，如果你确定想通过网站实现盈利的话，那么就跟我来学习吧，再看正式阅读本文之前，有一些注意事项介绍给你：1。为了节省文章篇幅，特别把进阶知识添加到外部链接，一篇文章不可能把你从菜鸟带到日赚斗金。</td><td width=16 id=a_mo"+(Nx+Ny)+"></td></tr>"
+for(x=2;x<=Nx;x++)
+t+="<tr><td width=16 id=a_mo"+(Nx-x)+">　</td><td width=16 id=a_mo"+(Ny+Nx+x-1)+">　</td></tr>"
+t+="<tr>"
+for(x=Ny;x>0;x--)
+t+="<td width=16 id=a_mo"+(x+Nx*2+Ny-1)+">　</td>"
+document.write(t+"</tr></table>")
+var N=Nx*2+Ny*2
+function f1(y){
+for(i=0;i<N;i++){
+c=(i+y)%20;if(c>10)c=20-c
+document.all["a_mo"+(i)].bgColor="'#0000"+l[c]+l[c]+"'"}
+y++
+setTimeout('f1('+y+')','1')}
+f1(1)
+</SCRIPT>
+</body>
+</html><br /><center>如不能显示效果，请按Ctrl+F5刷新本页，更多网页代码：<a href='http://www.veryhuo.com/' target='_blank'>http://www.veryhuo.com/</a></center>

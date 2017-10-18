@@ -1,0 +1,91 @@
+ul{
+	width: 200px;
+	height: 200px;
+	list-style: none;
+	position: relative;
+	margin: 10% auto;
+	transform-style: preserve-3d;
+	animation: rotate 5s linear 0s infinite;
+}
+
+@keyframes rotate{
+	from{transform: rotateX(0deg) rotateY(0deg);}
+	to{transform: rotateX(360deg) rotateY(360deg);}
+}
+ul li{
+	width: 200px;
+	height: 200px;	
+	text-align: center;
+	line-height: 200px;
+	font-size: 40px;
+	opacity: 0.2;
+	position: absolute;
+}
+/*前面*/
+ul li:first-child{
+	background-color: yellow;
+	transform: translateZ(100px);
+}
+/*后面*/
+ul li:nth-child(2){
+	background-color: yellowgreen;
+	transform: translateZ(-100px);
+}
+/*左面*/
+ul li:nth-child(3){
+	background-color: cyan;
+	transform: translateX(100px) rotateY(90deg);
+}
+/*右面*/
+ul li:nth-child(4){
+	background-color: lightseagreen;
+	transform: translateX(-100px) rotateY(90deg);
+}
+/*上面*/
+ul li:nth-child(5){
+	background-color: cornflowerblue;
+	transform: translateY(100px) rotateX(90deg);
+}
+/*下面*/
+ul li:last-child{
+	background-color: skyblue;
+	transform: translateY(-100px) rotateX(90deg);
+}
+
+
+
+/*前面*/
+ul:hover li:first-child{
+	background-color: yellow;
+	transform: translateZ(150px);
+}
+/*后面*/
+ul:hover li:nth-child(2){
+	background-color: yellowgreen;
+	transform: translateZ(-150px);
+}
+/*左面*/
+ul:hover li:nth-child(3){
+	background-color: cyan;
+	transform: translateX(150px) rotateY(90deg);
+}
+/*右面*/
+ul:hover li:nth-child(4){
+	background-color: lightseagreen;
+	transform: translateX(-150px) rotateY(90deg);
+}
+/*上面*/
+ul:hover li:nth-child(5){
+	background-color: cornflowerblue;
+	transform: translateY(150px) rotateX(90deg);
+}
+/*下面*/
+ul:hover li:last-child{
+	background-color: skyblue;
+	/*transform: translateY(-150px) rotateX(90deg);*/
+	animation: move 1s;
+	animation-fill-mode: forwards;/*当动画执行到最后一次的时候他就固定在那个位置了*/
+}	
+@keyframes move{
+	to{transform: rotateX(90deg) translateZ(250px);}
+}

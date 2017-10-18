@@ -1,0 +1,19 @@
+section,
+footer {
+  border: 1px solid red;
+  margin: 0 auto;
+  height: 100px;
+}
+section {
+  width: 1024;
+}
+footer {
+  width: 1024;
+}
+body {
+  width: 1024;
+}
+body .container .head .nav {
+  width: 1024;
+  font-size: 48px;
+}

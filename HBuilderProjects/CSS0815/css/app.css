@@ -1,0 +1,206 @@
+body{
+	padding: 100px;
+	background: #bebebe;
+}
+/*.button{
+	width: 150px;
+	height: 44px;
+	background-color: #ff6b00;
+	/*-webkit-appearance: button;设置外观外button样式
+	outline: 2px solid #444444;/*设置一个外边线
+}
+.button:hover{
+	outline-offset: 10px;
+}
+.canRsize{
+	width: 150px;
+	height: 44px;
+	background-color: #ff562f;
+	border: 3px solid #dadada;/*设置或者不设置border都可以实现resize
+	overflow: auto;
+	resize: both;/*可放大缩小
+}
+.box{
+	width: 200px;
+	height: 200px;
+	padding: 50px;
+	background-color: #FF6B00;
+	border: 10px solid red;
+	box-sizing: content-box;/*盒子大小以内容为基准
+	box-sizing: border-box;/*盒子大小以外边框为基准 边框+内边距+内容=width/height
+}
+.transition{
+	width: 100px;
+	height: 100px;
+	background-color: #40ff23;
+	transition: all 3s;/*样式发生改变过程持续3s
+}
+.transition:hover{
+	background-color: #1c70ff;
+	border-radius: 50%;
+}
+ul li{
+	width: 100px;
+	height: 100px;
+	background-color: crimson;
+	float: left;
+	margin-left: 10px;
+	position: relative;
+	
+}
+ul li:first-child{
+	transition: all 3s linear 2s;
+}
+ul li:nth-child(2){
+	transition: all 3s ease 3s;
+}
+ul li:nth-child(3){
+	transition: all 3s ease-in 4s;
+}
+ul li:nth-child(4){
+	transition: all 3s ease-out 5s;
+}
+ul li:last-child{
+	transition: all 3s ease-in-out 6s;
+}
+ul li:hover{
+	height:400px;
+	background-color: yellow;
+	/*box-shadow: #DC143C 2px 3px 5px;
+}
+ul li:first-child {
+    animation: jump 2s ease 3s;
+}
+
+@keyframes jump {/*定义关键帧动画
+
+    0%{
+        top:-50px;
+        height: 90px;
+        background-color: #ffa308;
+    }
+    30%{
+        top:-100px;
+        height: 80px;
+        background-color: #ff5d2f;
+    }
+    50%{
+        top:-60px;
+        height: 120px;
+        background-color: #6cff44;
+    }
+
+    80%{
+        top:-20px;
+        height: 110px;
+        background-color: #ff3fe0;
+    }
+}
+.ball{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 100px;
+	background-color: #ff0800;
+	animation: move 5s linear 1s infinite alternate;
+}
+@keyframes move{
+	from{
+		transform: translate(0px,0px) rotate(0deg);
+	}
+	to{
+		transform: translate(700px,-200px) rotate(360deg);
+		/*transform: rotate(180deg);
+	}
+}*/
+@keyframes rotate{
+	from{
+		opacity: 1;
+		transform:rotate(0deg);
+	}
+	to{
+		opacity: 0.1;
+		transform:rotate(360deg);
+	}
+}
+.taiji{
+	width: 400px;
+	height: 400px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+	animation: rotate 2s linear 0s infinite;
+}
+.taiji .top,.bottom{
+	width: 400px;
+	height: 200px;
+}
+.taiji .top{
+	background: black;
+}
+.taiji .bottom{
+	background: white;
+}
+.taiji .leftPoint{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	left:0px;
+	top: 25%;
+	background: black;
+	border: 75px solid #FFFFFF;
+	box-sizing: border-box;
+}
+.taiji .rightPoint{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	right:0px;
+	top: 25%;
+	background: white;
+	border: 75px solid #000;
+	box-sizing: border-box;
+}
+.headerImage{
+	width: 200px;
+	height: 200px;
+	background: url(../img/image.png) no-repeat center;
+	opacity: 0.6;
+	/*transform: skewY(45deg);*/
+	transform: scale(2);
+	transition: transform 1s,opacity 2s;
+}
+.headerImage:hover{
+	/*transform: skew(50deg,50deg);*/
+	transform: none;
+	opacity: 1.0;
+}
+body{
+	perspective: 500px;/*设置眼睛到物体的距离*/
+	perspective-origin:10% 50%;/*设置查看的位置*/
+}
+.person{
+	width: 800px;
+	height: 400px;
+	background: url(../img/people.jpg) no-repeat center;
+	background-size: cover;
+	animation: rotate3D 3s linear infinite;
+	border: 2px solid #000000;
+	transform-origin: 50% 50%;
+}
+.person:hover{
+	transform: rotateX(45deg);
+}
+@keyframes rotate3D{
+	to{
+		
+		/*transform: rotate3d(1, 1, 1, 360deg);*/
+		/*transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg) scale(0.3);*/
+		/*transform: translateX(100px) rotateY(-45deg);*/
+		transform: translateZ(-100px);
+		
+	}
+}

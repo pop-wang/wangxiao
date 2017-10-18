@@ -1,0 +1,89 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#bian{
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	animation: dong 6s;
+
+}
+#bian img{
+	width: 100%;
+}
+@-webkit-keyframes dong{
+	0%{
+		left: 0px;
+	    top: 0px;
+	}
+	12.5%{
+		left: 100px;
+	    top: 0px;
+	    background-color: yellow;
+	    opacity: 0.9;
+	}
+	25%{
+		left: 200px;
+	    top: 0px;
+	    background-color: deepskyblue;
+	    opacity: 0.8;
+	}
+	37.5%{
+		left: 200px;
+	    top: 100px;
+	    background-color: pink;
+	    opacity: 0.7;
+	}
+	50%{
+		left: 200px;
+	    top: 200px;
+	    background-color: gold;
+	    opacity: 0.6;
+	}
+	62.5%{
+		left: 100px;
+	    top: 200px;
+	    background-color: blueviolet;
+	    opacity: 0.5;
+	}
+	75%{
+		left: 0px;
+	    top: 200px;
+	    background-color: greenyellow;
+	    opacity: 0.4;
+	}
+	87.5%{
+		left: 0px;
+	    top: 100px;
+	    background-color: orange;
+	    opacity: 0.3;
+	}
+	100%{
+		left: 0px;
+	    top: 0px;
+	    background-color: red;
+	    opacity: 0.2;
+	}
+
+}
+#bian:hover{
+	animation: bianda 3s;
+}	
+@-webkit-keyframes bianda{
+	0%{
+		width: 200px;
+	    height: 200px;
+	}
+	50%{
+		width: 300px;
+		height: 300px;
+	}
+	100%{
+		width: 200px;
+	    height: 200px;
+	}
+}

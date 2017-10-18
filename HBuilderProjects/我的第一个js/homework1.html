@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*li{
+				width: 100px;
+				height: 25px;
+				background: #B0B0B0;
+				border-radius: 5px;
+				margin-top: 10px;
+			}*/
+		</style>
+	</head>
+	<body>
+		
+		<!--<ul>
+			<li>我是列表1</li>
+			<li>我是列表2</li>
+			<li>我是列表3</li>
+			<li>我是列表4</li>
+			<li>我是列表5</li>
+			<li>我是列表6</li>
+			<li>我是列表7</li>
+			<li>我是列表8</li>
+		</ul>-->
+		
+		<!--<table>
+			<tr>
+				<td onclick="otable(this)">我是列表1</td>
+				<td onclick="otable(this)">我是列表2</td>
+				<td onclick="otable(this)">我是列表3</td>
+				<td onclick="otable(this)">我是列表4</td>
+				<td onclick="otable(this)">我是列表5</td>
+				<td onclick="otable(this)">我是列表6</td>
+				<td onclick="otable(this)">我是列表7</td>
+				<td onclick="otable(this)">我是列表8</td>				
+			</tr>
+		</table>-->
+		
+		<!--2017.7.4-->
+		<!--<input type="text" name="uname"/>
+		<input type="text" name="psd"/>
+		<input type="submit" name="sbt" />
+		<p>中国是一个非常美丽的国家，中国有好多好多美味的食物</p>
+		<div></div>-->
+		
+		<!--2017.7.5-->
+		<!--<button>选择英雄</button>
+		<button>选择怪物</button>
+		<div></div>-->
+		
+		<div></div>
+	</body>
+	<!--2017-6-13:1、用户输入一个三位数  输出各个位数的和
+	<script type="text/javascript">
+		var num = window.prompt("请输入一个三位数：");
+		var temp1 = num%10;
+		var temp2 = parseInt(num/10%10);
+		var temp3 = parseInt(num/100%10);
+		var temp = temp1+temp2+temp3;
+		console.log(temp1);
+		console.log(temp2);
+		console.log(temp3);
+		console.log(temp);
+		alert("这个三位数各位数字的和是："+temp);
+	</script>-->
+	<!--2、如果今天是星期2    随便输入任意天数  显示是周几
+	<script type="text/javascript">
+		var num = window.prompt("任意输入一个数字：");
+		var i = num%7; 
+		console.log(i);
+		switch(i){
+			case 0:
+				alert("今天是周二");
+				break;
+			case 1:
+				alert("今天是周三");
+				break;
+			case 2:
+				alert("今天是周四");
+				break;
+			case 3:
+				alert("今天是周五");
+				break;
+			case 4:
+				alert("今天是周六");
+				break;
+			case 5:
+				alert("今天是周天");
+				break;
+			case 6:
+				alert("今天是周一");
+				break;
+			default:
+				break;
+		}
+	</script>-->
+	
+	
+	<!--2017-6-14:1、计算该交多少钱税 3500起征.-->
+	<!--<script type="text/javascript">
+		var pay = parseInt(window.prompt("请输入薪资："));
+		var revenue;
+		if (pay<=3500) {
+			revenue=0;
+		} else if(pay>3500&&pay<=5000){
+			revenue=(pay-3500)*0.03;
+		}else if(pay>5000&&pay<=8000){
+			revenue=(pay-5000)*0.1+45;
+		}else if(pay>8000&&pay<=12500){
+			revenue=(pay-800)*0.2+345;
+		}else if(pay>12500&&pay<=38500){
+			revenue=(pay-12500)*0.25+1245;
+		}else if(pay>38500&&pay<=58500){
+			revenue=(pay-38500)*0.3+7745;
+		}else if(pay>58500&&pay<=83500){
+			revenue=(pay-58500)*0.35+13745;
+		}else{
+			revenue=(pay-83500)*0.45+22495;
+		}
+		alert("该交税金额为"+revenue+"元");		
+	</script>-->
+	
+	<!--2、模拟电话银行程序：用户输入1 ：执行查询操作 2：执行取款 3：转账 4：人工服务 其他：无效输入-->
+	<!--<script type="text/javascript">
+		var num = parseInt(window.prompt("请输入需要服务的代号："));
+		switch (num){
+			case 1:
+				alert("执行查询操作");
+				break;
+			case 2:
+				alert("执行取款");
+				break;
+			case 3:
+				alert("转账");
+				break;
+			case 4:
+				alert("人工服务");
+				break;
+			default:
+				alert("无效输入");
+				break;
+		}
+	</script>-->
+	
+   	<!--3、查询分数 100 对应满分  90-100优 80-90良 70-80中  60-70合格 60以下差-->
+	<!--<script type="text/javascript">
+		var score = parseInt(window.prompt("请输入成绩："));
+		if (score==100) {
+			alert("该生成绩为满分");
+		} else if(score>=90&&score<100){
+			alert("该生成绩优");
+		}else if(score>=80&&score<90){
+			alert("该生成绩良");
+		}else if(score>=70&&score<80){
+			alert("该生成绩为中");
+		}else if(score>=60&&score<70){
+			alert("该生成绩合格");
+		}else{
+			alert("该生成绩差");
+		}
+	</script>-->
+	<!--2017.6.15:求1! + 2! + 3! + 4! + …… + 10!的和叹号表示阶乘，如4! = 1 * 2 * 3 * 4-->
+	<!--<script type="text/javascript">
+		var sum=0;				//申明一个变量sum存储阶乘相加的结果
+		for(var i=1;i<=10;i++){//遍历1-10
+			var plus=1;			//申明一个变量plus存储每个数字阶乘的结果
+			for(var j=1;j<=i;j++){//再次遍历1-10
+				plus=plus*j;	//求出每个数字阶乘结果
+				console.log(plus);
+			}
+			sum=plus+sum;		//求出阶乘相加结果
+		}
+		console.log(sum);		//在控制台中打印出来阶乘相加结果
+	var s=1;
+    var sum=0;
+    for(var i=1;i<=10;i++){
+        s*=i;
+        sum+=s;
+    }
+	console.log(sum);
+	</script>-->
+	<!--2017.6.16:用户随便输入一串数字，倒叙输出-->
+	<!--<script type="text/javascript">
+		var num = window.prompt("请随意输入一串数字");
+		for (var i=num.length-1;i>=0;i--) { 
+			var j = num.charAt(i);
+			console.log(j);
+		}
+		var num = window.prompt("请随意输入一串数字");
+		for(var i=num.length-1;i>=0;i--){
+			document.write(num[i]);
+		}
+		var s = window.prompt("请随意输入一串数字");		
+		var olength=s.length-1;    //输入字符串的长度
+		var num=parseInt(s);       //将输入的字符串转换为数字方便后面取余
+		var result;					//声明一个新变量存储求出的每位数字
+		for(var i=olength;i>=0;i--){  //遍历字符串
+			result=num%10;			//取余
+			num=parseInt(num/10);	
+			document.write(result);
+		}
+		var num=parseInt(prompt("请随意输入一串数字"));
+		for(var a=0;num>0;){
+   			 a=num%10;  //存储每位数
+   			 c=a.toString();
+   			 document.write(c);
+    		num=parseInt(num/10);
+//  		if(num==0){
+//  			break;
+//  		}
+		}
+	</script>-->
+		<!--2017.6.16:有一个列表  8个列表项   点击每个列表项 弹出他的下标-->
+		<!--<script type="text/javascript">-->
+		<!--//this对象做法：
+//			var list = document.getElementsByTagName("li"); //通过标签名获取到列表
+//			for(var i=0;i<=list.length-1;i++){ //遍历每个列表
+//				list[i].index=i;			   //将i赋值给列表下标值
+//				list[i].onclick=function(){    //给每个列表绑定点击事件
+//					alert('您所点击的列表的下标为'+parseInt(this.index+1));//数组下标从0开始，所以加1
+//					
+//				}
+//			}
+//		//闭包
+			var list = document.getElementsByTagName("li");
+			for(var i=0;i<=list.length-1;i++){
+				(function(j){
+					list[i].onclick=function(){
+						alert('您所点击的列表的下标为'+j);
+					}
+				})(i+1)//将i+1的值传给j
+			}
+		//闭包
+//			var list = document.getElementsByTagName("li");
+//			for(var i=0;i<=list.length-1;i++){
+//				list[i].onclick=(function(j){
+//					return function(){
+//						alert('您所点击的列表的下标为'+j);	
+//					}
+//				})(i+1)
+//			}
+		//用table完成
+//			var list = document.getElementsByTagName("td");
+//			for(var i=0;i<=list.length-1;i++){
+//				list[i].onclick=(function otable(j){
+//					return function(){
+//						alert('您所点击的列表的下标为'+ j);
+//					}	
+//				})(i+1)
+//			}
+		//用table完成
+		function otable(j){ 
+    		alert('您所点击的列表的下标为'+ parseInt(j.cellIndex+1)); 
+		}	
+
+		</script>-->
+	
+	<script type="text/javascript">
+//		var oinput0=document.getElementsByTagName("input")[0];
+//		var oinput1=document.getElementsByTagName("input")[1];
+//		var oinput2=document.getElementsByTagName("input")[2];
+//		oinput2.onclick=function(){
+//<!--2017.7.4：1.验证密码，是不是 首字母大写 并且包含6个字母-->			
+//			if(/^[A-Z][A-z]{5}/g.test(oinput1.value)){
+//				alert("满足条件");
+//			}else{
+//				alert("不满足条件");
+//			}
+//1.取数组中的第一个元素匹配，相等则匹配成功
+//			var result=oinput1.value.macth(/^[A-Z][A-z]{5}/g);
+//			if(result){
+//				if(result[0]==oinput1.value){
+//					alert("匹配成功");
+//				}
+//			}
+//字母和数字同时存在：/^[A-Z]([A-z]+\d+\w)|(\d+[A-z]+\w)/g;/^[A-Z](\w*\d+)\w*/g
+//<!--2017.7.4：3.验证密码，必须是8位以上的字符，首字母大写 必须同时包含字母和数字-->
+//			if(/^[A-Z]{1}[A-z]|[0-9]{7}/.test(oinput1.value)){
+//				alert("满足条件");
+//			}else{
+//				alert("不满足条件");
+//			}
+//<!--2017.7.4：4.登录注册，账号必须是字符串，密码必须是8位以上的字符，首字母大写 必须同时包含字母和数字-->
+//			if((/^[A-Z]{1}[A-z]|[0-9]{7}/.test(oinput1.value))&&(/[A-z]/.test(oinput0.value))){
+//				alert("满足条件");
+//			}else{
+//				alert("不满足条件");
+//			}
+//		}
+// 4.类似1的方法，直接拷贝过来
+//		var result=oinput1.value.macth.(/^[A-Z][A-z0-9]{7,}/);//*:代表可以有可以没有；+：代表至少有前面的一位；/^[A-Z][A-z]*[0-9]+/g，这样只需判断result[0]的length值大于8即可
+//		if(result){
+//			if(result[0]==oinput1.value){
+//				alert("匹配成功");
+//			}
+//		}
+//<!--2017.7.4：2.把所有包含 中国 的字符串替换成 我的祖国（替换敏感字符串）-->
+//		var odiv=document.getElementsByTagName("div")[0];
+//		var op=document.getElementsByTagName("p")[0];
+//		var reg=/中国/g;
+//		odiv.innerHTML=op.innerHTML.replace(reg,"我的祖国");
+
+//<2017.7.5 1.封装一个技能函数(名字,攻击力)和英雄的函数(名字,血量,攻击力)以及怪物的函数(名字,血量,攻击力)，创建3个英雄/怪物，每个英雄一个技能，使用技能攻击怪物的行为，让用户选择英雄，选择好了之后怪物随机出现>
+//		function skills(sname,satt){
+//			return{
+//				name:sname,
+//				att:satt,				
+//			}			
+//		}
+//		function hero(hname,hblood,hatt,skill) {
+//			return{
+//				name:hname,
+//				blood:hblood,
+//				att:hatt,
+//				skill:skills("布阵",100),
+//				fire:function(monster){
+//					console.log(monster+"减血") ;
+//				}
+//			}
+//		}
+//		function monster(mname,mblood,matt){
+//			return{
+//				name:mname,
+//				blood:mblood,
+//				att:matt,
+//				skill:skills("吸血",200)
+//			}
+//		}
+//		
+//		heros[//
+//			{name:1,blood:2,arr:3,skill:skill("吸血",200)}
+//			{name:2,blood:2,arr:3}
+//			{name:3,blood:2,arr:3}
+//		]
+//		var hero1=hero("法师",10000,100);//或者var hero1=hero("法师",10000,100，skill("布阵",100));
+//		console.log(typeof(hero1.name))
+//		var hero2=hero("魔术师",100000,500);
+//		var hero3=hero("战斗师",1000000,1000);
+//		var monster1=monster("犀牛",10000,100);
+//		var monster2=monster("飞龙",100000,500);
+//		var monster3=monster("虎鲸",1000000,1000);
+//		
+//		var arrmonster=[monster1,monster2,monster3];
+//		var arrhero=[hero1,hero2,hero3];
+//		
+//		var btn0=document.getElementsByTagName("button")[0];
+//		var btn1=document.getElementsByTagName("button")[1];
+//		var odiv0=document.getElementsByTagName("div")[0];
+//		var odiv1=document.getElementsByTagName("div")[1];
+//		btn0.onclick=function(){
+//			var numhero=3*Math.random();
+//			numhero=parseInt(numhero);
+//			odiv0.innerHTML=arrhero[numhero].name;
+//		}
+//		btn1.onclick=function(){
+//			var nummonster=3*Math.random();
+//			nummonster=parseInt(nummonster);
+//			odiv0.innerHTML=odiv0.innerHTML+"pk"+arrmonster[nummonster].name+"&nbsp"+arrmonster[nummonster].name+"掉血";
+//		}
+
+//		var selectedIndex = prompt("请选择英雄1.哈利波特 2.xx 3.xx");
+//
+//  	var hero = heros[parseInt(selectedIndex)-1];
+//  	alert(hero.name);
+//
+//  	var selectedMonster = parseInt(Math.random()*monsters.length);
+//  	alert(monsters[selectedMonster].name);
+
+//<2017.7.5 2.解析歌词>
+//		regexp.lastIndex-->自动记录查询的地址-->调用匹配的函数的时候 知道匹配到哪了
+//		regexp.exec(lrcString)有内容-->array；没有内容-->null
+//		可以根据解析之后的值来判断歌词是不是解析完成
+/*可以单独获得分 秒 毫秒-->计算成毫秒-->当成对象的属性
+ * 歌词是时间的一个值
+ * 需要想办法吧所有的歌词都放到这个对象中
+ */
+//		var request = new XMLHttpRequest();
+//		request.open("GET","董小姐.lrc");
+//		request.onload = function () {
+// 	 	var stringLRC = request.response;
+//  	var regExp = /\[(\d{2}):(\d{2})\.(\d{2})\](.*)/g;//小括号是吧单独的提取出来
+//    	 console.log(regExp.exec(stringLRC));
+//    	 console.log(regExp.exec(stringLRC));
+    /*
+    * 可以单独获得到 分 秒 毫秒 -> 计算成毫秒 -> 当成对象中的属性
+    * 歌词是 时间的一个值
+    * {
+    *   30:"歌词"
+    *   }
+    *   需要想办法  把所有歌词  放到这个对象中
+    * */
+//  	var lrcObj = {};
+//  	while (true){
+//      //如果 有匹配的 -> Array
+//     		 var items = regExp.exec(stringLRC);
+//  //    不匹配 -> 解析完毕 -> null
+//      	if (!items){
+//          	break;
+//     	 }       
+//      	var ms = parseInt(items[1])*60*1000+parseInt(items[2])*1000+parseInt(items[3]);
+//      	var lrc = items[4];
+//      	lrcObj[ms] = lrc;//将ms这个属性加到lrcObj这个对象中，并且将lrc赋值给ms这个属性	
+//  	}
+//  	console.log(lrcObj);
+//	};
+//	request.send();
+	
+	</script>
+	<script>
+//		2017.7.6 1.扩展日期类(添加获取月份;添加转换日期为上午下午;获取星期几;添加格式化日期对象的方法)
+		//获取月份
+		Date.prototype.obtainMonth=function(){
+			return this.getMonth()+1;
+		}
+		var date=new Date();
+		console.log(date.obtainMonth());
+		//转换日期为上午下午
+		Date.prototype.obtainMorning=function(){
+			if(this.getHours()>12){
+				return "下午";
+			}else{
+				return "上午";
+			}
+		}
+		var date=new Date();
+		console.log(date.obtainMorning());
+		//获取星期几
+		Date.prototype.obtainWeek=function(){
+			switch (this.getDay()){
+				case 0:
+					return "星期日";
+					break;
+				case 1:
+					return "星期一";
+					break;
+				case 2:
+					return "星期二";
+					break;
+				case 3:
+					return "星期三";
+					break;
+				case 4:
+					return "星期四";
+					break;
+				case 5:
+					return "星期五";
+					break;
+				default:
+					return "星期六";
+					break;
+			}
+		}
+		var date=new Date();
+		console.log(date.obtainWeek());
+		//添加格式化日期对象的方法
+		Date.prototype.obtainAppointed=function(){			
+			var str=window.prompt("请输入时间：");//用户所以输入一个日期格式yyyy符号mm符号dd
+			var ss1=str.substr(4,1);//获取输入日期中第一个符号
+			var ss2=str.substr(7,1);//获取输入日期中第二个符号			
+			var date=new Date(str);//new一个日期对象
+			var y=date.getFullYear();
+			var m=date.getMonth()+1;
+			m=m<10?"0"+m:m;
+			var d=date.getDate();
+			d=d<10?"0"+d:d;
+			return y+ss1+m+ss2+d;//字符串拼接
+			
+		}		
+		console.log(date.obtainAppointed());
+		
+		Date.prototype.dateformat=function(format){
+        	while(1){
+        		var result=/(\w{2,4})(.)(\w{1,2})(.)\w{1,2}/.exec(format)
+        	    console.log(result)
+        	    return this.getYear()+result[1]+this.getMonth()+result[2]+this.getData()
+        	}
+        }
+        var odate=new Date()
+        console.log(odate.dateformat())
+
+
+//		2017.7.6 2.扩展数组类(中文排序;获取数组中最大值的方法;获取第一个元素;获取最后一个元素;删除数组中指定的元素)
+		//中文排序
+		Array.prototype.chineseSort=function(){
+			this.sort(function(a,b){
+				return a.localeCompare(b);
+			});
+			return this;
+		} 
+		var arr=new Array("王大炮","安静","车宁","卞月");
+		console.log(arr.chineseSort());
+		//获取数组中最大值的方法;
+		Array.prototype.obtainMax=function(){
+			for(var i=0;i<this.length;i++){
+				this[0]>this[i]?this[0]=this[0]:this[0]=this[i];				
+			}
+			return this[0];
+		}
+		var arr=new Array(1,2,3,4,5,6);
+		console.log(arr.obtainMax());
+		//获取第一个元素
+		Array.prototype.obtainFirst=function(){
+			return this[0];
+		}
+		var arr=new Array(1,2,3,4,5,6);
+		console.log(arr.obtainFirst());
+		//获取最后一个元素
+		Array.prototype.obtainLast=function(){
+			return this[this.length-1];
+		}
+		var arr=new Array(1,2,3,4,5,6);
+		console.log(arr.obtainLast());		
+		//删除数组中指定的元素
+		Array.prototype.deleteAppointed=function(keyword){
+			var index=-1;
+			while((index=this.indexOf(keyword,++index))!=-1){
+				this.splice(index,1);
+			}
+			return this;
+		}
+		var arr=new Array(1,5,3,4,5,6);
+		console.log(arr.deleteAppointed(5));
+	</script>
+</html>

@@ -1,0 +1,14 @@
+.container{
+	position: relative;
+}
+ul {
+    animation: rotate 5s linear 0s infinite;
+}
+@keyframes rotate {
+    from{
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to{
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}

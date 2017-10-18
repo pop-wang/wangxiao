@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*table{
+				width: 500px;
+				height: 500px;
+				margin: 50px auto;
+				border: 1px solid black;
+				text-align: center;
+			}*/
+			table{
+				margin: 50px auto;
+				text-align: center;
+				font-size: 20px;				
+			}
+			table thead{
+				text-align: left;
+			}
+			table button{
+				width: 80px;
+				height: 40px;
+			}
+			table td{
+				width: 80px;
+				height: 40px;
+				background: gray;
+			}
+			table td span{
+				display: block;
+				width: 80px;
+				height: 40px;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<!--<table>
+			<tr>
+				<td>11</td>
+				<td>22</td>
+				<td>33</td>
+				<td>44</td>
+				<td>55</td>
+			</tr>
+			<tr>
+				<td>11</td>
+				<td>22</td>
+				<td>33</td>
+				<td>44</td>
+				<td>55</td>
+			</tr>
+			<tr>
+				<td>11</td>
+				<td>22</td>
+				<td>33</td>
+				<td>44</td>
+				<td>55</td>
+			</tr>
+			<tr>
+				<td>11</td>
+				<td>22</td>
+				<td>33</td>
+				<td>44</td>
+				<td>55</td>
+			</tr>
+			<tr>
+				<td>11</td>
+				<td>22</td>
+				<td>33</td>
+				<td>44</td>
+				<td>55</td>
+			</tr>
+		</table>-->
+		
+		<table>
+			<thead>
+				<tr>
+				<td colspan="4" id="result"></td>
+				</tr>	
+			</thead>
+			<tbody>
+				
+				<tr >
+					
+					<td><span>7</span></td>
+					<td><span>8</span></td>
+					<td><span>9</span></td>
+					<td><button>/</button></td>
+				</tr>
+				<tr>
+					<td><span>4</span></td>
+					<td><span>5</span></td>
+					<td><span>6</span></td>
+					<td><button>*</button></td>
+				</tr>
+				<tr>
+					<td><span>1</span></td>
+					<td><span>2</span></td>
+					<td><span>3</span></td>
+					<td><button>-</button></td>
+				</tr>
+				<tr>
+					<td rowspan="2" id="zero"><span>0</span></td>
+					<td rowspan="2"><span id="point">.</span></td>
+					<td  id="del"><span>del</span></td>	
+					<td ><button>+</button></td>
+				</tr>
+				<tr>
+					<td id="bs"><span>bs</span></td>
+					<td><button>=</button></td>
+				</tr>
+			</tbody>
+
+		</table>
+	</body>
+	<!--<script type="text/javascript">
+		var oIndex = document.getElementsByTagName('tr');
+		for(var i=0;i<oIndex.length;i++){
+			if(i%2 == 0){
+				oIndex[i].style.backgroundColor = "red";
+			}else{
+				oIndex[i].style.backgroundColor = "yellow";
+			}
+		}
+		
+	</script>-->
+	
+	<script type="text/javascript">
+	document.write("你好，我是计算器");
+	var result = document.getElementById('result');
+	var rnum = document.getElementsByTagName('tbody')[0].getElementsByTagName('span');
+	var sign = 	document.getElementsByTagName('tbody')[0].getElementsByTagName('button');
+	var opoint = document.getElementById('point');
+	var zero = document.getElementById('zero');
+	var bs = document.getElementById('bs');
+	var del = document.getElementById('del');
+	var isclick = false;      //符号的开关
+	var ispoint = true;       //点的开关
+	var isclicknum = true;       //点前是否是num的开关
+	var iszero = true;            //0的开关
+//		判断数字键
+		for(var i=0;i<rnum.length-4;i++){
+			rnum[i].onclick = function(){
+				result.innerHTML = result.innerHTML + this.innerHTML;
+				isclick = true;
+				isclicknum=false;
+			}
+		}
+//		判断符号键
+		for(var j=0;j<sign.length;j++){
+			sign[j].onclick = function(){
+				if(isclick){
+					if(this.innerHTML=='='){
+						result.innerHTML = eval(result.innerHTML);
+						isclick = true;
+					}else{
+						result.innerHTML = result.innerHTML + this.innerHTML;
+						isclick = false;
+						ispoint =true;
+						isclicknum = true; 
+					}
+				}			
+			}
+		}
+//		判断点键
+		opoint.onclick = function(){
+			if(ispoint){
+				if (result.innerHTML.length==0) {
+					result.innerHTML = '0.';
+					
+				}else{
+					if (isclicknum) {
+						result.innerHTML = result.innerHTML + '0.';
+						
+					}else{
+						result.innerHTML = result.innerHTML + this.innerHTML;
+					}					
+				}
+				ispoint =false;
+			}
+			
+		}
+//		判断0键
+		zero.onclick = function(){
+			if (iszero) {
+				if (result.innerHTML.length==0) {
+					result.innerHTML = '0.';
+					isclick = true;
+					ispoint = false; 
+				}else{
+					result.innerHTML = result.innerHTML + this.innerHTML;
+				}
+			}
+		}
+//		清空显示屏
+		del.onclick = function(){
+			result.innerHTML = '';
+			isclick = false;      
+	 		ispoint = true;       
+	 		isclicknum = true; 
+		}
+//		逐个清空显示屏
+		bs.onclick = function(){
+			result.innerHTML=result.innerHTML.substring(0,result.innerHTML.length-1);
+		}
+	
+</script>
+<script type="text/javascript">
+	var hamberger ="香辣鸡翅堡";
+	var drinking ="orange";
+	var slide = "tomato";
+	document.write(hamberger,drinking,slide)
+</script>
+	
+</html>

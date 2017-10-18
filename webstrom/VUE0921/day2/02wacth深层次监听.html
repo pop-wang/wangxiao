@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
+</head>
+<body>
+<div id="box">
+    <p>{{a}}</p>
+    <p>{{b}}</p>
+    <p>{{obj.name}}</p>
+</div>
+
+<script>
+    let vm=new Vue({
+        el:"#box",
+        data:{
+            stark:"shudong",
+            a:111,
+            b:222,
+            obj:{
+                name:"stark",
+                age:18
+            }
+        },
+    })
+    vm.$watch("obj",function () {
+        alert(this.obj.name);//不能监听对象，所以无法弹出
+    })
+    document.onclick=function () {
+        vm.obj.name="shudong";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+/* pages/find/find.wxss */
+.container{
+  width:500rpx;
+
+  background-color: bisque;
+}
+.item{
+  width: 1000rpx;
+  height: 200rpx;
+}

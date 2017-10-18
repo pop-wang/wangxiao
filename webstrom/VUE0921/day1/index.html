@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <!--<div id="app">-->
+        <!--<p>{{message}}</p>-->
+        <!--<p>{{num>5?"yes":"no"}}</p>-->
+        <!--&lt;!&ndash;显示里面的文本&ndash;&gt;-->
+        <!--<p v-text="num"></p>-->
+        <!--&lt;!&ndash;取出除标签的内容&ndash;&gt;-->
+        <!--<p v-html="tpl"></p>-->
+        <!--&lt;!&ndash;双向绑定&ndash;&gt;-->
+        <!--<input type="text" v-model="num">-->
+        <!--&lt;!&ndash;生命周期&ndash;&gt;-->
+        <!--<button onclick="change()">更新</button>-->
+        <!--<button onclick="destroy()">销毁</button>-->
+        <!--<button class="wangdapao">王大炮</button>-->
+        <!--<p v-if="seen">现在你看到我了嘛？</p>-->
+        <!--&lt;!&ndash;属性名可以自定义&ndash;&gt;-->
+        <!--<div :stark="id">id的值为{{id}}</div>-->
+        <!--<img :src="imgs" width="100px">-->
+        <!--<button v-on:mouseover="show">SHOW</button>-->
+        <!--<button @click="add">ADD</button>-->
+        <!--{{arr}}-->
+        <!--<br>-->
+        <!--<button @click="change">CHANGE</button>-->
+        <!--<div v-show="flag" style="width: 100px;height: 100px;background-color: blue;"></div>-->
+        <!--<br>-->
+        <!--<span class="fontSize" :class="{red:addClass}">hello wangdpao</span>-->
+        <!--&lt;!&ndash;插槽&ndash;&gt;-->
+        <!--<dapao>-->
+            <!--<ul slot="ul-slot">-->
+                <!--<li>22</li>-->
+                <!--<li>23</li>-->
+                <!--<li>24</li>-->
+                <!--<li>替换默认的位置</li>-->
+            <!--</ul>-->
+        <!--</dapao>-->
+    <!--</div>-->
+
+    <!--<template id="aaa">-->
+        <!--<div>必须要加一个根标签div-->
+            <!--<h1>-->
+                <!--slot开始-->
+            <!--</h1>-->
+            <!--<slot name="ul-slot">-->
+                <!--ul-slot要替换的位置-->
+            <!--</slot>-->
+        <!--</div>-->
+    <!--</template>-->
+
+    <!--<div id="box">-->
+        <!--<custom>-->
+            <!--<div slot="three">-->
+                <!--我想替换第三个位置-->
+            <!--</div>-->
+            <!--<div slot="two">-->
+                <!--我想替换第二个位置-->
+            <!--</div>-->
+            <!--<div>-->
+                <!--我一个不替换的slot标签-->
+            <!--</div>-->
+        <!--</custom>-->
+    <!--</div>-->
+    <div id="app">
+        <!--如果在组件里面使用小驼峰式命名，在dom里面调用的时候最好使用烤串式命名-->
+        <wang-xiao></wang-xiao>
+    </div>
+    <script type="x-template" id="tpl">-->
+        <div>
+            <h2 @click="change">标题：{{message}}</h2>
+            <ul>
+                <li v-for="item in arr">{{item}}</li>
+            </ul>
+        </div>
+    </script>
+ <!--<script type="x-template" id="temp">-->
+    <!--<div>-->
+        <!--hello,{{name}}-->
+    <!--</div>-->
+<!--</script>-->
+<!--<script>-->
+    <!--Vue.component("custom",{-->
+        <!--template:`-->
+        <!--<div>-->
+            <!--<h1>我是王大炮</h1>-->
+            <!--<slot name="one"><p>第一个位置</p></slot>-->
+            <!--<slot name="two"><p>第二个位置</p></slot>-->
+            <!--<slot name="three"><p>第三个位置</p></slot>-->
+            <!--<slot>我就咬你</slot>-->
+        <!--</div>-->
+        <!--`-->
+    <!--})-->
+    <!--new Vue({-->
+        <!--el:"#box"-->
+    <!--})-->
+<!--</script>-->
+<script src="js/index.js"></script>
+
+</body>
+
+</html>

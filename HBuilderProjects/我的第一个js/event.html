@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			/*div{width: 20px;height: 20px;background: red;border-radius: 50%;position: absolute;}*/
+			#samllPpic{position:relative;width: 170px;height: 170px;background: url(img/shirt_3.jpg) no-repeat;float: left;border: 1px solid #123456;margin: 30px;}
+			#bigPpic{width: 170px;height: 170px;background: url(img/shirt_3_big.jpg) no-repeat;float: left;border: 1px solid #123456;margin: 30px;display: none;}
+			#search{width: 72px;height: 72px;background: pink;opacity: 0.5;position: absolute;display: none;}
+			button{width: 50px;height: 50px;position: fixed;right: 50px;bottom: 50px;display: none;}
+			img{position: absolute;left: 50%;margin-left: -320px;top: 50%;margin-top: -189px;width: 640px;height: 378px;}
+			body,html{height: 100%;}
+		</style>
+	</head>
+	<body>
+		<!--//鼠标按下div跟着鼠标走-->
+		<!--<div style="width: 50px;height: 50px;background: yellowgreen;position: absolute;margin-top: 10px;"></div>-->
+		<!--//伴随鼠标移动而移动，延迟过程-->
+		<!--<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>		
+		<div></div>
+		<div></div>
+		<div></div>		
+		<div></div>-->
+		<!--点击按钮小球运动-->
+	<!--<button>play</button>
+	<div></div>-->
+	
+	<!--淘宝放大镜效果-->
+	<!--<div id="samllPpic">
+		<div id="search"></div>
+	</div>
+	<div id="bigPpic"></div>-->
+	
+	<!--返回顶部-->
+		<!--<p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p>
+		<p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p>
+		<p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p>
+		<p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p>
+		<p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p>
+		<p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p>
+		<p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p>
+		<p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p>
+		<p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p>
+		<p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p><p>王大炮小姐</p>
+		<button>回到顶部</button>-->
+		
+		<!--360度旋转-->
+		<div style="width: 100%;height: 100%;position: absolute;z-index: 999;"></div>
+		<!--//通过在图片上定位一个div，可以再图片上滑动-->
+		<img src="img/img/0.jpg"/>
+	</body>
+	<script type="text/javascript">
+	//键盘按下弹出ascii值
+//		document.onkeydown=function(evt){
+//			var evt=evt||event;
+//			alert(evt.keyCode)
+//		}
+	//相对浏览器的坐标
+//	document.onclick=function(evt){
+//		var ev=evt||event;
+//		console.log(ev.clientX+"+"+ev.clientY);
+//	}
+	//相对于div的坐标
+//	document.getElementsByTagName("div")[0].onclick=function(){
+//		var ev=arguments[0]||event;
+//		console.log(ev.offsetX+"+"+ev.offsetY);
+//	}
+	//鼠标按下div跟着鼠标走
+//	var odiv=document.getElementsByTagName("div")[0];
+//	odiv.onmousedown=function(){
+//		var e=event||arguments[0];
+//		var ex=e.offsetX;
+//		var ey=e.offsetY;
+//		document.onmousemove=function(){
+//			var e=event||arguments[0];
+//			odiv.style.left=e.clientX-ex+"px";//消除事件冒泡对坐标的影响
+//			odiv.style.top=e.clientY-ey+"px";
+//		}
+//	}
+//	odiv.onmouseup=function(){
+//		document.onmousemove=null;
+//	}
+	//伴随鼠标移动而移动，延迟过程
+//	var odiv=document.getElementsByTagName("div");
+//		document.onmousemove=function(){
+//			var num=0;
+//			var ev=event||arguments[0];
+//			var timer=setInterval(function(){//定时器实现延迟过程
+//				if(num==odiv.length){
+//					clearInterval(timer);
+//					return;
+//				}else{
+//					odiv[num].style.left=ev.clientX+"px";
+//					odiv[num].style.top=ev.clientY+"px";
+//					num++;
+//				}			
+//			},100)
+//		}	
+	
+//	//获取当前窗口宽度
+//	console.log(document.documentElement.clientWidth);
+//	console.log(document.documentElement.clientHeight);
+//	//获取div宽高
+//	var odiv=document.getElementsByTagName("div")[0];
+//	console.log(odiv.offsetWidth);
+//	console.log(odiv.offsetHeight);
+//	console.log(odiv.offsetTop);//等于margintop的值
+//	console.log(odiv.offsetLeft);//等于marginleft的值
+
+	//<!--点击按钮小球运动-->
+//	var btn=document.getElementsByTagName("button")[0];
+//	var odiv=document.getElementsByTagName("div")[0];
+//	btn.onclick=function(){
+//		var speedX=10;//x轴运动速度
+//		var speedY=10;//y轴运动速度
+//		setInterval(function(){
+//			speedY+=5;//模拟自由落体，给y为3的加速度
+//			speedX+=10;
+//			var l=odiv.offsetLeft+speedX;
+//			var t=odiv.offsetTop+speedY;
+//			if(t>=document.documentElement.clientHeight-odiv.offsetHeight){//判断碰到底部的时候
+//				speedY*=-0.8;
+//				t=document.documentElement.clientHeight-odiv.offsetHeight;
+//			}
+//			if(l>=document.documentElement.clientWidth-odiv.offsetWidth){//判断碰到底部的时候
+//				speedX*=0;
+//				l=document.documentElement.clientWidtht-odiv.offsetWidth;
+//			}else{
+//				speedX*=0.2;
+//			}
+//			odiv.style.left=l+"px";
+//			odiv.style.top=t+"px";
+//		},10)
+//	}
+
+//淘宝放大镜效果:
+//	var smpic=document.getElementById("samllPpic");
+//	var bgpic=document.getElementById("bigPpic");
+//	var fsearch=document.getElementById("search");
+//	//鼠标划入出现，移开消失
+//	smpic.onmouseover=function(){
+//		bgpic.style.display="block";
+//		fsearch.style.display="block";
+//	}
+//	smpic.onmouseout=function(){
+//		bgpic.style.display="none";
+//		fsearch.style.display="none";
+//	}
+//	//当鼠标移动时放大镜跟着移动
+//	//在移动过程中鼠标在放大镜正中心(减去放大镜本身的一半，避免放大镜溢出smpic)
+//	smpic.onmousemove=function(){
+//		var ev=event||arguments[0];
+//		var x=ev.clientX-smpic.offsetLeft-fsearch.offsetWidth/2; 
+//		var y=ev.clientY-smpic.offsetTop-fsearch.offsetHeight/2;
+//		//判断左右边界
+//		if(x<0){
+//			fsearch.style.left=0+"px";
+//		}else if(x>=smpic.offsetWidth-fsearch.offsetWidth){
+//			fsearch.style.left=smpic.offsetWidth-fsearch.offsetWidth+"px";
+//		}else{
+//			fsearch.style.left=x+"px";
+//		}
+//		//判断上下边界
+//		if(y<0){
+//			fsearch.style.top=0+"px";
+//		}else if(y>=smpic.offsetHeight-fsearch.offsetHeight){
+//			fsearch.style.top=smpic.offsetHeight-fsearch.offsetHeight+"px";
+//		}else{
+//			fsearch.style.top=y+"px";
+//		}
+//		//算比例
+//		var w=400/170;
+//		bgpic.style.backgroundPosition=(-fsearch.offsetLeft)*w+"px "+(-fsearch.offsetTop)*w+"px";//positon的两个属性之间要有空格
+//		
+//	}
+
+//<!--返回顶部-->
+//	window.onscroll=function(){
+//		var topv=document.body.scrollTop;
+//		var btn=document.getElementsByTagName("button")[0];
+//		if(topv>500){
+//			btn.style.display="block";
+//		}else{
+//			btn.style.display="none";
+//		}
+//		btn.onclick=function(){
+//		 	var timer=setInterval(function(){
+//		 		if(document.body.scrollTop>0){
+//		 			document.body.scrollTop-=50;
+//		 		}else{
+//		 			document.body.scrollTop=0;
+//		 			clearInterval(timer);
+//		 		}
+//			},20)
+//			
+//		}
+//	}
+
+
+//	<!--360度旋转-->
+	for(var i=1;i<77;i++){
+		var img=document.createElement("img");
+		img.src="img/img/"+i+".jpg";
+		img.style.display="none";
+		document.body.appendChild(img);
+		var img=document.getElementsByTagName("img");
+		var start=0;//存放鼠标位置
+		var index=0;//获得下标值
+		var last=0;
+		document.onmousedown=function(){
+			var e=event||arguments[0];
+			start=e.clientX;//鼠标一开始按下的位置
+			document.onmousemove=function(){
+				var e=event||arguments[0];
+				var x=e.clientX;
+				var dis=x-start;//移动的距离
+				if(dis>=0){
+					index=dis%77;//每滑动77px就可以转一圈
+				}else{
+					index=(dis+1920)%77;//为了倒着转换图片的连贯性，加1920（3张图片的宽度）循环一圈回到原图片
+				}
+				for(var j=0;j<77;j++){
+					img[j].style.display="none";
+				}
+				img[index].style.display="block";
+			}
+		}
+		document.onmouseup=function(){
+			last=index;
+			document.onmousemove="";
+		}
+	}
+	
+
+	</script>
+</html>

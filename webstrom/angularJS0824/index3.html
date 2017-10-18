@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="routerapp">
+<head>
+    <meta charset="UTF-8">
+    <title>router</title>
+    <link rel="stylesheet/less" href="css/index3.less">
+    <script src="css/bower_components/less/dist/less.js"></script>
+    <script src="js/bower_components/angular/angular.js"></script>
+    <script src="js/bower_components/angular/angular-route.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+</head>
+<body ng-init="list=[{title:'首页',linkTo:'/home'},{title:'发现',linkTo:'/discover'},{title:'模块',linkTo:'/model'},{title:'设计',linkTo:'/design'}]">
+<ng-view></ng-view>
+
+
+<ul class="tabBar">
+    <li ng-repeat="item in list"><a ng-href="#{{item.linkTo}}" ng-bind="item.title"></a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+<script src="js/routerController.js"></script>
+<script src="js/index3.js"></script>
+</body>
+</html>

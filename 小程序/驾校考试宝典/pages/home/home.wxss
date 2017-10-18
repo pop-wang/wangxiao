@@ -1,0 +1,16 @@
+/* pages/home/home.wxss */
+.home_container{
+  display: flex;
+  justify-content: center;
+}
+.home_item{
+  width: 375rpx;
+  height: 375rpx;
+  color: white;
+  text-align: center;
+  line-height: 295rpx;
+  border: 40rpx solid white;
+  border-radius: 80rpx;
+  background: #4f94cd;
+  box-sizing: border-box;
+}

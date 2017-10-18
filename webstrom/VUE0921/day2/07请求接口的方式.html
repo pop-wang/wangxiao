@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
+    <script src="https://cdn.bootcss.com/vue-resource/1.3.4/vue-resource.min.js"></script>
+</head>
+<body>
+<div id="box">
+    github:ID:<input type="text" v-model="uid">
+    <button @click="getGitUser(uid)">获取指定的github账户信息并显示</button>
+    姓名：{{user.name}}
+    <br>头像：
+    <img :src="user.avatar_url" style="width: 100px;">
+    <input type="text" v-model="word" @keyup="jsonp()">
+    <ul>
+        <li v-for="item in myData">
+            {{item}}
+        </li>
+    </ul>
+
+</div>
+
+<script>
+    new Vue({
+        el:"#box",
+        data:{
+            word:"",
+            myData:[],
+            user:{},
+            uid:""
+        },
+        methods:{
+            jsonp:function () {//使用jsonp
+                this.$http.jsonp(`https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su`,{
+                    params:{
+                        wd:this.word
+
+                    },
+                    jsonp:"cb"
+                }).then(function (res) {
+                    this.myData=res.data.s;
+                })
+            },
+            getGitUser:function (uid) {//使用get
+                this.$http.get(`https://api.github.com/users/${uid}`).then(res=>{
+                    console.log(res.data);
+                    this.user=res.data;
+                })
+            }
+        },
+    })
+</script>
+</body>
+</html>

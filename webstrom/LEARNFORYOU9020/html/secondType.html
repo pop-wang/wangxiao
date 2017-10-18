@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>secondType</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>LearnForYou</h1>
+    </header>
+    <section>
+        <ul class="secondTypeContainer"></ul>
+    </section>
+    <footer></footer>
+<script src="../js/jquery-3.2.1.js"></script>
+<script src="../js/http.js"></script>
+<script src="../js/secondType.js"></script>
+<script>
+    function init() {
+        var name=location.search.slice(location.search.lastIndexOf('=')+1);
+        console.log(name);
+        new SecondType().createView("http://route.showapi.com/8-11",{showapi_appid:42208,showapi_sign:"b1818eeddbd549ca9a6601a750ceb9fb",name:name},$(".secondTypeContainer"),function (event) {
+            console.log(event);
+            window.open("html/secondTypeItem.html?classId="+event.data.class_id+"&courseNum="+event.data.course_num);
+        })
+    }
+    init();
+</script>
+</body>
+</html>

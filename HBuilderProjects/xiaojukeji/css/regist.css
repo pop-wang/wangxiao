@@ -1,0 +1,139 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+}
+body{
+	background: #EEEEEE;
+}
+.head{
+	width: 900px;
+	height: 84px;
+	margin: 20px auto;
+	line-height: 84px;
+}
+.head .head1{
+	width: 200px;
+	height: 54px;
+	background: url(../img/login-logo.png) no-repeat;
+	float: left;
+}
+.head .head2{
+	width: 126px;
+	height: 21px;
+	float: right;
+	font-size: 14px;
+}
+.head .head2 a{
+	color: #FF8903;
+}
+.middle{
+	width: 900px;
+	height: 457px;
+	margin: 20px auto;
+}
+.middle .middle1{
+	width: 898px;
+	height: 55px;
+	margin: 0 auto;
+	border: 1px solid #E6E6E6;
+	border-bottom: none;
+	line-height: 55px;
+	text-indent: 20px;
+	background: #FAFAFA;
+}
+.middle .middle1 h1{
+	font-size: 18px;
+}
+.middle .middle2{
+	width: 898px;
+	height: 400px;
+	margin: 0 auto;
+	border: 1px solid #E6E6E6;
+	text-indent: 20px;
+	background: white;
+}
+.middle .middle2 h2{
+	font-size: 16px;
+	margin: 20px 10px;
+}
+.middle .middle2 form{
+	width: 420;
+	height: 300px;
+	font-size: 14px;
+	color: #434343;
+	margin-left: 120px;
+}
+.middle .middle2 form input[type="text"]{
+	width: 270px;
+	height: 40px;
+	border: 1px solid #CCCCCC;
+	text-indent: 10px;
+}
+.middle .middle2 .phone{
+	width: 67px;
+	height: 42px;
+	border: 1px solid #CCCCCC;
+	border-left: none;
+}
+.middle .middle2 form input[type="checkbox"]{
+	width: 20px;
+	height: 20px;
+	margin-left: 65px;
+	vertical-align: middle;
+}
+.middle .middle2 form span{
+	width: 300px;
+	height: 20px;
+	line-height: 20px;
+}
+.middle .middle2 form span i{
+	color: #1E96FA;
+}
+.middle .middle2 form .regist{
+	width: 182px;
+	height: 46px;
+	margin-left: 65px;
+	border: none;
+	background: #FF8903;
+	color: white;
+	font-size: 20px;border-radius: 5px;
+}
+.foot{
+	width: 900px;
+	height: 50px;
+	margin: 0 auto;
+	line-height: 50px;
+	font-size: 12px;
+	color: #434343;
+}
+.foot span{
+	float: right;
+	color: #959595;
+}
+.foot span b{
+	font-size: 14px;
+}
+.ewm{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: 55px;
+	right: 30px;
+	background: white;
+}
+.ewm img{
+	margin: 10px 0px 0px 10px;
+}
+.ewm p{
+	width: 150px;
+	height: 27px;
+	background: #FF8903;
+	color: white;
+	font-size: 12px;
+	line-height: 27px;
+	text-align: center;
+	margin-top: 7px;
+}

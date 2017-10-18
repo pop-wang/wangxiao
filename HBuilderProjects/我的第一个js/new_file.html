@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			/*td{
+				border: 1px solid black;
+				width: 80px;
+				text-align: center;
+				line-height: 30px;
+			}*/
+			/*.box1{width: 600px;height: 600px;margin: 50px auto;background: red;overflow: hidden;}
+			.box2{width: 400px;height: 400px;margin: 100px auto;background: yellow;overflow: hidden;}
+			.box3{width: 200px;height: 200px;margin: 100px auto;background: blue;overflow: hidden;}*/
+			button{width: 50px;height: 30px;text-align: center;line-height: 30px;}
+			textarea{width: 300px;height: 200px;font-size: 40px;}
+		</style>
+	</head>
+	<body>
+		<!--<a href="javascript: history.go(-1)">返回上一页</a>
+		<a href="../我的第一个js/new_file.html">跳</a>
+		<a href="javascript: history.go(0)">刷新</a>
+		<a href="javascript: history.go(1)">前进一页</a>
+		<form>
+			<input type="text" name="name"/>
+			<input type="password" name="psd"/>
+			<input type="submit" name="sbt"  />
+		</form>
+		<div>百度</div>-->
+		<!--<div class="box1" onclick="fun(this)">
+			<div class="box2" onclick="fun(this)">
+				<div class="box3" onclick="fun(this)">
+					
+				</div>
+				
+			</div>
+			
+		</div>-->
+		
+		<!--<div class="box1"
+			<div class="box2" >
+				<div class="box3">
+					
+				</div>
+				
+			</div>
+			
+		</div>-->
+		<div onclick="cal()">
+			<button>1</button>
+			<button>2</button>
+			<button>3</button>
+			<button>4</button>
+			<button>c</button>
+			<button>+</button>
+			<button>-</button>
+			<button>=</button>
+		</div>
+		<textarea></textarea>
+	</body>
+	<script type="text/javascript">
+//	//事件委托
+//	function cal(){
+//		var ev=arguments[0] || event;//获取event对象
+//		var src=ev.srcElement || ev.target;//获取目标对象
+//		var txt=document.getElementsByTagName("textarea")[0];
+//		if(src.nodeName=="BUTTON"){//获取标签名
+//			switch(src.innerHTML){
+//				case  "c":
+//					txt.innerHTML="";
+//					break;
+//				case  "=":
+//					try{  //用来检测错误（错误处理）
+//						txt.innerHTML=eval(txt.innerHTML);//无错误返回
+//					}catch(e){
+//						txt.innerHTML=e;//有错误返回e
+//					}					
+//					break;
+//				default:
+//					txt.innerHTML+=src.innerHTML;
+//					break;
+//			}
+//		}				
+//	}
+
+
+
+
+//		console.log(location.herf);
+//		var odiv=document.getElementsByTagName("div")[0];
+//		odiv.onclick=function(){
+//			location.assign("http://www.baidu.com");
+//			location.reload();
+//			location.replace("http://www.ucai.cn");
+			
+//		}
+//		console.log(location.search.slice(1).split("&")[0].split("=")[1]);
+//		console.log(screen.width);
+//		console.log(screen.height);
+//		console.log(screen.availWidth);
+//		console.log(screen.availHeight);
+		
+//function fun(){
+//	var ev=arguments[0] || event;
+////	var src=ev.srcElement || ev.target;//目标元素对象
+//	alert(src.className);
+//	if(ev.stopPropagation){//取消冒泡影响
+//		ev.stopPropagation();//dom标准下
+//	}else{
+//		ev.cancelBubble;//ie8
+//	}
+//}
+//var odiv=document.getElementsByTagName("div");
+//for(var i=0;i<odiv.length;i++){
+//	odiv[i].addEventListener("click",fun)
+//}
+
+
+
+
+//		var oinput = window.prompt("请输入薪资");
+//		console.log(parseInt(oinput) + 2000);
+//		alert(parseInt(oinput) + 2000);
+//		var pin = window.prompt("请输入这个月薪资");
+//			pin = pin%200;
+//			console.log("这个月零花钱"+pin);
+//		var score = window.prompt("请输入分数");
+//		var level = 10 - parseInt(score/10);
+//		console.log(level+"等");
+//		var num = window.prompt("请输入数字");
+//		var isodd = (parseInt(num%2 ) == 0);
+//		var iseven =(parseInt(num%2 ) == 1);
+//		console.log("是偶数"+isodd)
+//		console.log("是奇数"+iseven)
+//		console.log(Number(true))//1
+//		console.log(Number("true"))//nan
+//		console.log(true+false*null)//1
+//		console.log(true+false*Infinity)//nan
+//		console.log(false*Infinity)//nan
+//		console.log(true*Infinity)//infinity
+//		console.log(!100==0);//true
+//		var years=window.prompt("请输入一个年份");
+//		console.log("是瑞年嘛？"+(years%400==0)||(years%4==0&&years%100!=0));
+////	1.逻辑短路
+//		var n=10;
+//		var r = (++n>10 || ++m<10);//如果将或换成与，则r报错,r=true/false
+//		console.log(r);//true 逻辑短路，只判断第一个条件
+//		console.log(n);//11
+//		console.log(m);//报错
+
+//		var price=window.prompt("请输入一个金额");
+//		(price>=500)&&(price=price*0.8);//(price<500)
+//		console.log(price)
+		/*用户输入一段文字再打印台打印出用户输入的文字
+		 * 如果没有输入，打印出用户很懒
+		 */
+//		var oinput=window.prompt("请输入一段文字");
+//		(oinput!="")||(oinput="用户很懒");
+//		console.log(oinput||"用户很懒");
+//		console.log(2<<2);//8
+//		var n = 5;
+//		n+=n+=n;
+//		console.log(n);//15
+//		n+=n;
+//		n+=n;
+//		console.log(n);//20
+//		var score=window.prompt("请输入用户成绩");
+//		score>=80?console.log("甲"):
+//		score>60&&score<80?console.log("乙"):
+//		console.log("丙");
+/*克莱托指数：体重除以身高的平方，18以下偏瘦；18-25正常，25-28偏胖，28-32肥胖,32以上非常胖*/
+
+//		var h=parseFloat(prompt("请输入用户身高"));
+//		var w=parseFloat(prompt("请输入用户体重"));
+//		var k=w/(h*h);
+//		k<18?console.log("偏瘦"):
+//		k<=25&&k>=18?console.log("正常"):
+//		k<=28&&k>25?console.log("偏胖"):
+//		k<=32&&k>28?console.log("肥胖"):
+//		console.log("非常胖");
+/*不允许申明新的变量*/
+//		var x=parseFloat(prompt("请输入数字1"));
+//		var y=parseFloat(prompt("请输入数字2"));
+//		var z=parseFloat(prompt("请输入数字3"));
+//		var z
+	//2个数比较
+//		x<y&&(z=y,y=x,x=z);允许申明新变量
+//		x<y&&(x+=y,y=x-y,x-=y);不允许申明新变量
+//		console.log(x+">"+y)
+	/*3个数比较*/
+//		x<y&&(x+=y,y=x-y,x-=y);
+//		y<z&&(y+=z,z=y-z,y-=z);
+//		x<y&&(x+=y,y=x-y,x-=y);
+//		console.log(x+">"+y+">"+z)
+// 	var sex=window.prompt("请输入性别");
+// 	var age=window.prompt("请输入年龄");
+// 	if(sex=="男"){
+// 		if(age>=22){
+// 			console.log("可以结婚");
+// 		}else{
+// 			console.log("不可以结婚");
+// 		}
+// 		
+// 	}else{
+// 		if(age>=20){
+// 			console.log("可以结婚");
+// 		}else{
+// 			console.log("不可以结婚");
+// 		}
+//	}
+
+//	var year=window.prompt("请输入年份");
+//	var month=window.prompt("请输入月份");	
+//	if(month==1||month==3||month==5||month==7||month==8||month==10||month==12){
+//		console.log(month+"月有31天");
+//	}else if(month==4||month==6||month==9||month==11){
+//		console.log(month+"月有30天");
+//	}else if(month==2&&year%400!=0){
+//		console.log(month+"月有28天");
+//	}else{
+//		console.log(month+"月有29天");
+//	}
+	
+//	var month=parseInt(window.prompt("请输入月份"));	//必须要吧月份转成数字，case里面的值一定要和获取的值相等
+//	switch(month){
+//		case 1：
+//		case 3：
+//		case 5：
+//		case 7：
+//		case 8：
+//		case 10：
+//		case 12：
+//			alert("这个月有31天");
+//			break;
+//	}
+
+
+//判断奇偶姓是否相同
+//		var a=parseInt(window.prompt("请输入第一个数字"));
+//		var b=parseInt(window.prompt("请输入第二个数字"));
+//		a%2==b%2?console.log("两个数奇偶性相同")://(a+b)%==0
+//		console.log("两个数奇偶性不同");
+
+
+
+//for循环打印出1-10
+//		for(var i=2;i<12;i+=3){
+//			i+=4;
+//			console.log(i);
+//		}//6,13,i=16
+//		for(var i=2;i<=26;i++){
+//			if(i%2==0){
+//				i+=3;		
+//			}else{
+//				i+=2;
+//			}
+//			console.log(i);//5 9 13 17 21 15 29
+//		}
+//		for(var i=15;i>2;i-=3){
+//			console.log(i);//15 12 9 6 3
+//		}
+//		var i=8;
+//		for(;i<12;i++){
+//			console.log(i);
+//		}
+//		for(var m=1,n=2;m+n<12;m++){
+//			n++;
+//			console.log(m);
+//		}m+n在n++前面，1 2 3 4 5
+//		var i=1;
+//		for(alert("你好");i<5;i++){
+//			console.log(i);
+//		}//你好，1 2 3 4 
+//		for(;true;){
+//			console.log(1);
+//		}//死循环
+//累加器1+2+...+200
+//	var sum=0;
+//	for(var m=1;m<201;sum+=m++);
+//	console.log(sum);
+//	for(var m=1;m<=1000;m++){
+//		if(m%5==0 || m%6==0){
+//			console.log(m);	
+//		}
+//		
+//	}
+//求约数
+//	var num =parseInt(window.prompt("请输入数字"));
+//	for(var i=1;i<=num;i++){
+//		if(num%i==0){
+//			console.log(i);	
+//		}
+//				
+//	}
+//	水仙花数:四位数各位四次方和等于它本身
+	
+//	for(var num=1000;num<10000;num++){
+//		var temp1 = num%10;
+//		var temp2 = parseInt(num/10%10);
+//		var temp3 = parseInt(num/100%10);
+//		var temp4 = parseInt(num/1000%10);
+//		var tempc=temp1*temp1*temp1*temp1+temp2*temp2*temp2*temp2+temp3*temp3*temp3*temp3+temp4*temp4*temp4*temp4;
+//		if(num==tempc){
+//			console.log(num);
+//		}
+//	}
+//9*9乘法表
+//	document.write("<table>");
+//	for (var i=1;i<=9;i++) {//决定有几行
+//		document.write("<tr>");
+//		for(var j=1;j<=i;j++){//决定有几列
+//			document.write("<td>"+i+"*"+j+"="+(i*j)+"</td>");
+//		}
+//		document.write("</tr>");
+//	}
+//	document.write("</table>");
+//完美数,一个数等于除它所有因数（约数）的和
+//	for(var i=1;i<=1000;i++){//遍历1-1000
+//		var sum=0;    //申明一个变量存储约数的和
+//		for(var j=0;j<i;j++){//求约数			
+//			if(i%j==0)
+//			sum+=j;//约数求和
+//		}	
+//		if(sum==i){console.log(i);}	
+//	}
+//质数：约数只有1和本身1-1000
+//	for(var i=2;i<=1000;i++){
+//		var sum=0;     //申明一个变量存储约数的个数
+//		for(var j=1;j<=i;j++){
+//			if(i%j==0){
+//				sum++;//约数个数
+//			}			
+//		}
+//		if(sum<=2){console.log(i);}
+//	}
+//一个桃子3块，一个苹果2块，一个鸭梨1块钱，只有200元，要买100个水果，有多少中可能列出来
+//	for(var ph=0;ph<=100;ph++){//遍历桃子
+//		for(var ap=0;ap<=100;ap++){//遍历苹果
+//			for(var pr=0;pr<=100;pr++){//遍历鸭梨
+//				if (ph*3+ap*2+pr*1==200&&ph+ap+pr==100){
+//					console.log(ph+"个桃子"+ap+"个苹果"+pr+"个鸭梨");
+//				}
+//				
+//			}
+//		}
+//	}
+//560-800之间第一个被3整除的数字
+//	for(var i=560;i<=800;i++){
+//		if(i%3==0){
+//			console.log(i);
+//			break;//跳出当前循环（waiceng）只打印出第一个可以整除3的数
+//		}
+//	}
+//	for(var i=1;i<=10;i++){
+//		if(i==7){
+//			continue;//跳过此次循环继续下次循环，不打印7
+//		}
+//		console.log(i);
+//	}
+	
+//	var i=0;
+//	while(i<10){
+//		console.log(i);
+//		i++;
+//	}
+//	var i=prompt("你爱不爱我");
+//	while(i!="爱"){
+//		i=prompt("你爱不爱我");
+//	}
+//	do{
+//		var i=prompt("你爱不爱我")；
+//	}while(i!="爱")//不管条件成不成立都会执行一次。
+
+
+//<!--函数-->
+//	function buy(people，what){
+//		document.write("步骤一：下课出公司");
+//		document.write("步骤二："+people+"进食堂");
+//		document.write("步骤三：吃"+what);
+//		document.write("步骤四：回公司<br />");
+//		return"香喷喷的"+what;//控制台中打印出此句
+//		document.write("今天好开心<br />");//不执行这一句，因为在return后面
+//	}
+//	for(var i=0;i<3;i++){
+//		buy("王大炮"，"排骨")//如果不需要传递参数，直接赋值"";如果省略赋值，不识别逗号会报错；
+//	}
+//	var eat = buy();//buy函数的return返回值
+//	buy();
+//	buy();
+//	buy();
+//	document.write("今天好开心<br />");
+//	buy();
+//<!--用户输入一个数字,返回大写的数字-->
+//	var what = prompt("输入一个十以内的数字：");
+//	console.log(num(what));
+//	function num(a){ //a是形参，将形参a里面的数值传递给实际参数what
+//		a==0?(a="零"):
+//		a==1?(a="一"):
+//		a==2?(a="二"):
+//		a==3?(a="三"):
+//		a==4?(a="四"):
+//		a==5?(a="五"):
+//		a==6?(a="六"):
+//		a==7?(a="七"):
+//		a==8?(a="八"):
+//		a==9?(a="九"):a="无效输入";
+//		return a;		
+//	}
+
+//	var home="饮水机";
+//	function room(){
+//		var water="矿泉水";
+//		
+//	}
+//	room();
+//	console.log(home);
+//	console.log(water);//报错，声明了找不到
+
+//鄙视1
+//	var a=100;
+//	function fun(){
+//		a++;
+//		console.log(a);
+//	}
+//	fun(a);//实参101
+//	console.log(a);//函数里面无参数就近原则101；有参数全局100（函数里面无参数直接修改的是全局变量的值）
+////鄙视2
+//	function foo(){
+//		m=100;
+//		console.log(m);//100
+//	}
+//	foo();
+//	console.log(m);//100
+//鄙视3
+//	function foo(m){
+//		m=100;
+//		console.log(m);//100
+//	}
+//	foo();
+//	console.log(m);//报错
+//鄙视4：
+//	var a=100;
+//	function fun () {
+//		console.log(a);//undefined，声明提前到function函数中，再赋值
+//		var a=90;
+//		console.log(a);//90
+//	}
+//	fun();
+//	console.log(a);//100,在window中找
+//
+
+
+
+//	var a=10;
+//	function fun1(){
+//		a--;
+//		console.log(a);//9
+//	}
+//	function fun2(){
+//		a--;
+//		console.log(a);//8
+//	}
+//	function fun3(){
+//		var a=10;
+//		console.log(a);//10
+//	}
+//	console.log(a);//10
+//	fun1();
+//	console.log(a);//9
+//	fun2();
+//	console.log(a);//8
+//	fun3();
+//	console.log(a);//8
+
+
+
+//	function fun(){
+//		console.log(1);
+//	}
+//	fun();//2 新值覆盖旧值
+//	function fun(){
+//		console.log(2);
+//	}
+
+//	function foo(){
+//		return 1;
+//	}
+//	console.log(foo());//2
+//	function foo(){
+//		return 2;
+//	}
+//	console.log(foo());//2
+//	var foo=100;
+//	console.log(foo());//报错
+//	var foo;
+//	function foo(){
+//		return 2;
+//	}
+//	console.log(foo());
+//	console.log(foo());
+//	foo=100;//此时的foo已经不是一个函数了，只是一个数字
+//	console.log(foo());
+
+
+//兔子生兔子问题
+//	function rubit(n){
+//		if (n==1 ||n==2) {
+//			return 1;			
+//		}else{
+//			return(rubit(n-1)+rubit(n-2));
+//		}		
+//	}
+//	console.log(rubit(9));
+
+
+//	function fun1(){
+//		if (arguments.length==1){
+//			return (arguments[0]*arguments[0]);		
+//		}else{
+//			return(arguments[0]+arguments[1]);
+//		}
+//	}
+//	console.log(fun1(10))//100
+//	console.log(fun1(10,12))//22
+//不论传入多少参数都可以求和
+// function addsum(){
+// 	for(var i=0,sum=0;i<arguments.length;sum+=arguments[i++]);
+// 	 	return sum;
+//}
+// console.log(addsum(1,2,3));//6
+
+// var addsum = function(){
+// 	for(var i=0,sum=0;i<arguments.length;sum+=arguments[i++]);
+// 	 	return sum;
+//}
+// console.log(addsum(1,2,3));//6
+//函数声明提前并覆盖，均输出2 
+//foo();//2
+//function foo(){
+//	console.log(1);
+//}
+//foo();//2
+//function foo(){
+//	console.log(2);
+//}
+//foo();//2
+//声明提前，赋值留在原地
+//console.log(foo()) ;//报错：foo不是一个function
+//var foo = function(){
+//	return 1;
+//}
+//console.log(foo());//1
+//var foo = function(){
+//	return 2;
+//}
+//console.log(foo());//2
+
+//声明提前后的格式
+//var foo;
+//foo = function(){
+//	return 1;
+//}
+//console.log(foo());
+//foo = function(){
+//	return 2;
+//}
+//console.log(foo());
+//声明提前，函数和函数定义提前
+//console.log(foo()) ;//2
+//var foo = function(){
+//	return 1;
+//}
+//console.log(foo());//1
+//function foo(){
+//	return 2;
+//}
+//console.log(foo());//1
+//以下哪种创建函数方式正确
+//a.var fun = function(a,b,c){alert(a+b+c)}
+//b.function fun(a,b,c){alert(a+b+c)}
+//c.var fun = new Function(a,b,c,alert(a+b+c))//不对
+//d.var fun = new Function("a","b","c","alert(a+b+c)")
+
+//function fun(a){
+//	a++;
+//	console.log(a);
+//}
+//var a=100;
+//fun(a);//101
+//匿名函数自调用，减少内存，
+
+//function (){
+//	alert("hello");
+//}()
+//设计一个函数，接收三个参数，比较前2个参数大的和第3个数求和
+//function sum(a,b,c){
+//	return(function(a,b){
+//		return a>b?a:b;
+//	})(a,b)+c;  //整个函数运行结果加c(a+c||b+c)
+//}
+//alert(sum(9,5,3));//12
+
+//var a = 100;
+//(function(a){
+//	a++;
+//	console.log(a);//101
+//})(a);
+//console.log(a);//100(function后面有a)，101（function后面无a）
+
+//var num=1;
+//function getnum(){
+//	return num++;
+//}
+//console.log(getnum());//1
+//console.log(getnum());//1
+//var num=300;//全局污染
+//console.log(getnum());//300
+//console.log(getnum());//301
+
+//闭包
+//function getconter(){
+//	var n=1;
+//	var conter= function(){
+//		return n++;
+//	}
+////	return conter;n
+//}
+//var getnum= getconter();
+//
+//console.log(getnum());//1
+//console.log(getnum());//2
+//var num=300;
+//console.log(getnum());//3
+//console.log(getnum());//4
+
+//var a=100;
+//function fun(){  //定义一个外部函数用来封装一个受保护的200
+//	var a=200;
+//	function foo(){ //执行对200的操作
+//		return a;
+//	}
+//	return foo;  //fun函数返回foo函数对象（foo被返回到外部，在外部调用）
+//}
+//console.log(fun()());//200
+
+//数组
+//var week=["日","一","二","三","四","五","六"];
+//week[0]="星期"+week[0];
+//week[1]="星期"+week[1];
+//week[2]="星期"+week[2];
+//week[3]="星期"+week[3];
+//week[4]="星期"+week[4];
+//week[5]="星期"+week[5];
+//week[6]="星期"+week[6];
+//console.log(week);
+//
+//var n=100;
+//var m=n;
+//n++;
+//console.log(n);//101
+//console.log(m);//100
+
+//var myfood=["包","包","包","包","包","包"];
+//var gffood=myfood;
+//gffood[0]="0";
+//console.log(myfood);//5
+//myfood[1]="0";
+//myfood=null;
+//console.log(gffood);//4
+//console.log(myfood);//4
+//myfood[100]="100";//数组长度为101，下标越界不出错
+//console.log(myfood);
+//myfood.length-=1;
+//console.log(myfood);
+
+//不断接受员工姓名，并将其存入数组中，直到输入exit结束
+//var arr=[];
+//var name="";
+//var i=0;
+//while(name!="exit"){
+//	name=window.prompt("员工姓名");
+//	if(name!="exit"){
+//		arr[i]=name;
+//		i++;
+//	}	
+//}
+//console.log(arr);
+
+//优化后的代码
+//var arr=[];
+//var name="";
+//while((name=window.prompt("员工姓名"))!="exit"){
+//		arr[arr.length]=name;	
+//}
+//console.log(arr);
+
+//写一个方法，用来寻找数组中最大值
+//var arr=[1,2,31,4,5,6,9];
+//function getmax(){
+//	for(var i=0;i<arr.length;i++){
+//		arr[0]>arr[i]?arr[0]=arr[0]:arr[0]=arr[i];
+//	}
+//
+//}
+//getmax(arr);
+//console.log(arr[0]);
+//
+//function getmax(){
+//	var max=arr[0];
+//	for(var i=1;i<arr.length;i++){
+//		arr[i]>max && (max=arr[i]);
+//	}
+//
+//}
+
+//写一个方法：数组中有没有某个元素，如果有返回这个元素的下标，没有返回-1
+//var arr=[1,3,5,7,9,11,13,15];
+//function indexof(arr,ename){
+//	for(var i=1;i<arr.length;i++){
+//		if(arr[i]==ename){
+//			return i;
+//		}		
+//	}
+//	return -1;
+//}
+//console.log(indexof(arr,9)) ;
+
+//冒泡排序，从大到小
+//var arr=[1,3,5,7,9,11,13,15];
+//function ordered(){
+//	var min;
+//	for(var i=0;i<arr.length;i++){   //获得数组中的每个元素的下标
+//		for(var j=0;j<arr.length-1-i;j++){//每个元素和后面一个元素做大小比较，交换位置
+//			if(arr[j]<arr[j+1]){
+//				min=arr[j];
+//				arr[j]=arr[j+1];
+//				arr[j+1]=min;
+//			}
+//		}
+//	}
+//	return arr;
+//}
+//console.log(ordered(arr));
+
+//自定义数组
+//var arr=[];
+//arr["name"]="王大炮";
+//arr["height"]=160;
+//arr["sex"]="女";
+//arr["old"]=22;
+//console.log(arr);
+//console.log(arr["name"]);
+//for(var i in arr){
+//	console.log(arr[i]);
+//}
+
+//二维数组
+//var arr=[
+//	[1,1,1,1],
+//	[1,1,1,1],
+//	[1,1,1,1],
+//	[1,1,1,1]
+//]
+//console.log(arr[1][2]);
+
+//数组API
+//var arr=["王潇","王大炮"];
+//arr.push("王小胖");//从后面加
+//console.log(arr);
+//arr.pop();//从后面删
+//console.log(arr);
+//arr.unshift("王大脸");//从前面加
+//console.log(arr);
+//arr.shift();//删除前面元素
+//console.log(arr);
+//arr=["h","e","l","l","o"];
+//console.log(arr.toString());
+//console.log(arr.join(""));
+//arr=["hello","world","what's","your","name"];
+//console.log(arr.join(" "));
+//console.log(arr.indexOf("your"));
+//console.log(arr.splice(2))//切割从修改的位置开始的元素
+//console.log(arr)//["hello","world"]
+//console.log(arr.splice(2,2))//从第2个开始取第一个
+//console.log(arr)//["hello","world","name"]
+//console.log(arr.splice(2,1,"how"));//从第2个开始第0个加how
+//console.log(arr);//["hello","world","how","your","name"]
+//console.log(arr.reverse().join(" "));
+//var arr1=["good","good","study"];
+//var arr2=["day","day","up"];
+//arr1=arr1.concat(arr2);
+//console.log(arr1);//["good","good","study","day","day","up"]
+//console.log(arr.slice(2,4))//["what's","your"]含头不含尾
+//console.log(arr);//原数组不改变
+//console.log(typeof(arr));//object
+//console.log(arr instanceof Array)//true
+
+//输入市找到省
+//var provs=["北京市","陕西省","山西省","河南省"];
+//var city=[
+//	["海定区","石景山区","丰台区","昌平区"],
+//	["西安市","咸阳","宝鸡","延安"],
+//	["运城市","太原市","晋中","长治"],
+//	["洛阳","郑州","三门峡"]
+//];
+//function getcities(prov){
+//	//用户输入的这个省在我provs里面的下标
+//	var i=provs.indexOf(prov);
+//	if(i!=-1){
+//		document.write(provs[i]+"的："+city[i]);
+//	}else{
+//		alert("没有这个省份");
+//	}
+//}
+//getcities(window.prompt("请输入省份"));
+//挨个打印出二维数组的每个元素
+//function printpc(){
+//	for(var r=0;r<city.length;r++){
+//		//console.log(provs[i]);	
+//	 	for (var c=0;c<city[r].length;c++) {
+//	 		console.log(city[r][c]);			
+//		}
+//}
+//}
+//printpc();
+
+//去掉数组连重复的元素（不创建新数组）
+//var arr=[1,3,2,4,5,6,2,3,5,4,2,3,5,7,8,567];
+//	for(var i=0;i<arr.length;i++){ //判断比较元素个数
+//		for (var j=i+1;j<arr.length;j++) {//判断每个元素比较次数
+//			if(arr[i]==arr[j]){
+//			arr.splice(j,1);//如果j和i元素相等，删除j
+//			j--;
+//			}
+//		}		
+//	}
+//	console.log(arr);
+//var newarr=[];
+//	for(var i=0;i<arr.length;i++){
+//		if(arr.indexOf(arr[i])==i){  //arr[i]这个元素第一次在数组中出现的位置，是就放在新数组里面
+//		if(newarr.indexOf(arr[i])==-1)//判断新数组里面是否出现这个数，没有出现就添加进去
+//			newarr.push(arr[i]);
+//		}
+//	}
+//	console.log(newarr);
+//var str = "好好学习";
+//console.log(str.length);//4
+//console.log(str[2]);//学
+//str = "610321199407021827";
+//console.log(str.slice(6,-4))
+//var a=str[str.length-2]%2==0?"女":"男";
+//alert(a);
+//弹出框输入身份证号，返回框谈性别
+//var str=window.prompt("请输入身份证号码：");
+//var a=str[str.length-2]%2==0?"女":"男";
+//alert(a);
+//str = "js是\"互联网\"第一大语言";
+//console.log(str);
+//str="明明喜欢我，\n\t却不告诉我";
+//console.log(str);
+
+//在程序中保存一个固定的验证码，请用户输入，如果用户输入不正确，提醒用户输入错误，直到输入正确，在页面显示输入正确
+//var code = "ucai001".toUpperCase();
+//var oinput="";
+////	while ((oinput=prompt("请输入验证码"+code)).toUpperCase() != code.toUpperCase()){
+////		alert("输入错误");
+////	}
+//	for(;code!=oinput;){
+//		alert("输入错误");
+//		oinput=prompt("请输入验证码"+code)).toUpperCase();
+//	}
+//	document.write("<h1>输入正确</h1>")
+
+//请用户输入一句话，遍历这句话的每个字符，将每个字符Unicode号存入一个数组中，遍历结束后将数组元素转换成一个字符串返回
+//var str=window.prompt("请输入一句话:");
+//var arr=[];
+//for (var i=0;i<str.length;i++) {
+//	arr.push((str.charCodeAt(i)+100000+"").slice(1));//变成6位数，截取前5位
+////	if(str.charCodeAt(i)<100){
+////		str.charCodeAt(i)="000"+str.charCodeAt(i);		
+////	}else if(str.charCodeAt(i)<1000){
+////		str.charCodeAt(i)="00"+str.charCodeAt(i);
+////	}else if(str.charCodeAt(i)<10000){
+////		str.charCodeAt(i)="0"+str.charCodeAt(i);
+////	}//将Unicode值限制在5位，
+//}
+//document.write(arr.join(""));
+
+//var str="你好漂好亮";
+//console.log(str.indexOf("好",2))//3
+//在程序中保存一个关键字，用户输入一句话查找所有关键字的位置，弹出
+
+//var keyword="我草";
+//function kword (str){
+//	debugger
+//	var index=-1;
+//	while((index=str.indexOf(keyword,++index))!=-1){
+////		console.log(index);
+////		console.log(index+1);
+//		alert("在"+index+"出现敏感值")
+//	}
+//}
+//kword("女神要来我家我草草的收拾了一下房间，她又不来了，我草")
+
+//获取子字符串
+//var str="js is so easy";
+//var str1=str.slice(6,13);//里面的参数可以为负
+//var str2=str.substring(6,13);//里面的参数不可以为负
+//var str3=str.sunstr(6,12)
+//console.log(str1);
+//console.log(str2);
+//console.log(String.fromCharCode(52));//求ASCII值对应的字符
+////解码方法:创建一个空数组,对每5位遍历,得到每个字符，传入数组,遍历结束以后返回数组拼接结果
+
+//var arr=[];
+//function decode(code){
+//	for (var i=0;i<code.length;i=i+5) {
+//		var str=code.substr(i,5);
+//		var dc=String.fromCharCode(str)
+//		arr.push(dc);
+//		//arr.push(String.fromCharCode(code.substr(i,5)));//优化代码
+//	}
+//	console.log(arr.join(" "));
+//}
+//decode("20840328443964025163");//全职高手
+//用户输入邮箱，得到用户名域名
+//var email=window.prompt("请输入邮箱");
+//var kword=email.indexOf("@",0);
+//var username=email.substr(0,kword);
+//var yuname=email.substr(kword+1,email.length);
+//console.log(username);
+//console.log(yuname);
+
+//分隔字符串
+//var str="12 3 45753 22 4";
+//var arr=str.split(" ");
+//console.log(arr);//返回一个数组
+//function mail(email){	
+//	var arr=email.split("@")
+//	console.log(arr[0]);
+//	console.log(arr[1]);
+//}
+
+//让首字母都大写
+//var str="no zuo no die";
+//function us(){
+//	var arr=str.split(" ");	
+//	for (var i=0;i<arr.length;i++) {		
+//		up=arr[i].substr(0,1);
+//		down=arr[i].substr(1,arr[i].length);
+//		newup=up.toUpperCase();
+//		console.log(newup+down);
+//	}
+//	
+//}
+//us(str);
+//function bigfirst(str){
+//	var arr=str.split("");
+//	for(var i=0;i<arr.length;i++){
+//		arr[i]=arr[i][0].toUpperCase()+arr[i].slice(1);
+//	}
+//	console.log(arr.join(""));
+//}
+//bigfirst(str);
+
+//按照姓名职业和生命分隔输出
+//var str="德玛西亚之力@战士@3000#寒冰射手@射手@2500#诡术妖姬@法师@2700";
+//function prints(str){
+//	var arrrols=str.split("#");
+//	for(var i=0;i<arrrols.length;i++){
+//		var arrcols=arrrols[i].split("@");
+//		arrrols[i]="姓名:"+arrcols[0]+" | 职业:"+arrcols[1]+" | 生命:"+arrcols[2];
+//	}
+//	document.write(arrrols.join("<br />"))//通过join用字符串打印出来
+//}
+//prints(str)
+
+//str.split(" ").reverse().join("");//把字符串转换为数组，将数组倒着输出再连接成字符串打印出来
+
+//字符串匹配
+//var keyword=/no/i;//可以识别大小写
+//console.log(str.search(keyword));//indexof不区分大小写
+//var keyword=/no/ig;//ig匹配模式，i表示大小写一视同仁，g表示所有关键字，没有办法获取下标
+//console.log(str.match(keyword));
+//var str="我有个同学叫习大大"	
+//kword="习大大"	
+//console.log(str.replace(keyword,"*"));	
+
+//math对象
+//console.log(Math.sqrt(81));
+//function round (num,d){
+//	num*=Math.pow(10,d);
+//	num=Math.round(num);
+//	return num/Math.pow(10,d);
+//}
+//console.log(round(5555.5555,10));
+//Console.log(Math.min(1,2,3,4,5));
+//var arr=["1","2","3","4"];
+//console.log(Math.max,apply(null,arr));
+
+//双色球6个不重复数字1-33，一个蓝球1-16
+//function doubleball(){
+	//循环数组保存双色球
+	//循环生存6个红球，判断如果和生成的其他球不一样，在放入数组中
+	//循环完毕再生成一个蓝球
+	//返回双色球
+//	var arr=[];
+//	for (var i=0;i<6;i++) {
+//		r=Math.ceil(Math.random()*32);
+//		if(arr.indexOf(arr[i]==-1)){
+//			arr.push(r);			
+//		}
+//	}
+//	var b=Math.ceil(Math.random()*15);
+//	return arr.join(" ")+"*"+b
+//}
+//alert(doubleball());
+
+//随机生成验证码
+//var codes=[];
+//var arr=[];
+//for(var i=48;i<57;codes.push(String.fromCharCode(i++)));//数字0-9的ASCII
+//for(var i=65;i<90;codes.push(String.fromCharCode(i++)));//大写字母A-Z的ASCII
+//for(var i=97;i<122;codes.push(String.fromCharCode(i++)));//小写字母a-z的ASCII
+//for (var i=0;i<4;i++) {
+//	arr.push(codes[Math.ceil(Math.random()*61)]);
+//}
+//alert(arr.join(""));
+
+//var now = new Date();//获取当前计算机的时间
+////var bir=new Date("1997/08/27");
+////console.log(parseInt((now-bir)/1000/60/60/24));//默认为毫秒
+//console.log(now.getFullYear());//2017
+//console.log(now.getMonth()+1);//6
+//console.log(now.getDate());//22
+//console.log(now.getHours());//
+//console.log(now.getMinutes());
+//console.log(now.getSeconds());
+//console.log(now.getMilliseconds());
+//var arr=[];
+//for(var i=0;i<10;i++){
+//	arr.push(parseInt(window.prompt("请输入一个数字")));
+////	console.log(arr);
+//}
+//console.log(arr);
+
+</script>
+
+	
+</html>

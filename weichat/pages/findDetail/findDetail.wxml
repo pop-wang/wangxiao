@@ -1,0 +1,9 @@
+<!--pages/findDetail/findDetail.wxml-->
+<view>
+  <view>{{name}}</view>
+  <navigator url='/pages/homeDetail/homeDetail'>跳转带homeDetial页面</navigator>
+  <navigator url='/pages/user/user' open-type='switchTab'>跳转到tabbar中的user页面</navigator>
+  <navigator url='/pages/login/login' open-type='redirect'>新开一个页面(登录)</navigator>
+  <navigator url='/pages/login/login' open-type='reLaunch'>重新加载页面</navigator>
+  
+</view>

@@ -1,0 +1,59 @@
+<ion-view title="WANGDAPAO">
+  <ion-nav-buttons>
+    <button class="button button-balanced button-clear">left</button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right">
+    <button class="button button-balanced button-clear">right</button>
+  </ion-nav-buttons>
+  <ion-content>
+    <ion-list>
+      <!--<ion-item>1</ion-item>-->
+      <!--<ion-item>2</ion-item>-->
+      <!--<ion-item>3</ion-item>-->
+      <!--<ion-item>4</ion-item>-->
+      <!--<ion-item>5</ion-item>-->
+      <!--<ion-item>6</ion-item>-->
+
+      <!--<a class="item" href="#" ng-repeat="item in [1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9] track by $index" ng-bind="item"></a>-->
+
+      <!--<a class="item item-icon-left" href="#" ng-repeat="item in [{icon:'ion-contrast',content:'1'},{icon:'ion-happy-outline',content:'2'},{icon:'ion-happy',content:'3'},{icon:'ion-ios-glasses',content:'4'},{icon:'ion-ios-toggle',content:'5'},{icon:'ion-ios-world',content:''},{icon:'ion-ios-wineglass',content:'6'},]">-->
+        <!--<span ng-class="['icon',item.icon]"></span>-->
+        <!--<span ng-bind="item.content"></span>-->
+      <!--</a>-->
+
+      <!--<a class="item item-thumbnail-left" href="#">-->
+        <!--<img src="http://p1.so.qhimgs1.com/t01aefe9b89ec8206d1.jpg" alt="">-->
+        <!--<h2>名字</h2>-->
+        <!--<p>介绍</p>-->
+      <!--</a>-->
+
+      <!--<div class="list card">-->
+
+        <!--<div class="item item-avatar">-->
+          <!--<img src="http://www.tu88.com/uploads/allimg/c160722/14E1R63R3040-1XL0.jpg">-->
+          <!--<h2>Miss Wangdapao</h2>-->
+          <!--<p>August 28, 2017</p>-->
+        <!--</div>-->
+
+        <!--<div class="item item-body">-->
+          <!--<img class="full-image" src="http://www.tu88.com/uploads/allimg/c160722/14E1R63R3040-1XL0.jpg">-->
+          <!--<p>-->
+            <!--Love is the foolishness of men, and the wisdom of God.-->
+
+            <!--In life, you don’t regret the things you do, you regret the things you don’t do.-->
+
+            <!--In life, you are either improving, growing of decaying.-->
+          <!--</p>-->
+          <!--<p>-->
+            <!--<a href="#" class="subdued">10 Like</a>-->
+            <!--<a href="#" class="subdued">50 Comments</a>-->
+          <!--</p>-->
+        <!--</div>-->
+
+      <!--</div>-->
+      <a class="item" ng-repeat="info in list" ng-bind="info.title" ng-href="#/tab/home/{{info.id}}" ng-click="gotoNext(info)"></a>
+
+    </ion-list>
+  </ion-content>
+
+</ion-view>

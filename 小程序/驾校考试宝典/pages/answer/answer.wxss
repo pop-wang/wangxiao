@@ -1,0 +1,22 @@
+/* pages/answer/answer.wxss */
+.image{
+  width: 100%;
+}
+.item{
+  padding: 20rpx 15rpx;
+  box-sizing: border-box;
+}
+.question{
+  font-size: 40rpx;
+  color: #020636;
+}
+.answer{
+  border: 1px dashed wheat;
+  box-sizing: border-box;
+}
+.result{
+  color: red;
+}
+.expalains{
+  color: #bebebe;
+}

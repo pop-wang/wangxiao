@@ -1,0 +1,4 @@
+<!--pages/login/login.wxml-->
+<view>
+  <input placeholder='我是王大炮'/>
+</view>

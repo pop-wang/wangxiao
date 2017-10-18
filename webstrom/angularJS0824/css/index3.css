@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+p {
+  transition: all linear 1s;
+  opacity: 1;
+  background-color: #1cfff3;
+}
+.ng-hide {
+  opacity: 1;
+  background-color: #317fff;
+}
+.homeContentList {
+  display: flex;
+  flex-wrap: wrap;
+}
+.homeContentList li {
+  width: 10rem;
+  height: 10rem;
+  text-align: center;
+  line-height: 10rem;
+}
+ul {
+  list-style: none;
+}
+.tabBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 44px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffad1a;
+}
+.tabBar li {
+  list-style: none;
+}
+.tabBar li a {
+  text-decoration: none;
+  text-align: center;
+  height: 44px;
+  line-height: 44px;
+  color: white;
+}

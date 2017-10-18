@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		
+	</body>
+	<!--<script src="SubClass.js"></script>
+	<script src="SupClass.js"></script>-->
+	<script>
+	//---------自执行函数及作用域-------------------
+//	(function () {
+//		function move(){
+//			
+//		}
+//      //父类
+//      function SupClass() {
+//      }
+//      window.SupClass=SupClass;
+//  })();
+//  (function () {
+//  	function move(){
+//			
+//		}
+//      //子类
+//      function SubClass() {            
+//      } 
+//      SubClass.prototype = new SupClass();
+//      new SubClass();
+//  })();
+
+//------------------回调函数（声明一个带参数的函数，调用的时候传入参数）--------------------
+//为什么使用回调函数不使用return
+//function foo(parm){//参数为字符串的函数
+//	alert(parm);
+//}
+//foo("你好");   
+//function foo(parm){//参数为数字的函数
+//	alert(parm+20)
+//}
+//foo(30);
+//function foo(parm){//参数为一个函数，parm就是传入的a这个函数，parm（）；表示让a里面的代码去执行
+//	console.log(parm);
+//	alert(parm);
+//}
+//var a=function(){
+//	
+//};
+//foo(a);
+//回调->回头调用 等一下在调用
+//function foo(parm){
+//	parm();
+//}
+//foo(function(){//想让 参数中的函数 执行->就需要调用这个函数->在foo（parm）这个里面使用形参parm去调用	
+//});
+//function foo(parm){
+//	parm("canshu");
+//}
+//foo(function(p){
+//	alert(p)
+//});
+//var foo2=function(p){
+//	alert(p)
+//}
+//foo2("canshu")
+
+
+
+	/*课堂练习
+    * 创建一个 自己的 数组类(List) -> 拥有所有Array里面的方法 属性
+    * List 添加 获取第一个元素的方法
+    * 添加 each的方法 遍历数组 ->得到 遍历之后的结果
+    *
+    * */
+//(function(){
+//	function List(){	
+//	}
+//	List.prototype=new Array();
+//	List.addFirst=function(){
+//		return this[0];
+//	}
+//	Array.prototype.addEach=function(parm){
+//		for(var i=0;i<this.length;i++){
+//			parm(this[i]);
+//		}		
+//	};
+//	[1,2,3].addEach(function(item){alert(item)});
+//})();
+
+//不知道什么时候 拿到第一个第二个、、值，也不能让函数结束，所以不能使用return
+	
+//----------------bind(this)---------------
+/*bind:为了更改函数this的指向
+ *this：代表的谁：函数里面的this->widow；有对象调用->调用的对象；构造函数里面->即将通过构造函数 创建出来的对象
+ */
+//function Person(){
+//	this.show();
+//}
+//Person.prototype.show=function(){
+//	this.ui();
+//	console.log(this);//person实例化的对象
+//	setTimeout(function(){
+//		console.log(this);
+//		//没有对象调用，this表示的就是Window
+//	}.bind(this),2000)
+//}
+//Person.prototype.ui=function(){
+//}
+//var p=new Person();
+//p.show();//p 也是创建出来的person对象
+
+//---------------命名空间----------------------
+//使用js文件 比较多->同一类js->统一的名字，不管调用还是防止命名冲突
+//window.nameSpace=window.nameSpace||{};
+//(function(){
+//	function Person(){
+//		
+//	}
+//	nameSpace.ppp=Preson;//公开到namespace上，要不然在匿名函数里面找不到
+//	
+//})();
+//new Person();
+	</script>
+
+	</body>
+	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+</html>
+

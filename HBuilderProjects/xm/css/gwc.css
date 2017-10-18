@@ -1,0 +1,403 @@
+*{margin: 0;
+padding: 0;
+}
+.top{
+	width: 100%;
+	height: 80px;
+	border-bottom: 2px solid #FF6700;
+	background: white;
+}
+.top .topinner{
+	width: 1226px;
+	height: 56px;
+	margin: 25px auto;
+}
+.top .top1{
+	width: 56px;
+	height: 56px;
+	background: url(../img/log1.png);
+	float: left;
+	
+}
+.top .top1:hover{
+	background: url(../img/log2.png);
+}
+.top .topinner .top2{
+	width: 900px;
+	height: 56px;
+	float: left;
+	line-height: 56px;
+	font-size: 30px;
+	color: #424242;
+	margin-left: 50px;
+}
+.top .top2 span{
+	font-size: 12px;
+	color: #757575;
+}
+.top .top3{
+	width: 174px;
+	height: 56px;
+	margin-top: 21px;
+	margin-left: 45px;
+	float: left;
+}
+.top .top3 .top31{
+	width: 100px;
+	height: 14px;
+	text-align: center;
+	line-height: 14px;
+	font-size: 12px;
+	color: #757575;
+	float: left;
+	position: relative;
+}
+.top .top3 .top31 ul{
+	list-style: none;
+	width: 100px;
+	height: 150px;
+	background: white;
+	position: absolute;
+	top: 20px;
+	left: 2px;
+	box-shadow: 0px 4px 8px 0px rgba(223,223,223,0.5);
+	display: none;
+}
+.top .top3 .top31:hover ul{
+	display: block;
+}
+.top .top3 .top31 ul li{
+	widows: 100px;
+	height: 30px;
+	line-height: 30px;
+}
+.top .top3 .top32{
+	width: 73px;
+	height: 14px;
+	text-align: center;
+	line-height: 14px;
+	font-size: 12px;
+	color: #757575;
+	float: right;
+	
+	border-left: 1px solid #E0E0E0;
+}
+.good{
+	width: 1226px;
+	height: 304px;
+	margin: 40px auto;
+	background: white;
+}
+.good .good1{
+	width: 1226px;
+	height: 70px;
+	
+}
+.good .good11-1 input{
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+}
+.good .good11{
+	width: 70px;
+	height: 70px;
+	line-height: 70px;
+	font-size: 14px;
+	color: #757575;
+	float: left;
+}
+.good .good11-1{
+	margin-left: 25px;
+}
+.good .good11-2{
+	margin-left: 100px;
+}
+.good .good11-3{
+	margin-left: 400px;
+}
+.good .good11-4{
+	margin-left: 90px;
+}
+.good .good11-5{
+	margin-left: 90px;
+}
+.good .good11-6{
+	margin-left: 90px;
+}
+.good .good2{
+	width: 1226px;
+	height: 117px;
+	border-top: 1px solid #E0E0E0;
+}
+.good .good21{
+	height: 61px;
+	float: left;
+	text-align: center;
+	line-height: 61px;
+	margin-top: 28px;
+	margin-left: 25px;
+	font-size: 18px;
+	color: #757575;
+}
+.good .good21 .ckb{
+	width: 20px;
+	height: 61px;
+	vertical-align: middle;
+	float: left;
+	
+}
+.good .good21 input{
+	width: 20px;
+	height: 20px;
+
+}
+.good .good21 .ckbimg{
+	width: 66px;
+	height: 61px;
+	float: right;
+}
+.good .good21-2{
+	width: 210px;
+	height: 61px;
+	margin-left: 55px;
+	
+}
+.good .good21-3{
+	width: 50px;
+	height: 61px;
+	margin-left: 260px;
+	
+}
+.good .good21-4{
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 70px;
+	margin-top: 38px;
+	border: 1px solid #E0E0E0;
+	
+}
+.good .good21-41{
+	width: 15px;
+	height: 40px;
+	float: left;
+	margin-top: -10px;
+}	
+.good .good21-41 input{
+	border: none;
+	font-size: 18px;
+	color: #757575;
+}
+.good .good21-41 button{
+	border: none;
+	outline: none;
+	background: white;
+	font-size: 18px;
+	color: #757575;
+}
+.good .good21-5{
+	width: 60px;
+	height: 61px;
+	margin-left: 50px;
+	color: #FF6700;
+}
+.good .good21-6{
+	width: 50px;
+	height: 61px;
+	margin-left: 113px;
+}
+.exgood{
+	width: 1226px;
+	height: 50px;
+	margin: 0 auto;
+	background: white;
+}
+.exgood .exgoodtu{
+	width: 25px;
+	height: 25px;
+	margin-top: 12.5px;
+	margin-left: 20px;
+	float: left;
+}
+.exgood .exgoodzi{
+	width: 250px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 14px;
+	color: #757575;
+	float: left;
+	margin-left: 10px;
+}
+.price{
+	width: 1226px;
+	height: 50px;
+	margin: 0 auto;
+	background: white;
+	margin-top: 50px;
+}
+.price .price1{
+	width: 260px;
+	height: 50px;
+	float: left;
+	line-height: 50px;
+	color: #B0B0B0;
+	font-size: 14px;
+	margin-left: 30px;
+}
+.price .price1 span{
+	color: #FF6700;
+}
+.price .price2{
+	width: 260px;
+	height: 50px;
+	float: left;
+	line-height: 50px;
+	color: #FF6700;
+	margin-left: 446px;
+}
+.price .price2 span{
+	font-size: 28px;
+}
+.price .price3{
+	width: 200px;
+	height: 50px;
+	float: left;
+	margin-left: 30px;
+}
+.price .price3 input{
+	width: 200px;
+	height: 50px;
+	background: #FF6700;
+	font-size: 20px;
+	color: white;
+	border: none;
+}
+.goods{
+	width: 100%;
+	height: 630px;
+	background: rgba(0,0,0,0.6);
+}
+.goodsinner{
+	width: 1226px;
+	height: 450px;
+	margin: 0 auto;
+}
+.goods1{
+	width: 1226px;
+	height: 32px;
+	padding-top: 20px;
+}
+.goods1 .goods11{
+	width: 1162px;
+	height: 32px;
+	float: left;
+	margin-left: 32px;
+	text-align: center;
+	font-size: 25px;
+	color: white;
+	
+}
+.goods1 .goods12{
+	width: 32px;
+	height: 32px;
+	float: right;
+	
+}
+.goods2{
+	width: 1226px;
+	height: 30px;
+	margin: 50px auto;
+	
+}
+.goods2 ul{
+	width: 1226px;
+	height: 300px;
+	list-style: none;
+}
+.goods2 ul li{
+	width: 200px;
+	height: 300px;
+	float: left;
+	background: white;
+}
+.goods2 ul li .goodsqq2{
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	border: 1px solid #E0E0E0;
+	margin: 10px 0px 0px 10px;
+}
+.goods2 ul li .goodstu2{
+	width: 160px;
+	height: 160px;
+	margin-left: 20px;
+}
+.goods2 ul li .goodszi2{
+	font-size: 14px;
+	text-align: center;
+	margin-top: 20px;
+	
+}
+.goods2 ul li .goodszi2 span{
+	color: #FF6700;
+	
+}
+.goods2 .goods22{
+	margin-left: 56px;
+}
+.goods2 ul li img{
+	width: 160px;
+	height: 160px;
+}
+.goods3{
+	width: 1226px;
+	height: 100px;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 250px;
+}
+.goods3 input{
+	width: 160px;
+	height: 40px;
+	background: #FF6700;
+	border: none;
+	color: white;
+}
+.win{
+	width: 500px;
+	height: 270px;
+	background: white;
+	position: fixed;
+	top: 25px;
+	left: 50%;
+	margin-left: -250px;
+}
+.win .win1{
+	width: 32px;
+	height: 32px;
+	margin-left: 440px;
+}
+.win .win2{
+	width: 220px;
+	height: 32px;
+	text-align: center;
+	font-size: 30px;
+	margin-left: 140px;
+	margin-top: 20px;
+}
+.win .win3{
+	width: 340px;
+	height: 40px;
+	margin-top: 80px;
+	margin-left: 80px;
+}
+.win .win3 button{
+	width: 160px;
+	height: 40px;
+}
+.win .win3-1{
+	float: left;
+}
+.win .win3-2{
+	float: right;
+}

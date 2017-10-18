@@ -1,0 +1,27 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#dahezi{
+	width: 1350px;
+	height: 360px;
+	position: relative;
+}
+#dahezi #xia{
+	width: 225px;
+	height: 125px;
+	position: absolute;
+	top: 180px;
+	left: 60px;
+					
+}
+#dahezi #shang{ 
+	width: 53px;
+	height: 53px;
+					
+	background: url(img/spr-v2.png) no-repeat -222px -30px;
+	position: absolute;
+	top: 208px;
+	left: 151px;
+	
+}

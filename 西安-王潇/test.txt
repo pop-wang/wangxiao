@@ -1,0 +1,49 @@
+1、prototype(原型)是什么,它是怎么使用的
+	答：prototype是类里面的一个共享空间，可以在这个共享空间里面添加一些公共的（即只要是通过这个类创建的都可以访问）属性和方法，所有对象访问的这些属性和方法都是存在在内存中的同一个地址中的。
+使用的时候一般有2种做法，一是直接给原型对象添加属性，也就是给所有通过这个类创建出来的对象添加公共属性；而是改变原型对象的属性和方法，所有通过这个类创建出来的对象也就都具备了改变之后的属性和方法。
+2、怎么样创建元素节点和文本节点,怎么样删除节点
+	答：创建元素节点：document.createElement();
+	   创建文本节点：document.createTextNode();
+	 删除节点：removeNode()。
+3、怎样通过js给某个节点对象添加属性和属性值 
+	答：setAttribute(属性名，属性值)。
+4、Js查找元素的几种方式
+	答：document.getElementById();
+	   document.getElementsByClassName();
+	   document.getElementsByName();
+	   document.getElementsByTagName();
+	   document.querySelector()。
+5. <button>开始<button> 将按钮的文字变成结束  再次点击 再次切换为开始
+	答：var btn=document.querySelector("button");
+		var open=true;
+		btn.onclick=function(){
+			if(btn.innerHTML=="开始"){
+				btn.innerHTML="结束";
+				open=false;
+			}else{
+				btn.innerHTML="开始";
+				open=true;
+			}
+		}
+6. 使用正则 删除里面的 特殊符号 “W^%R&E第三。！方*E”
+	答：不会正则。
+7. 写出程序运行的结果？
+for(i=0, j=0; i<10, j<6; i++, j++){
+ 	k = i + j;
+}
+写出k的值
+	答：k的值为10，当j=6的时候就已经跳出循环，不执行i+j了，所以结果为k=5+5=10。
+ 8. 写出 a b 的值
+(function() {
+	var a = b = 5;
+})();
+ console.log(b);
+	答：b的值为undefined，因为上面的函数是个自执行函数，执行完即刻销毁，相当于整个代码中没有声明一个名为b的变量，所以结果为undefined。
+9. 写出两种继承的方式
+	答：1.原型继承：只要是通过这个类的原型创造出来的对象，都拥有这个原型对象所具有的属性和方法；
+	   2.多重继承：创造出来的对象不仅继承原型对象，同时也继承了构造函数；
+	   3.混合继承：创造出来的对象只继承原型对象，不承构造函数，构造函数使用自己的构造函数。
+10. 写一个url格式验证的正则
+	答：不会正则。
+
+
